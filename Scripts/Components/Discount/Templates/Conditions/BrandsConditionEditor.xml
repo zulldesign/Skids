@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="BrandsConditionEditor">
+  <content>
+    <![CDATA[
+        <table border="0" cellpadding="0" cellspacing="0" class="gridView">
+          <thead>
+            <tr>
+              <th class="${sortedAscending?'sortedAsc':'sortedDesc' }">
+                <a href="javascript:void(0);" onclick="$(this).tmplItem().data.revertSorting();">
+                  ${Magelia.WebStore.Discount.Conditions.BrandsCondition.Localizations.BrandHeaderText}
+                </a>
+              </th>
+              <th>${Magelia.WebStore.Discount.Conditions.BrandsCondition.Localizations.ActionHeaderText}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="${model.Brands.length%2==0?'':'odd'}">
+              <td>
+                <input type="text" id="itxtBrandAdd${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}" value="${currentBrand}"/>
+                <script type="text/javascript">
+                   (
+                    function(){
+                       var itxtBrandAdd = $('#itxtBrandAdd${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}');
+                       itxtBrandAdd.tmplItem().data.registerAddTextbox(itxtBrandAdd);
+                    }
+                   )()
+                </script>
+              </td>
+              <td>
+                <a href="javascript:void(0);" style="padding:0;" class="rounded minor black"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.addBrand();
+                      }
+                    )
+                    (this);
+                  "
+                ><span><span><span>${Magelia.WebStore.Discount.Conditions.BrandsCondition.Localizations.AddButtonText}</span></span></span></a>
+              </td>
+            </tr>
+            {{each model.Brands}}
+              <tr class="${$index%2==0?'':'odd'}">
+                <td>${$value}</td>
+                <td>
+                  <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.editBrand(${$index});
+                      }
+                    )
+                    (this);
+                  "><span><span><span>${Magelia.WebStore.Discount.Conditions.BrandsCondition.Localizations.EditButtonText}</span></span></span></a>
+                  <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.removeBrand(${$index});
+                      }
+                    )
+                    (this);
+                  "><span><span><span>${Magelia.WebStore.Discount.Conditions.BrandsCondition.Localizations.RemoveButtonText}</span></span></span></a>
+                </td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      ]]>
+  </content>
+</template>

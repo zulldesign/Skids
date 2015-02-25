@@ -1,0 +1,175 @@
+﻿div.order {
+  overflow: hidden;
+}
+div.order > div.left {
+  margin-right: 310px;
+}
+div.order > div.left > * + * {
+  margin-top: 10px;
+}
+div.order > div.right {
+  float: right;
+  width: 300px;
+}
+div.order > div.right fieldset.payments li {
+  list-style-type: none;
+  padding: 10px 3px;
+}
+div.order > div.right fieldset.payments li + li {
+  border-top: solid 1px #999;
+}
+div.order > div.right fieldset.payments li > div {
+  line-height: 1.4em;
+}
+div.order > div.right fieldset.payments div.buttons a {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+div.order table.gridView tr.total td {
+  font-weight: bold;
+}
+div.order table.gridView tr.header td {
+  height: 40px;
+  color: white;
+  background-color: #999999;
+}
+div.order table.gridView tr.total > td:first-child {
+  text-align: right;
+}
+div.order table.gridView tr.orderSubset td {
+  color: black;
+  text-align: left;
+  background: #dfdfdf url('Images/GridView/bg-options.png') repeat-x 0 0;
+}
+div.order table.gridView tr.orderSubset td ul {
+  margin-top: 10px;
+  overflow: hidden;
+}
+div.order table.gridView tr.orderSubset td ul > li {
+  float: left;
+}
+div.order table.gridView tr.orderSubset td ul > li + li {
+  margin-left: 10px;
+}
+div.order table.gridView tr.orderSubset td ul > li a.button {
+  width: auto;
+  height: auto;
+  display: block;
+  font-weight: normal;
+  padding-left: 20px;
+}
+div.order table.gridView a.button {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+div.order div.addresses > div {
+  overflow: hidden;
+  width: 50%;
+  float: left;
+}
+div.order div.addresses > div > fieldset {
+  margin: 0 10px;
+}
+div.order div.addresses > div:first-child > fieldset {
+  margin-left: 0;
+}
+div.order div.addresses > div:last-child > fieldset {
+  margin-right: 0;
+}
+div.order div.addresses > div div.field.break {
+  width: 100%;
+}
+div.order div.addresses > div div.field.break div.commentsEditor,
+div.order div.addresses > div div.field.break div.additionalDataEditor {
+  float: none;
+}
+div.order div.addresses > div div.field.break div.commentsEditor table.gridView,
+div.order div.addresses > div div.field.break div.additionalDataEditor table.gridView {
+  width: 100%;
+}
+div.order div.addresses > div div.field.break table.gridView > thead > tr > th:first-child,
+div.order div.addresses > div div.field.break table.gridView > tbody > tr > td:first-child {
+  min-width: 70px;
+}
+div.order div.addresses > div div.field.break table.gridView > tbody > tr > td.content,
+div.order div.addresses > div div.field.break table.gridView > tbody > tr > td.content > textarea {
+  width: 100%;
+  min-width: 40px;
+}
+div.order div.addresses > div div.field.break table.gridView > tbody > tr > td > input[type=text] {
+  width: 100%;
+  min-width: 80px;
+  max-width: 150px;
+}
+div.order fieldset.status select {
+  width: 100%;
+}
+div.order fieldset.summary > div {
+  overflow: hidden;
+  line-height: 25px;
+}
+div.order fieldset.summary > div + div {
+  margin-top: 10px;
+}
+div.order fieldset.summary > div > * {
+  display: block;
+}
+div.order fieldset.summary > div > input[type=text] {
+  width: 100px;
+}
+div.order fieldset.summary div > span:first-child,
+div.order fieldset.summary div > label {
+  float: left;
+}
+div.order fieldset.summary > div > * + * {
+  float: right;
+}
+div.order fieldset.summary > div > * + div {
+  float: none;
+  clear: both;
+}
+div.order fieldset.versions > ul > li {
+  overflow: hidden;
+}
+div.order fieldset.versions > ul > li.current {
+  font-weight: bold;
+}
+div.order fieldset.versions > ul > li + li {
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid #cccccc;
+}
+div.order fieldset.versions > ul > li > div {
+  float: left;
+}
+div.order fieldset.versions > ul > li > ul {
+  float: right;
+}
+div.payments table.gridView a.button {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+div.payments table.gridView td.paymentAmount input[type=text],
+div.payments table.gridView td.paymentAmount select {
+  width: auto;
+}
+div.payments table.gridView td.paymentAmount input[type=text] {
+  text-align: right;
+}
+div.popin.comments textarea,
+div.popin.additionalData textarea {
+  width: 300px;
+}
+div.popin.comments input[type=text],
+div.popin.additionalData input[type=text] {
+  width: 200px;
+}
+/*div.popin.additionalData > div
+{
+	overflow-y:auto;
+	overflow-x:hidden;
+	max-height:500px;
+}*/

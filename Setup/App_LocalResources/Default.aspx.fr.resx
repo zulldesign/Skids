@@ -1,0 +1,870 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="bfCode.HeaderText" xml:space="preserve">
+    <value>Activité</value>
+  </data>
+  <data name="bfMessage.HeaderText" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="bnTestDatabaseConnection.Text" xml:space="preserve">
+    <value>Tester la connexion à la base de données</value>
+  </data>
+  <data name="cbxUseSmtpMachineConfiguration.Text" xml:space="preserve">
+    <value>Utiliser les paramètres SMTP définis dans machine.config</value>
+  </data>
+  <data name="cbxUseSqlExpress.Text" xml:space="preserve">
+    <value>Utiliser la base de données par défaut associée à SQL Server Express</value>
+  </data>
+  <data name="csBasicAuthenticationMode" xml:space="preserve">
+    <value>de base</value>
+  </data>
+  <data name="csNoAuthenticationMode" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="csWindowsAuthenticationMode" xml:space="preserve">
+    <value>Authentification Windows</value>
+  </data>
+  <data name="cvCheckAllTestsPassed.ErrorMessage" xml:space="preserve">
+    <value>Une erreur s'est produite pendant le processus d'installation, veuillez consulter les messages d'erreur.</value>
+  </data>
+  <data name="cvConfirmAdministratorPassword.ErrorMessage" xml:space="preserve">
+    <value>Le mot de passe Admin et le nouveau mot de passe Admin ne correspondent pas.</value>
+  </data>
+  <data name="cvConfirmNewPassword.ErrorMessage" xml:space="preserve">
+    <value>Le mot de passe et le nouveau mot de passe ne correspondent pas.</value>
+  </data>
+  <data name="cvExistingDatabaseName.ErrorMessage" xml:space="preserve">
+    <value>Entrez le nom de la base de données si vous souhaitez utiliser une base de données existante</value>
+  </data>
+  <data name="cvLicenseFile.ErrorMessage" xml:space="preserve">
+    <value>Fichier de licence invalide</value>
+  </data>
+  <data name="cvSmtpPort.Text" xml:space="preserve">
+    <value>Mauvais numéro de port</value>
+  </data>
+  <data name="databaseNameRetrievedFail" xml:space="preserve">
+    <value>La base de données n'a pas été trouvée. Veuillez vérifier que le nom de la base de données est correct.</value>
+  </data>
+  <data name="databaseNameRetrievedSuccess" xml:space="preserve">
+    <value>La base de données '{0}' existe bien.</value>
+  </data>
+  <data name="databaseOpenError" xml:space="preserve">
+    <value>Le test de connexion à la base de données a échoué.&lt;br /&gt;Le message d'erreur est: &lt;em&gt;{0}&lt;/em&gt;</value>
+  </data>
+  <data name="databaseOpenSuccess" xml:space="preserve">
+    <value>La connexion à la base de données a été testée avec succès.</value>
+  </data>
+  <data name="databaseWillBeCreatedWithAdminCredential" xml:space="preserve">
+    <value>La base de données sera créée en utilisant les informations de connexion de l'administrateur</value>
+  </data>
+  <data name="hlContactUs.Text" xml:space="preserve">
+    <value>Contactez nous</value>
+  </data>
+  <data name="lbtnForgotPassword.Text" xml:space="preserve">
+    <value>Mot de passe oublié</value>
+  </data>
+  <data name="hlLicense.Text" xml:space="preserve">
+    <value>Licence</value>
+  </data>
+  <data name="hlModify.Text" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="lblAccessCredPassword.Text" xml:space="preserve">
+    <value>Mot de passe:</value>
+  </data>
+  <data name="lblAccessCredUsername.Text" xml:space="preserve">
+    <value>Nom d’utilisateur:</value>
+  </data>
+  <data name="lblAdminCredPassword.Text" xml:space="preserve">
+    <value>Mot de passe:</value>
+  </data>
+  <data name="lblAdminCredUsername.Text" xml:space="preserve">
+    <value>Nom d’utilisateur:</value>
+  </data>
+  <data name="lblAdministratorEmail.Text" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="lblAdministratorPassword.Text" xml:space="preserve">
+    <value>Mot de passe:</value>
+  </data>
+  <data name="lblAdministratorUserName.Text" xml:space="preserve">
+    <value>Nom d’utilisateur:</value>
+  </data>
+  <data name="lblCompanyName.Text" xml:space="preserve">
+    <value>Société:</value>
+  </data>
+  <data name="lblConfirmAdministratorPassword.Text" xml:space="preserve">
+    <value>Confirmation du mot de passe:</value>
+  </data>
+  <data name="lblConfirmNewPassword.Text" xml:space="preserve">
+    <value>Confirmation du mot de passe:</value>
+  </data>
+  <data name="lblConnectionsString.Text" xml:space="preserve">
+    <value>Chaîne de connexion</value>
+  </data>
+  <data name="lblConnectionsString.Text1" xml:space="preserve">
+    <value>Fichier ConnectionsStrings.config:</value>
+  </data>
+  <data name="lblCultures.Text" xml:space="preserve">
+    <value>Culture : </value>
+  </data>
+  <data name="lblDatabaseName.Text" xml:space="preserve">
+    <value>Nom de la base de données:</value>
+  </data>
+  <data name="lblDropDatabaseConfirm" xml:space="preserve">
+    <value>Attention: la base de données existe déjà et sera supprimée.</value>
+  </data>
+  <data name="lblFirstName.Text" xml:space="preserve">
+    <value>Prénom:</value>
+  </data>
+  <data name="lblInstallSampleOrders.Text" xml:space="preserve">
+    <value>Ajouter des données clients et commandes (difficile à supprimer ensuite)</value>
+  </data>
+  <data name="lblInstallStarterSite.Text" xml:space="preserve">
+    <value>Données d'exemple et paramètres</value>
+  </data>
+  <data name="lblLastName.Text" xml:space="preserve">
+    <value>Nom:</value>
+  </data>
+  <data name="lblLicenseFile.Text" xml:space="preserve">
+    <value>Fichier de licence :</value>
+  </data>
+  <data name="lblLoginEmail.Text" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="lblLoginPassword.Text" xml:space="preserve">
+    <value>Mot de passe:</value>
+  </data>
+  <data name="lblNewEmail.Text" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="lblNewPassword.Text" xml:space="preserve">
+    <value>Mot de passe:</value>
+  </data>
+  <data name="lblProvideNavigationInformation.Text" xml:space="preserve">
+    <value>J’accepte de fournir mes données de navigation anonymes à Magelia</value>
+  </data>
+  <data name="lblSellerName.Text" xml:space="preserve">
+    <value>Nom de la société:</value>
+  </data>
+  <data name="lblSmtpAuthenticationMode.Text" xml:space="preserve">
+    <value>Authentication mode:</value>
+  </data>
+  <data name="lblSmtpBasicAuthenticationPassword.Text" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="lblSmtpBasicAuthenticationUserName.Text" xml:space="preserve">
+    <value>Nom d’utilisateur</value>
+  </data>
+  <data name="lblSmtpEmailSender.Text" xml:space="preserve">
+    <value>E-mail de l'expéditeur:</value>
+  </data>
+  <data name="lblSmtpPort.Text" xml:space="preserve">
+    <value>Port:</value>
+  </data>
+  <data name="lblSmtpServer.Text" xml:space="preserve">
+    <value>Serveur SMTP:</value>
+  </data>
+  <data name="lblSmtpUseSsl.Text" xml:space="preserve">
+    <value>SSL:</value>
+  </data>
+  <data name="lblSqlServerExpressName.Text" xml:space="preserve">
+    <value>Nom de l'instance:</value>
+  </data>
+  <data name="lblSqlServerName.Text" xml:space="preserve">
+    <value>Nom ou adresse IP du serveur SQL:</value>
+  </data>
+  <data name="lblStoreName.Text" xml:space="preserve">
+    <value>Nom de la boutique:</value>
+  </data>
+  <data name="lblWebConfig.Text" xml:space="preserve">
+    <value>Fichier Web.config:</value>
+  </data>
+  <data name="lbtnCancelConfirmLicense.Text" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="lbtnCommunityEdition.Text" xml:space="preserve">
+    <value>Go !</value>
+  </data>
+  <data name="lbtnConfirmLicense.Text" xml:space="preserve">
+    <value>Confirmer</value>
+  </data>
+  <data name="lbtnCreateAccount.Text" xml:space="preserve">
+    <value>Créer un compte</value>
+  </data>
+  <data name="lbtnEnterpriseEdition.Text" xml:space="preserve">
+    <value>Enterprise edition</value>
+  </data>
+  <data name="lbtnGoToStoreAdministrator.Text" xml:space="preserve">
+    <value>Continuer</value>
+  </data>
+  <data name="lbtnGoToTechnicalSettings.Text" xml:space="preserve">
+    <value>Suivant</value>
+  </data>
+  <data name="lbtnInstall.Text" xml:space="preserve">
+    <value>Installer Magelia WebStore</value>
+  </data>
+  <data name="lbtnLogin.Text" xml:space="preserve">
+    <value>Valider</value>
+  </data>
+  <data name="lbtnNextStep.Text" xml:space="preserve">
+    <value>Rééssayer</value>
+  </data>
+  <data name="lbtnProfessionalEdition.Text" xml:space="preserve">
+    <value>Essayez Gratuitement</value>
+  </data>
+  <data name="lbtnSendLicenseFile.Text" xml:space="preserve">
+    <value>Validez</value>
+  </data>
+  <data name="liSmtpBasicAuthentication.Text" xml:space="preserve">
+    <value>De base</value>
+  </data>
+  <data name="liSmtpNoneAuthentication.Text" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="litAccountSettingsGenericError.Text" xml:space="preserve">
+    <value>Une erreur s'est produite lors de la création de votre licence. Pour activer la licence, une connexion Internet doit être active et la console d'administration doit être en mesure de se connecter à &lt;a href="http://www.magelia.org" target="_blank"&gt;http://www.magelia.org.&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;em&gt;Détails techniques:&lt;/em&gt;&lt;br/&gt;
+&lt;span style="font-size:smaller;"&gt;{0}. {1}&lt;/span&gt;</value>
+  </data>
+  <data name="litAdministratorEmail.Text" xml:space="preserve">
+    <value>E-mail de l'administrateur:</value>
+  </data>
+  <data name="litAdministratorUsername.Text" xml:space="preserve">
+    <value>Nom de l’administrateur:</value>
+  </data>
+  <data name="litAdvanceStoreParameters.Text" xml:space="preserve">
+    <value>Paramètres avancés</value>
+  </data>
+  <data name="litChooseCommunityTitle.Text" xml:space="preserve">
+    <value>Community Edition</value>
+  </data>
+  <data name="litChooseEnterpriseTitle.Text" xml:space="preserve">
+    <value>Enterprise Edition</value>
+  </data>
+  <data name="litChooseLicenseTitle.Text" xml:space="preserve">
+    <value>Quelle édition de Magelia WebStore correspond le mieux à vos attentes ?</value>
+  </data>
+  <data name="litChooseProfessionalTitle.Text" xml:space="preserve">
+    <value>Professional Edition</value>
+  </data>
+  <data name="litCommunityDescription.Text" xml:space="preserve">
+    <value>Le logiciel e-commerce open-source adapté aux petites et moyennes entreprises. Totalement gratuite, Magelia WebStore Community edition est conçue pour vous aider à développer rapidement votre activité en ligne.</value>
+  </data>
+  <data name="litCommunityFree.Text" xml:space="preserve">
+    <value>&lt;strong&gt;100% gratuite&lt;/strong&gt;</value>
+  </data>
+  <data name="hlCompareEditions.Text" xml:space="preserve">
+    <value>Comparez les éditions</value>
+  </data>
+  <data name="litConfigurationMessage.Text" xml:space="preserve">
+    <value>Le fichier de configuration n'a pas pu être créé. Veuillez ajouter cette configuration et cliquez sur "Terminer":</value>
+  </data>
+  <data name="litCreateAccountTitle.Text" xml:space="preserve">
+    <value>Créez votre compte Magelia.org</value>
+  </data>
+  <data name="litDatabaseAccessCredentials.Text" xml:space="preserve">
+    <value>Droits d’accès à la base de données</value>
+  </data>
+  <data name="litDatabaseAccessCredentialsHelp.Text" xml:space="preserve">
+    <value>Droits d’accès à la base de données</value>
+  </data>
+  <data name="litDatabaseAccessCredentialsHelpText.Text" xml:space="preserve">
+    <value>Indiquez le compte avec lequel Magelia WebStore accèdera à la base de données.&lt;br /&gt;
+Si vous choisissez l’authentification Windows, l’utilisateur  qui réalise actuellement l’installation (IIS APPPOOL\DefaultAppPool) se verra attribuer les droits d’accès à la base de données Magelia WebStore.&lt;br /&gt;
+Si vous choisissez l’authentification SQL Server, vous pouvez définir un compte existant ou un nouveau compte. Si le compte n’existe pas, il sera créé durant le processus d’installation.</value>
+  </data>
+  <data name="litDatabaseAdminCred.Text" xml:space="preserve">
+    <value>Droits d’administration de la base de données</value>
+  </data>
+  <data name="litDatabaseAdministrationCredentials.Text" xml:space="preserve">
+    <value>Droits d’administration de la base de données</value>
+  </data>
+  <data name="litDatabaseAdministrationCredentialsText.Text" xml:space="preserve">
+    <value>Indiquez le compte à utiliser pour créer la base de données. Pour créer une nouvelle base de données, le compte utilisé doit disposer de droits suffisants.&lt;br /&gt;Si vous choisissez d’utiliser une base de données vierge, le compte à utiliser doit être le compte administrateur de la base de données.&lt;br /&gt;Ces informations d’authentification ne seront pas enregistrées par Magelia WebStore et seront utilisées seulement lors de l’installation.</value>
+  </data>
+  <data name="litDatabaseSettingStep.Text" xml:space="preserve">
+    <value>Paramètres de la base de données</value>
+  </data>
+  <data name="litDefineAccountSettingsTitle.Text" xml:space="preserve">
+    <value>Paramètres de votre compte &lt;a href="http://www.magelia.org" target="_blank"&gt;www.magelia.org&lt;/a&gt;</value>
+  </data>
+  <data name="litDontForget.Text" xml:space="preserve">
+    <value>N'OUBLIEZ PAS votre identifiant ni votre mot de passe!</value>
+  </data>
+  <data name="litDontForgetText.Text" xml:space="preserve">
+    <value>Les informations de connexion de votre administrateur sont nécessaires pour vous  connecter à la console d’administration de Magelia WebStore. Il est important de vous en souvenir.</value>
+  </data>
+  <data name="litDuplicateEmail.Text" xml:space="preserve">
+    <value>Cette adresse e-mail existe déjà. Veuillez vous connecter avec cet e-mail ou en choisir un autre e-mail pour créer un compte.</value>
+  </data>
+  <data name="litEnterpriseDescription.Text" xml:space="preserve">
+    <value>Toutes les fonctionnalités de la version professionnelle auxquelles viennent s’ajouter des fonctionnalités exclusives telles qu’un nombre de licences illimitées au sein de la même entreprise, un support prioritaire illimité, du conseil et de la formation.</value>
+  </data>
+  <data name="litExistingOrNewDatabase.Text" xml:space="preserve">
+    <value>Base de données existante ou nouvelle</value>
+  </data>
+  <data name="litGenericCreateAccountError.Text" xml:space="preserve">
+    <value>Une erreur s'est produite lors de la création de votre compte: {0} - {1}</value>
+  </data>
+  <data name="litGenericError.Text" xml:space="preserve">
+    <value>Une erreur s'est produite: {0}</value>
+  </data>
+  <data name="litHelp.Text" xml:space="preserve">
+    <value>Aide</value>
+  </data>
+  <data name="litInvalidPassword.Text" xml:space="preserve">
+    <value>Il y a une erreur avec votre combinaison E-Mail/Mot de passe. Veuillez essayer à nouveau.</value>
+  </data>
+  <data name="litLicenseDetailsThank.Text" xml:space="preserve">
+    <value>DETAILS DE LA LICENCE MAGELIA WEBSTORE</value>
+  </data>
+  <data name="litLoading.Text" xml:space="preserve">
+    <value>Chargement</value>
+  </data>
+  <data name="litLogin.Text" xml:space="preserve">
+    <value>Authentifiez-vous</value>
+  </data>
+  <data name="litLoginIntro.Text" xml:space="preserve">
+    <value>Saisissez les identifiants de votre compte créé sur Magelia.org</value>
+  </data>
+  <data name="litNavigationInfo.Text" xml:space="preserve">
+    <value>Données de navigation </value>
+  </data>
+  <data name="litNavigationInfoText.Text" xml:space="preserve">
+    <value>En acceptant de nous fournir des données de navigation de manière anonyme, vous nous aidez à améliorer l’ergonomie de Magelia WebStore.</value>
+  </data>
+  <data name="litPopular.Text" xml:space="preserve">
+    <value>La plus populaire</value>
+  </data>
+  <data name="litProfessionnalDescription.Text" xml:space="preserve">
+    <value>Notre solution professionnelle qui comprend des fonctionnalités puissantes et donne accès au support de Magelia.</value>
+  </data>
+  <data name="litProfessionnalTrial.Text" xml:space="preserve">
+    <value>&lt;strong&gt;Essai gratuit pendant 45 jours&lt;/strong&gt;&lt;br/&gt;Achetez ensuite pour 2 990 €</value>
+  </data>
+  <data name="litRetrieveLicense.Text" xml:space="preserve">
+    <value>Retrouvez vos clés de licence sur Magelia.org</value>
+  </data>
+  <data name="litRetrieveLicenseText.Text" xml:space="preserve">
+    <value>En disposant d’un compte sur Magelia.org, vous pourrez facilement récupérer vos clés de licence en vous connectant sur le site &lt;a target="_blank" href="http://www.magelia.org"&gt;Magelia.org&lt;/a&gt;.</value>
+  </data>
+  <data name="litSampleData.Text" xml:space="preserve">
+    <value>Jeu de données</value>
+  </data>
+  <data name="litSampleDataText.Text" xml:space="preserve">
+    <value>Installer des données et paramètres peut vous faire gagner du temps pour configurer le logiciel et vous faire comprendre plus facilement le paramétrage de Magelia WebStore.</value>
+  </data>
+  <data name="litSellerName.Text" xml:space="preserve">
+    <value>Vendeur/Société:</value>
+  </data>
+  <data name="litSetupStatus.Text" xml:space="preserve">
+    <value>Etat d’avancement de l’installation</value>
+  </data>
+  <data name="litSetupStatusDescription.Text" xml:space="preserve">
+    <value>&lt;/ br&gt; &lt;strong&gt; Félicitations! &lt;/ strong&gt; Magelia WebStore a été installé avec succès.
+&lt;/ br&gt; Vous allez maintenant être redirigé vers la console d'administration Magelia WebStore</value>
+  </data>
+  <data name="litSetupTitle.Text" xml:space="preserve">
+    <value>Installation de Magelia WebStore</value>
+  </data>
+  <data name="litSmtpAuthenticationMode.Text" xml:space="preserve">
+    <value>SMTP Authentication mode:</value>
+  </data>
+  <data name="litSmtpServer.Text" xml:space="preserve">
+    <value>Serveur SMTP:</value>
+  </data>
+  <data name="litSqlDatabase.Text" xml:space="preserve">
+    <value>Base de données:</value>
+  </data>
+  <data name="litSqlExpressText.Text" xml:space="preserve">
+    <value>La nouvelle base de données sera créée dans le répertoire App_Data</value>
+  </data>
+  <data name="litSqlServer.Text" xml:space="preserve">
+    <value>Serveur SQL:</value>
+  </data>
+  <data name="litSqlServerAdministration.Text" xml:space="preserve">
+    <value>Nom du serveur SQL</value>
+  </data>
+  <data name="litSqlServerName.Text" xml:space="preserve">
+    <value>Veuillez saisir le nom du serveur SQL sur lequel vous souhaitez installer WebStore</value>
+  </data>
+  <data name="litSqlServerSettingsTitle.Text" xml:space="preserve">
+    <value>Paramètres de la base de données</value>
+  </data>
+  <data name="litSqlUseExistingDatabase.Text" xml:space="preserve">
+    <value>Utilisation de la base de données:</value>
+  </data>
+  <data name="litStillNotSure.Text" xml:space="preserve">
+    <value>Vous hésitez ?</value>
+  </data>
+  <data name="litStoreAdministratorTitle.Text" xml:space="preserve">
+    <value>Création du compte administrateur pour la boutique</value>
+  </data>
+  <data name="litStoreName.Text" xml:space="preserve">
+    <value>Nom de la boutique:</value>
+  </data>
+  <data name="litStoreParametersAdvancedParameters.Text" xml:space="preserve">
+    <value>Paramètres avancés</value>
+  </data>
+  <data name="litStoreParametersAdvancedParametersText.Text" xml:space="preserve">
+    <value>Par défaut, Magelia WebStore installe les 30 langues les plus parlées dans le monde. Pour la plupart des cas, il n’est pas nécessaire de modifier les paramètres avancés. Si vous le souhaitez, vous pouvez bien sur  ajouter ou supprimer des langues.</value>
+  </data>
+  <data name="litStoreParametersTitle.Text" xml:space="preserve">
+    <value>Configuration de la boutique</value>
+  </data>
+  <data name="litTechnicalSettingsAdvancedParameters.Text" xml:space="preserve">
+    <value>Paramètres avancés: configuration d’un serveur de mail</value>
+  </data>
+  <data name="litTechnicalSettingsAdvancedParametersText.Text" xml:space="preserve">
+    <value>Définissez les paramètres du serveur SMTP sur lequel Magelia WebStore peut se connecter. Par défaut, Magelia WebStore Magelia WebStore utilisera les paramètres définis dans le fichier machine.config (s'ils ont éét définis dasn ce fichier).</value>
+  </data>
+  <data name="litTechnicalSettingsAdvanceParameters.Text" xml:space="preserve">
+    <value>Paramètres avancés</value>
+  </data>
+  <data name="litTechnicalSettingsTitle.Text" xml:space="preserve">
+    <value>Paramètres techniques</value>
+  </data>
+  <data name="litUseExistingLicenseIntro.Text" xml:space="preserve">
+    <value>Veuillez télécharger votre fichier de licence :</value>
+  </data>
+  <data name="litUseExistingLicenseTitle.Text" xml:space="preserve">
+    <value>Vous disposez déjà d’une clé de licence valide ?</value>
+  </data>
+  <data name="litWebStoreAccountExplanation.Text" xml:space="preserve">
+    <value>Indiquer le compte que Magelia WebStore va utiliser pour accéder à la base de données. Si ce compte n’existe pas, il sera créé automatiquement.</value>
+  </data>
+  <data name="litWhoIsAdmin.Text" xml:space="preserve">
+    <value>A quoi correspond l’administrateur de la boutique ?</value>
+  </data>
+  <data name="litWhoIsAdminText.Text" xml:space="preserve">
+    <value>L’administrateur sera la seule personne autorisée à se connecter à la console d’administration une fois que l’installation est terminée.</value>
+  </data>
+  <data name="litWhyDefineAnAccount.Text" xml:space="preserve">
+    <value>Pourquoi créer un compte sur  &lt;a href="http://www.magelia.org" target="_blank"&gt;www.magelia.org&lt;/a&gt;</value>
+  </data>
+  <data name="litWhyDefineAnAccountText.Text" xml:space="preserve">
+    <value>Il est nécessaire de créer un compte sur &lt;a href="http://www.magelia.org" target="_blank"&gt;Magelia.org&lt;/a&gt; afin de permettre à Magelia de générer votre clé de licence logicielle.</value>
+  </data>
+  <data name="litWizardTitleAccountSettings.Text" xml:space="preserve">
+    <value>Paramètres de votre compte Magelia</value>
+  </data>
+  <data name="litWizardTitleSetupStatus.Text" xml:space="preserve">
+    <value>Etat d’avancement de l’installation</value>
+  </data>
+  <data name="litWizardTitleStoreAdministrator.Text" xml:space="preserve">
+    <value>Création du compte administrateur pour la boutique</value>
+  </data>
+  <data name="litWizardTitleStoreParameters.Text" xml:space="preserve">
+    <value>Configuration de la boutique</value>
+  </data>
+  <data name="litWizardTitleTechnicalSettings.Text" xml:space="preserve">
+    <value>Paramètres techniques</value>
+  </data>
+  <data name="litWizardTitleWelcome.Text" xml:space="preserve">
+    <value>Installation</value>
+  </data>
+  <data name="lnkModifyWebConfig.Text" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="pnlConfigurationSummary.GroupingText" xml:space="preserve">
+    <value>Résumé de la configuration:</value>
+  </data>
+  <data name="pnlDetail.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rblliExistingDatabase.Text" xml:space="preserve">
+    <value>Mettre à jour ou utiliser une instance de base de données existante</value>
+  </data>
+  <data name="rblliExistingDatabase.Title" xml:space="preserve">
+    <value>Non disponible</value>
+  </data>
+  <data name="rblliExistingEmptyDatabase.Text" xml:space="preserve">
+    <value>Utiliser une nouvelle instance vierge d’une base de données existante (Nouvelle installation)</value>
+  </data>
+  <data name="rblliNewDatabase.Text" xml:space="preserve">
+    <value>Créer une nouvelle base de données</value>
+  </data>
+  <data name="rblliSqlServerAccountMethod.Text" xml:space="preserve">
+    <value>Authentification SQL</value>
+  </data>
+  <data name="rblliWindowsAuthMethod.Text" xml:space="preserve">
+    <value>Authentification Windows</value>
+  </data>
+  <data name="revAdministratorEmail.ErrorMessage" xml:space="preserve">
+    <value>Le format de l'adresse e-mail n'est pas valide. Veuillez corriger votre saisie.</value>
+  </data>
+  <data name="revLoginEmail.ErrorMessage" xml:space="preserve">
+    <value>Le format de l'adresse e-mail n'est pas valide.	revNewEmail.ErrorMessage. Veuillez corriger votre saisie.</value>
+  </data>
+  <data name="revNewEmail.ErrorMessage" xml:space="preserve">
+    <value>Le format de l'adresse e-mail n'est pas valide. Veuillez corriger votre saisie.</value>
+  </data>
+  <data name="rfvAdministratorEmail.ErrorMessage" xml:space="preserve">
+    <value>Veuillez saisir le l'adresse e-mail</value>
+  </data>
+  <data name="rfvAdministratorPassword.ErrorMessage" xml:space="preserve">
+    <value>Veuillez saisir le mot de passe</value>
+  </data>
+  <data name="rfvAdministratorUserName.Text" xml:space="preserve">
+    <value>Veuillez saisir le Nom de l'utilisateur</value>
+  </data>
+  <data name="rfvDatabaseAccessCred.ErrorMessage" xml:space="preserve">
+    <value>Un mode d'authentification est requis pour les autorisations d'accès</value>
+  </data>
+  <data name="rfvDatabaseAdminCred.ErrorMessage" xml:space="preserve">
+    <value>Un mode d'authentification est requis pour les autorisations de l'administrateur</value>
+  </data>
+  <data name="rfvDatabaseName.ErrorMessage" xml:space="preserve">
+    <value>Un nom de base de données est requis</value>
+  </data>
+  <data name="rfvExistingOrNewDatabase.ErrorMessage" xml:space="preserve">
+    <value>Choisir entre créer une nouvelle base ou utiliser une base de données existante</value>
+  </data>
+  <data name="rfvLastName.ErrorMessage" xml:space="preserve">
+    <value>Veuillez saisir votre Nom</value>
+  </data>
+  <data name="rfvLoginEmail.ErrorMessage" xml:space="preserve">
+    <value>Veuillez saisir l'adresse e-mail</value>
+  </data>
+  <data name="rfvLoginPassword.ErrorMessage" xml:space="preserve">
+    <value>Veuillez saisir le Mot de passe</value>
+  </data>
+  <data name="rfvNewEmail.ErrorMessage" xml:space="preserve">
+    <value>Veuillez saisir l'adresse e-mail</value>
+  </data>
+  <data name="rfvNewPassword.ErrorMessage" xml:space="preserve">
+    <value>Veuillez saisir le Mot de passe</value>
+  </data>
+  <data name="rfvPasswordCredRequired.ErrorMessage" xml:space="preserve">
+    <value>Veuillez saisir le mot de passe pour le compte SQL Server.</value>
+  </data>
+  <data name="rfvSellerName.ErrorMessage" xml:space="preserve">
+    <value>Veuillez saisir le nom de la société</value>
+  </data>
+  <data name="rfvSqlServerExpressName.ErrorMessage" xml:space="preserve">
+    <value>Veuillez saisir le nom de l'Instance</value>
+  </data>
+  <data name="rfvSqlServerName.ErrorMessage" xml:space="preserve">
+    <value>Un nom ou une IP est requis pour SQL Server.</value>
+  </data>
+  <data name="rfvStoreName.ErrorMessage" xml:space="preserve">
+    <value>Le nom de la boutique est requis</value>
+  </data>
+  <data name="rfvUsernameCredRequired.ErrorMessage" xml:space="preserve">
+    <value>Veuillez saisir un nom d'utilisateur car cela est nécessaire pour SQL Server account.</value>
+  </data>
+  <data name="slCultures.AssociatedItemsLabelText" xml:space="preserve">
+    <value>Cultures sélectionnées</value>
+  </data>
+  <data name="slCultures.AvailableItemsLabelText" xml:space="preserve">
+    <value>Cultures disponibles</value>
+  </data>
+  <data name="tbxEmail.Text" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="tbxPassword.Text" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="tfStatus.HeaderText" xml:space="preserve">
+    <value>Statut</value>
+  </data>
+  <data name="lblNewsletter.Text" xml:space="preserve">
+    <value>Je souhaite recevoir la newsletter de Magelia</value>
+  </data>
+  <data name="litWizardTitleRoot.Text" xml:space="preserve">
+    <value>Magelia WebStore &gt;</value>
+  </data>
+  <data name="rfvFirstName.ErrorMessage" xml:space="preserve">
+    <value>Veuillez saisir votre prénom</value>
+  </data>
+  <data name="lblForgotPasswordEmail.Text" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="lbtnForgotPasswordReviewEmail.Text" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="lbtnSendNewPassword.Text" xml:space="preserve">
+    <value>Recevoir un nouveau mot de passe</value>
+  </data>
+  <data name="litForgotPassword.Text" xml:space="preserve">
+    <value>Mot de passe oublié</value>
+  </data>
+  <data name="litForgotPasswordError.Text" xml:space="preserve">
+    <value>Une erreur inattendue est survenue, veuillez réessayer plus tard.</value>
+  </data>
+  <data name="litForgotPasswordNotSend.Text" xml:space="preserve">
+    <value>L'e-mail spécifié ne correspond pas à un compte existant. Veuillez vérifier votre saisie.</value>
+  </data>
+  <data name="litForgotPasswordSuccess.Text" xml:space="preserve">
+    <value>Un nouveau mot de passe en été envoyé à votre adresse email.</value>
+  </data>
+  <data name="revForgotPasswordEmailPattern.ErrorMessage" xml:space="preserve">
+    <value>L'adresse e-mail n'est pas valide. Veuillez corriger votre saisie.</value>
+  </data>
+  <data name="rfvForgotPasswordEmail.ErrorMessage" xml:space="preserve">
+    <value>Veuillez saisir votre adresse e-mail</value>
+  </data>
+  <data name="cvCountryRequired.ErrorMessage" xml:space="preserve">
+    <value>Données par défaut: Veuillez choisir le pays</value>
+  </data>
+  <data name="lblBasicConfiguration.Text" xml:space="preserve">
+    <value>Configuration basique</value>
+  </data>
+  <data name="lblBlank.Text" xml:space="preserve">
+    <value>Configuration vierge de Magelia WebStore</value>
+  </data>
+  <data name="lblRegion.Text" xml:space="preserve">
+    <value>Etat/Région:</value>
+  </data>
+  <data name="lblStoreDefaultCountry.Text" xml:space="preserve">
+    <value>Pays par défaut de la boutique:</value>
+  </data>
+  <data name="litInstallType.Text" xml:space="preserve">
+    <value>Paramètres et données de la boutique</value>
+  </data>
+  <data name="litTaxIndications.Text" xml:space="preserve">
+    <value>indiquer un état / une région SI ET SEULEMENT SI les taxes sont calculées par Etat / région</value>
+  </data>
+  <data name="BasicConfig" xml:space="preserve">
+    <value>de base</value>
+  </data>
+  <data name="Blank" xml:space="preserve">
+    <value>vide</value>
+  </data>
+  <data name="litBasicConfigText.Text" xml:space="preserve">
+    <value>&lt;strong&gt;- Configuration basique:&lt;/strong&gt;&lt;br/&gt; Choisissez cette option pour que soient préconfigurés automatiquement : devise par défaut, pays par défaut, zone de taxe par défaut, zone de livraison par défaut, catalogue par défaut, entrepôt par défaut, catalogue par défaut et type de produits standard.</value>
+  </data>
+  <data name="litBlankInstallText.Text" xml:space="preserve">
+    <value>&lt;strong&gt;- Configuration vierge:&lt;/strong&gt;&lt;br/&gt; Sélectionnez cette option pour créer une boutique vierge sans aucun paramètre configuré.</value>
+  </data>
+  <data name="litDemoStoreText.Text" xml:space="preserve">
+    <value>&lt;strong&gt;- Catalogue et jeu de données de test:&lt;/strong&gt;&lt;br/&gt; Choisissez cette option pour   obtenir une boutique complètement pré-configurée avec des produits, catalogue, livraison, taxe, prix, etc.</value>
+  </data>
+  <data name="litInstallConfiguration.Text" xml:space="preserve">
+    <value>Configuration de la boutique:</value>
+  </data>
+  <data name="litInstallInfo.Text" xml:space="preserve">
+    <value>Paramètres et données de la boutique</value>
+  </data>
+  <data name="revAdministratorPasswordLength.ErrorMessage" xml:space="preserve">
+    <value>Le mot de passe doit contenir au moins {0} caractères. Veuillez corriger votre saisie.</value>
+  </data>
+  <data name="Sample" xml:space="preserve">
+    <value>Données d'exemple</value>
+  </data>
+  <data name="cvSmtpServerRequired.ErrorMessage" xml:space="preserve">
+    <value>Un serveur SMTP est requis</value>
+  </data>
+  <data name="lbtnRetry.Text" xml:space="preserve">
+    <value>Rééssayer</value>
+  </data>
+  <data name="lblDataSampleChoice.Text" xml:space="preserve">
+    <value>Jeu de données à installer:</value>
+  </data>
+  <data name="CommunityEURDataSet" xml:space="preserve">
+    <value>Community Edition - Boutique de Démo Europe</value>
+  </data>
+  <data name="CommunityUSDataSet" xml:space="preserve">
+    <value>Community Edition - Boutique de Démo USA</value>
+  </data>
+  <data name="ProfessionalDataSet" xml:space="preserve">
+    <value>Professional Edition - Demo multi-entrepots</value>
+  </data>
+  <data name="ProfessionalEditionOnly" xml:space="preserve">
+    <value>Professional Edition uniquement</value>
+  </data>
+  <data name="litHideDetail.Text" xml:space="preserve">
+    <value>Masquer les détails</value>
+  </data>
+  <data name="litShowDetail.Text" xml:space="preserve">
+    <value>Afficher les détails</value>
+  </data>
+  <data name="lblPleaseWait.Text" xml:space="preserve">
+    <value>Merci de patienter pendant que l'installation se termine</value>
+  </data>
+  <data name="RedirectingToBackOffice" xml:space="preserve">
+    <value>Installation réussie. Vous allez être dirigé automatiquement vers la console d'administration de Magelia WebStore.</value>
+  </data>
+  <data name="lblProgressText.Text" xml:space="preserve">
+    <value>Etape {0} de {1} - {2}</value>
+  </data>
+  <data name="hlContactUsHelp.Text" xml:space="preserve">
+    <value>Contactez nous pour obtenir de l’aide</value>
+  </data>
+  <data name="cvTermsAndConditions.ErrorMessage" xml:space="preserve">
+    <value>Veuillez accepter les Conditions Générales de Magelia WebStore</value>
+  </data>
+  <data name="hlTermsAndConditions.Text" xml:space="preserve">
+    <value>Conditions Générales et Licence</value>
+  </data>
+  <data name="litTermsAndConditions.Text" xml:space="preserve">
+    <value>J’accepte les </value>
+  </data>
+  <data name="hlBackToAdministrationConsole.Text" xml:space="preserve">
+    <value>retour à la Console d'administration de Magelia WebStore</value>
+  </data>
+  <data name="litAlreadyInstalled.Text" xml:space="preserve">
+    <value>&lt;p&gt;Magelia WebStore est correctement installé, et il n'est pas possible de relancer la procédure d'installation.&lt;/ p&gt;
+&lt;p&gt;Si vous souhaitez apporter des modifications à la configuration actuelle, veuillez utiliser la console d'administration.&lt;/ p&gt;</value>
+  </data>
+  <data name="cbxSpecifyCollation.Text" xml:space="preserve">
+    <value>Utiliser le classement spécifique (collation)</value>
+  </data>
+  <data name="lblCollationName.Text" xml:space="preserve">
+    <value>Nom du classement (collation)</value>
+  </data>
+  <data name="rfvCollationName.ErrorMessage" xml:space="preserve">
+    <value>Nom duy classement (collation)</value>
+  </data>
+  <data name="revAdministratorUserNameLength.ErrorMessage" xml:space="preserve">
+    <value>Le nom d'utilisateur doit contenir au moins  {0} caractères. Veuillez corriger votre saisie.</value>
+  </data>
+  <data name="litSmtpNextScreen.Text" xml:space="preserve">
+    <value>Configurez le SMTP dans l’écran suivant</value>
+  </data>
+  <data name="litSmtpNextScreenText.Text" xml:space="preserve">
+    <value>Saisissez les paramètres du serveur de mail que vous souhaitez utiliser dans l’écran suivant afin de pouvoir obtenir un nouveau mot de passe administrateur.</value>
+  </data>
+  <data name="litSqlExpress.Text" xml:space="preserve">
+    <value>Pour une installation facile et rapide cochez « Utiliser la base de données par défaut associée à SQL Server Express »</value>
+  </data>
+  <data name="litSetupStatusTitle.Text" xml:space="preserve">
+    <value>Etat d’avancement de l’installation</value>
+  </data>
+  <data name="rfvConfirmAdministratorPassword.ErrorMessage" xml:space="preserve">
+    <value>Veuillez saisir la confrmation de mot de passe</value>
+  </data>
+  <data name="litSqlWarning.Text" xml:space="preserve">
+    <value>Pré-requis: SQLServer</value>
+  </data>
+  <data name="litSqlWarningText.Text" xml:space="preserve">
+    <value>Pour installer Magelia WebStore, un serveur de base de données SQL Server Express ou supérieur doit déjà avoir été installé. Remarque : Si vous installez Magelia WebStore en utilisant Web Platform Installer, Web Platform Installer a du se charger de cette installation si cela était nécessaire.</value>
+  </data>
+  <data name="litUseSqlExpress.Text" xml:space="preserve">
+    <value>Installation de la base de données</value>
+  </data>
+  <data name="rblliUseSqlExpress.Text" xml:space="preserve">
+    <value>Utiliser la base de données attachée à SQL Server Express (SQL server auto-attached DB)</value>
+  </data>
+  <data name="rblliManuallyConfigureSqlServer.Text" xml:space="preserve">
+    <value>Configurer manuellement une instance existante de SQL Server</value>
+  </data>
+</root>

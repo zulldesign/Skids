@@ -1,0 +1,134 @@
+﻿div.noInstalledExtensions {
+    padding: 10px;
+
+    > div {
+        background-color: @color;
+        background-image: url('Images/Messages/warning.png');
+    }
+}
+
+ul.extensions {
+    > li {
+        padding: 10px 0;
+
+        + li {
+            border-top: solid 1px #CACACA;
+        }
+
+        div.additionalVersion {
+            display: none;
+
+            ul.messages {
+                margin-bottom: 10px;
+            }
+        }
+
+        .spacer {
+            clear: both;
+        }
+    }
+}
+
+
+.extensionDetail {
+    > img {
+        float: left;
+        margin: 0 10px;
+        width: 128px;
+    }
+
+    > div {
+        margin-left: 158px; // 128px (img) + 10px (margin-left) + 20px (margin-right)
+        > div span.extensionCode {
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        > div .extensionPublisher {
+            font-style: italic;
+        }
+
+        div.subHeader {
+            line-height: 2.5em;
+            height: 2.5em;
+            font-weight: bold;
+
+
+            > span.extensionVersion {
+                float: left;
+
+                span.newVersionAvailable {
+                    color: #57c229;
+                }
+            }
+
+            > ul.actions {
+                display:block;
+                text-align:right;
+
+                > li {
+                    display: inline-block;
+                }
+
+                    > li + li {
+                        margin-left: 5px;
+                    }
+
+                        > li + li::before {
+                            content: " | ";
+                        }
+            }
+        }
+
+
+        div.extensionDescription {
+            clear: right;
+            max-height: 65px;
+        }
+
+        a.readmore-js-toggle {
+            font-weight: bold;
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        a.toggle {
+            display: inline-block;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+            a.toggle + div.additionalVersion > div > div > a {
+                text-align: right;
+                display: block;
+                font-weight: bold;
+                margin: 5px 0;
+            }
+
+        ul.additionalVersion {
+
+            div.subHeader {
+                line-height: 1.5em;
+                height: 1.5em;
+            }
+
+            >li:nth-child(even) {
+                background-color: #F2F2F2;
+            }
+        }
+    }
+}
+
+.popin .extensionPopin {
+    width: 900px;
+
+    ul.messages {
+        margin-bottom: 20px;
+    }
+
+    div.extensionDescription {
+        max-height: 400px;
+        overflow: auto;
+        margin-bottom: 20px;
+    }
+}

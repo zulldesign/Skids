@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="SegmentConditionEditor">
+  <content>
+    <![CDATA[
+        <div>
+          <label for="itxtSegment${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.SegmentCondition.Localizations.SegmentLabel}</label>
+          <input type="text" value="${model.Segment}" id="itxtSegment${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}"
+            onkeyup="
+              (
+                function(source){
+                    var textbox = $(source);
+                    textbox.tmplItem().data.updateSegment(textbox.val());
+                }
+              )
+              (this);
+            "
+          />
+          <script type="text/javascript">
+          (
+            function(){
+              var itxtSegment = $('#itxtSegment${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}');
+              itxtSegment.tmplItem().data.implementAutoComplete(itxtSegment);
+            }
+          )()
+          </script/>
+        </div>
+      ]]>
+  </content>
+</template>

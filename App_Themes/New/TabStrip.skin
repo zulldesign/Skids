@@ -1,0 +1,3 @@
+﻿<mag:TabStrip runat="server" CssClass="tabStrip">
+    <SelectedItemStyle CssClass="selected"/>    
+</mag:TabStrip>

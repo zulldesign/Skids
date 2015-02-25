@@ -1,0 +1,246 @@
+﻿table.gridView
+{
+	width:100%;
+	border-left:0;
+	border-right:0;
+	background-color:white;
+}
+
+table.gridView>tbody>tr>td, table.gridView>thead>tr>th, table.gridView>tbody>tr>th
+{
+	padding:5px;
+	border-top:0;
+	border-bottom:0;
+	text-align:center;	
+	border:1px solid #cccccc;
+}
+
+table.gridView>thead>tr>th, table.gridView>tbody>tr>th
+{
+	height:40px;
+	color:white;
+	vertical-align:middle;
+	background-color:#999999;
+	border-bottom:1px solid #cccccc	
+}
+
+table.gridView td img
+{
+	max-width:100px;
+	max-height:100px;
+}
+
+table.gridView th a
+{
+	color:white;
+}
+
+table.gridView th a:hover
+{
+	text-decoration:none;
+}
+
+table.gridView th.sortedAsc,table.gridView th.sortedDesc
+{
+	background:#666666 url('Images/GridView/bg-header.png') repeat-x 0 0;
+}
+
+table.gridView th.sortedAsc a
+{
+	padding-right:20px;
+	background:url('Images/GridView/sort-asc.png') no-repeat 100% 5px;
+}
+
+table.gridView th.sortedDesc a
+{
+	padding-right:20px;
+	background:url('Images/GridView/sort-desc.png') no-repeat 100% 5px;
+}
+
+table.gridView>tbody>tr.odd>td
+{
+	background-color:#f7f7f7;
+}
+
+table.gridView td input[type=text], table.gridView td select
+{
+	width:100%;
+}
+
+table.gridView tr a
+{
+	font-weight:bold;
+}
+
+table.gridView td textarea
+{
+	width:100%;
+	height:100px;
+}
+
+table.gridView td.numeric
+{
+	text-align:right;
+}
+
+table.gridView td.left-align
+{
+	text-align:left;
+}
+
+table.gridView td.cbx, table.gridView th.cbx
+{
+	width:17px;
+}
+
+table.gridView>tbody>tr:hover>td
+{
+	background-color:#e0e0e0;
+}
+
+div.gridViewContainer
+{
+	margin-bottom:10px;
+}
+
+div.gridViewContainer > div
+{
+	background:#dfdfdf url('Images/GridView/bg-options.png') repeat-x 0 0;
+}
+
+div.gridViewContainer > div
+{
+	height:77px;
+	overflow:hidden;
+}
+
+div.gridViewContainer > div > div.left
+{
+	float:left;
+}
+
+div.gridViewContainer > div > div.left a:hover
+{
+	text-decoration:underline;
+}
+
+div.gridViewContainer > div.top
+{
+	border:1px solid #cccccc;
+	border-bottom:0;
+}
+
+div.gridViewContainer > div.top > div.left > ul
+{
+	height:77px;
+	overflow:hidden;
+	padding-left:45px;
+	background:url('Images/GridView/arrows.png') no-repeat 10px 0;
+}
+
+div.gridViewContainer > div.top > div.left > ul>li
+{
+	float:left;
+	margin-top:10px;
+}
+
+div.gridViewContainer > div.top > div.left > ul>li+li
+{
+	margin-left:10px;
+}
+
+div.gridViewContainer > div.top > div.left > div
+{
+	margin:45px 45px;
+	position:absolute;
+}
+
+div.gridViewContainer > div > div.left > div > ul, div.gridViewContainer > div > div.left > div > ul > li
+{
+	display:inline;
+}
+
+div.gridViewContainer > div > div.left > div > ul > li
+{
+	margin-left:10px;
+}
+
+div.gridViewContainer > div.top > div.right
+{
+	margin:10px 10px 0 0;
+}
+
+div.gridViewContainer > div > div.right > span > *
+{
+	padding:1px 5px;
+}
+
+div.gridViewContainer > div > div.right > span > span.current
+{
+	color:white;
+	background-color:#666666;
+}
+
+div.gridViewContainer > div a.aspNetDisabled
+{
+	color:#cacaca;
+}
+
+div.gridViewContainer > div a.aspNetDisabled:hover
+{
+	text-decoration:none;
+}
+
+div.gridViewContainer > div.bottom 
+{
+	overflow:hidden;
+	border:1px solid #cccccc;
+	border-top:0;
+}
+
+div.gridViewContainer > div.bottom > div.left
+{
+	background-position:10px -77px;
+}
+
+div.gridViewContainer > div.bottom > div.left > div
+{
+	position:absolute;
+	margin:15px 0 0 45px;
+}
+
+div.gridViewContainer > div.bottom > div.left > ul
+{
+	height:77px;
+	overflow:hidden;
+	padding-left:45px;
+	background:url('Images/GridView/arrows.png') no-repeat 10px -77px;
+}
+
+div.gridViewContainer > div.bottom > div.left > ul > li
+{
+	float:left;
+	margin-top:45px;
+}
+
+div.gridViewContainer > div.bottom > div.left > ul > li +li
+{
+	margin-left:10px;
+}
+
+div.gridViewContainer > div > div.right
+{
+	float:right;
+	text-align:right;
+	margin:10px 10px 0 0;
+}
+
+div.gridViewContainer > div > div.right > div
+{
+	margin-top:20px;
+}
+
+div.gridViewContainer > div > div.right > div > ul, div.gridViewContainer > div > div.right > div > ul > li
+{
+	display:inline;
+}

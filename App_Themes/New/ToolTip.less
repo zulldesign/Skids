@@ -1,0 +1,46 @@
+﻿span.tooltip
+{
+	width:16px;
+	height:16px;
+	display:inline-block;
+	background-image:url('Images/Common/help.png?color=999999');
+}
+
+span.tooltip:hover
+{
+	cursor:pointer;
+}
+
+.form div.field > span.tooltip, div.swapList span.tooltip
+{
+	clear:none;
+	margin:5px 0 0 5px;
+}
+
+.form div.field.inline > span.tooltip
+{
+	float:left;
+	z-index:100;
+	margin:5px 0 0 -17px;
+}
+
+.form div.field.inline > input[type=checkbox]
+{
+	margin-top:6px;
+}
+
+.form div.field.inline > span.tooltip + *
+{
+	margin-left:1px;
+}
+
+table th span.tooltip
+{
+	margin-left:5px;
+	background:url('Images/Common/help.png?color=%23ffffff');
+}
+
+fieldset legend span.tooltip
+{
+	margin-left:5px;
+}

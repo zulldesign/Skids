@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="UsernameConditionEditor">
+  <styles>
+    <![CDATA[
+        div.username>input{float:right;}
+      ]]>
+  </styles>
+  <content>
+    <![CDATA[
+        <div class="username">
+          <label for="itxtUsername${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.UsernameCondition.Localizations.UserNameLabel}</label>
+          <input type="text" value="${model.Username}" id="itxtUsername${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}"
+            onkeyup="
+              (
+                function(source){
+                    var textbox = $(source);
+                    textbox.tmplItem().data.updateUsername(textbox.val());
+                }
+              )
+              (this);
+            "
+          />
+        </div>
+      ]]>
+  </content>
+</template>

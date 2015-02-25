@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<countries>
+  <!--
+  
+SELECT
+	culture.CountryId,
+	neutralCulture.CultureId,
+	isnull(ISNULL(neutralCultureLocalized.Name, neutralCultureLocalizedFromNeutral.name), neutralCultureLocalizedFromInvariant.name) name
+FROM 
+	magelia.Culture culture
+	inner join magelia.culture neutralCulture ON culture.ParentCultureId = neutralCulture.CultureId
+	left outer join magelia.CultureLocalized neutralCultureLocalized on neutralCulture.CultureId = neutralCultureLocalized.LocalizedCultureId AND neutralCultureLocalized.cultureId = Culture.CultureId
+	left outer join magelia.CultureLocalized neutralCultureLocalizedFromNeutral on neutralCulture.CultureId = neutralCultureLocalizedFromNeutral.LocalizedCultureId AND neutralCultureLocalizedFromNeutral.cultureId = neutralCulture.CultureId
+	left outer join magelia.CultureLocalized neutralCultureLocalizedFromInvariant on neutralCulture.CultureId = neutralCultureLocalizedFromInvariant.LocalizedCultureId AND neutralCultureLocalizedFromInvariant.cultureId = 127
+WHERE 
+	culture.Countryid is not null 
+	AND culture.countryid IN (SELECT c.CountryId FROM magelia.culture c GROUP BY c.Countryid HAVING COUNT(c.CountryId) > 1)
+order by culture.Countryid
+FOR XML AUTO
+ 
+  -->
+
+  <country countryId="4">
+  <culture cultureId="99" name="Pashto" />
+</country>
+<country countryId="8">
+  <culture cultureId="28" name="Albanian" />
+</country>
+<country countryId="12">
+  <culture cultureId="1" name="العربية" />
+</country>
+<country countryId="31">
+  <culture cultureId="29740" name="Azeri (Cyrillic)" />
+  <culture cultureId="30764" name="Azeri (Latin)" />
+</country>
+<country countryId="32">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="36">
+  <culture cultureId="9" name="English" />
+</country>
+<country countryId="40">
+  <culture cultureId="7" name="Deutsch" />
+</country>
+<country countryId="48">
+  <culture cultureId="1" name="العربية" />
+</country>
+<country countryId="51">
+  <culture cultureId="43" name="Հայերեն" />
+</country>
+<country countryId="56">
+  <culture cultureId="19" name="Nederlands" />
+  <culture cultureId="12" name="français" />
+</country>
+<country countryId="68">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="70">
+  <culture cultureId="26" name="Croatian" />
+  <culture cultureId="27674" name="Serbian (Cyrillic)" />
+  <culture cultureId="28698" name="Serbian (Latin)" />
+</country>
+<country countryId="76">
+  <culture cultureId="22" name="Português" />
+</country>
+<country countryId="84">
+  <culture cultureId="9" name="English" />
+</country>
+<country countryId="96">
+  <culture cultureId="62" name="Malay" />
+</country>
+<country countryId="100">
+  <culture cultureId="2" name="Bulgarian" />
+</country>
+<country countryId="112">
+  <culture cultureId="35" name="Belarusian" />
+</country>
+<country countryId="116">
+  <culture cultureId="83" name="Khmer" />
+</country>
+<country countryId="124">
+  <culture cultureId="31837" name="Inuktitut (Latin)" />
+  <culture cultureId="30813" name="Inuktitut (Syllabics)" />
+  <culture cultureId="9" name="English" />
+  <culture cultureId="12" name="français" />
+</country>
+<country countryId="144">
+  <culture cultureId="91" name="Sinhala" />
+</country>
+<country countryId="152">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="156">
+  <culture cultureId="4" name="Chinese (Simplified)" />
+  <culture cultureId="81" name="Tibetan" />
+  <culture cultureId="31824" name="Mongolian (Traditional Mongolian)" />
+  <culture cultureId="120" name="ꆈꌠꁱꂷ" />
+  <culture cultureId="128" name="Uyghur" />
+</country>
+<country countryId="158">
+  <culture cultureId="31748" name="Chinese (Traditional)" />
+</country>
+<country countryId="170">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="188">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="191">
+  <culture cultureId="26" name="Croatian" />
+</country>
+<country countryId="203">
+  <culture cultureId="5" name="Czech" />
+</country>
+<country countryId="208">
+  <culture cultureId="6" name="dansk" />
+</country>
+<country countryId="214">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="218">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="222">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="231">
+  <culture cultureId="94" name="Amharic" />
+</country>
+<country countryId="233">
+  <culture cultureId="37" name="Estonian" />
+</country>
+<country countryId="246">
+  <culture cultureId="29" name="svenska" />
+  <culture cultureId="59" name="Sami (Northern)" />
+  <culture cultureId="11" name="Finnish" />
+</country>
+<country countryId="250">
+  <culture cultureId="12" name="français" />
+  <culture cultureId="126" name="Breton" />
+  <culture cultureId="130" name="Occitan" />
+  <culture cultureId="131" name="Corsican" />
+</country>
+<country countryId="268">
+  <culture cultureId="55" name="Georgian" />
+</country>
+<country countryId="276">
+  <culture cultureId="7" name="Deutsch" />
+</country>
+<country countryId="300">
+  <culture cultureId="8" name="Ελληνικά" />
+</country>
+<country countryId="320">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="340">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="348">
+  <culture cultureId="14" name="magyar" />
+</country>
+<country countryId="352">
+  <culture cultureId="15" name="Icelandic" />
+</country>
+<country countryId="356">
+  <culture cultureId="57" name="Hindi" />
+  <culture cultureId="70" name="Punjabi" />
+  <culture cultureId="71" name="Gujarati" />
+  <culture cultureId="72" name="Oriya" />
+  <culture cultureId="73" name="Tamil" />
+  <culture cultureId="74" name="Telugu" />
+  <culture cultureId="75" name="ಕನ್ನಡ" />
+  <culture cultureId="77" name="Assamese" />
+  <culture cultureId="78" name="Marathi" />
+  <culture cultureId="79" name="Sanskrit" />
+  <culture cultureId="9" name="English" />
+</country>
+<country countryId="360">
+  <culture cultureId="33" name="Indonesian" />
+</country>
+<country countryId="364">
+  <culture cultureId="41" name="Persian" />
+</country>
+<country countryId="368">
+  <culture cultureId="1" name="العربية" />
+</country>
+<country countryId="372">
+  <culture cultureId="9" name="English" />
+  <culture cultureId="60" name="Irish" />
+</country>
+<country countryId="376">
+  <culture cultureId="13" name="Hebrew" />
+</country>
+<country countryId="380">
+  <culture cultureId="16" name="italiano" />
+</country>
+<country countryId="388">
+  <culture cultureId="9" name="English" />
+</country>
+<country countryId="392">
+  <culture cultureId="17" name="日本語" />
+</country>
+<country countryId="398">
+  <culture cultureId="63" name="Kazakh" />
+</country>
+<country countryId="400">
+  <culture cultureId="1" name="العربية" />
+</country>
+<country countryId="404">
+  <culture cultureId="65" name="Kiswahili" />
+</country>
+<country countryId="410">
+  <culture cultureId="18" name="한국어" />
+</country>
+<country countryId="414">
+  <culture cultureId="1" name="العربية" />
+</country>
+<country countryId="417">
+  <culture cultureId="64" name="Kyrgyz" />
+</country>
+<country countryId="418">
+  <culture cultureId="84" name="Lao" />
+</country>
+<country countryId="422">
+  <culture cultureId="1" name="العربية" />
+</country>
+<country countryId="428">
+  <culture cultureId="38" name="latviešu" />
+</country>
+<country countryId="434">
+  <culture cultureId="1" name="العربية" />
+</country>
+<country countryId="438">
+  <culture cultureId="7" name="Deutsch" />
+</country>
+<country countryId="440">
+  <culture cultureId="39" name="lietuvių" />
+</country>
+<country countryId="442">
+  <culture cultureId="7" name="Deutsch" />
+  <culture cultureId="12" name="français" />
+  <culture cultureId="110" name="Lëtzebuergesch" />
+</country>
+<country countryId="458">
+  <culture cultureId="9" name="English" />
+  <culture cultureId="62" name="Malay" />
+</country>
+<country countryId="462">
+  <culture cultureId="101" name="Divehi" />
+</country>
+<country countryId="470">
+  <culture cultureId="58" name="Maltese" />
+</country>
+<country countryId="484">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="492">
+  <culture cultureId="12" name="français" />
+</country>
+<country countryId="496">
+  <culture cultureId="30800" name="Mongolian (Cyrillic)" />
+</country>
+<country countryId="499">
+  <culture cultureId="27674" name="Serbian (Cyrillic)" />
+  <culture cultureId="28698" name="Serbian (Latin)" />
+</country>
+<country countryId="504">
+  <culture cultureId="1" name="العربية" />
+</country>
+<country countryId="512">
+  <culture cultureId="1" name="العربية" />
+</country>
+<country countryId="524">
+  <culture cultureId="97" name="Nepali" />
+</country>
+<country countryId="528">
+  <culture cultureId="98" name="Frisian" />
+  <culture cultureId="19" name="Nederlands" />
+</country>
+<country countryId="554">
+  <culture cultureId="9" name="English" />
+  <culture cultureId="129" name="Maori" />
+</country>
+<country countryId="558">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="566">
+  <culture cultureId="106" name="Yoruba" />
+  <culture cultureId="112" name="Igbo" />
+  <culture cultureId="31848" name="Hausa (Latin)" />
+</country>
+<country countryId="578">
+  <culture cultureId="30740" name="Norwegian (Nynorsk)" />
+  <culture cultureId="31764" name="Norwegian (Bokmål)" />
+  <culture cultureId="59" name="Sami (Northern)" />
+</country>
+<country countryId="586">
+  <culture cultureId="32" name="Urdu" />
+</country>
+<country countryId="591">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="600">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="604">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="608">
+  <culture cultureId="9" name="English" />
+</country>
+<country countryId="616">
+  <culture cultureId="21" name="polski" />
+</country>
+<country countryId="620">
+  <culture cultureId="22" name="Português" />
+</country>
+<country countryId="634">
+  <culture cultureId="1" name="العربية" />
+</country>
+<country countryId="642">
+  <culture cultureId="24" name="română" />
+</country>
+<country countryId="643">
+  <culture cultureId="25" name="русский" />
+  <culture cultureId="68" name="Tatar" />
+  <culture cultureId="109" name="Bashkir" />
+</country>
+<country countryId="646">
+  <culture cultureId="135" name="Kinyarwanda" />
+</country>
+<country countryId="682">
+  <culture cultureId="1" name="العربية" />
+</country>
+<country countryId="686">
+  <culture cultureId="136" name="Wolof" />
+</country>
+<country countryId="688">
+  <culture cultureId="28698" name="Serbian (Latin)" />
+  <culture cultureId="27674" name="Serbian (Cyrillic)" />
+</country>
+<country countryId="702">
+  <culture cultureId="4" name="Chinese (Simplified)" />
+  <culture cultureId="9" name="English" />
+</country>
+<country countryId="703">
+  <culture cultureId="27" name="slovenčina" />
+</country>
+<country countryId="704">
+  <culture cultureId="42" name="Vietnamese" />
+</country>
+<country countryId="705">
+  <culture cultureId="36" name="Slovenian" />
+</country>
+<country countryId="710">
+  <culture cultureId="50" name="Setswana" />
+  <culture cultureId="52" name="isiXhosa" />
+  <culture cultureId="53" name="isiZulu" />
+  <culture cultureId="54" name="Afrikaans" />
+  <culture cultureId="9" name="English" />
+</country>
+<country countryId="716">
+  <culture cultureId="9" name="English" />
+</country>
+<country countryId="724">
+  <culture cultureId="10" name="español" />
+  <culture cultureId="3" name="Catalan" />
+  <culture cultureId="45" name="Basque" />
+  <culture cultureId="86" name="Galician" />
+</country>
+<country countryId="752">
+  <culture cultureId="59" name="Sami (Northern)" />
+  <culture cultureId="29" name="svenska" />
+</country>
+<country countryId="756">
+  <culture cultureId="23" name="Rumantsch" />
+  <culture cultureId="16" name="italiano" />
+  <culture cultureId="7" name="Deutsch" />
+  <culture cultureId="12" name="français" />
+</country>
+<country countryId="760">
+  <culture cultureId="1" name="العربية" />
+</country>
+<country countryId="762">
+  <culture cultureId="31784" name="Tajik (Cyrillic)" />
+</country>
+<country countryId="764">
+  <culture cultureId="30" name="Thai" />
+</country>
+<country countryId="780">
+  <culture cultureId="9" name="English" />
+</country>
+<country countryId="784">
+  <culture cultureId="1" name="العربية" />
+</country>
+<country countryId="788">
+  <culture cultureId="1" name="العربية" />
+</country>
+<country countryId="792">
+  <culture cultureId="31" name="Turkish" />
+</country>
+<country countryId="795">
+  <culture cultureId="66" name="Turkmen" />
+</country>
+<country countryId="804">
+  <culture cultureId="34" name="Ukrainian" />
+</country>
+<country countryId="807">
+  <culture cultureId="47" name="Macedonian (FYROM)" />
+</country>
+<country countryId="818">
+  <culture cultureId="1" name="العربية" />
+</country>
+<country countryId="826">
+  <culture cultureId="9" name="English" />
+  <culture cultureId="82" name="Welsh" />
+  <culture cultureId="145" name="Scottish Gaelic" />
+</country>
+<country countryId="840">
+  <culture cultureId="10" name="español" />
+  <culture cultureId="9" name="English" />
+</country>
+<country countryId="858">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="860">
+  <culture cultureId="31811" name="Uzbek (Latin)" />
+  <culture cultureId="30787" name="Uzbek (Cyrillic)" />
+</country>
+<country countryId="862">
+  <culture cultureId="10" name="español" />
+</country>
+<country countryId="887">
+  <culture cultureId="1" name="العربية" />
+</country>
+</countries>

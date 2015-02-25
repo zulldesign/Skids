@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Magelia.WebStore.Services.Implementation.AdministrationService" Factory="Magelia.WebStore.Services.Implementation.ServiceHostFactory, Magelia.WebStore.Services.Implementation" %>

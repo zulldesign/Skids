@@ -1,0 +1,229 @@
+﻿div.order {
+    overflow: hidden;
+
+    > div.left {
+        margin-right: 310px;
+    }
+
+        > div.left > * + * {
+            margin-top: 10px;
+        }
+
+    > div.right {
+        float: right;
+        width: 300px;
+
+        fieldset.payments {
+
+            li {
+                list-style-type: none;
+                padding: 10px 3px;
+            }
+
+                li + li {
+                    border-top: solid 1px #999;
+                }
+
+                li > div {
+                    line-height: 1.4em;
+                }
+
+            div.buttons a {
+                width: 60%;
+                text-align: center;
+                margin: auto;
+            }
+        }
+    }
+
+    table.gridView {
+        tr.total td {
+            font-weight: bold;
+        }
+
+        tr.header td {
+            height: 40px;
+            color: white;
+            background-color: #999999;
+        }
+
+        tr.total > td:first-child {
+            text-align: right;
+        }
+
+        tr.orderSubset td {
+            color: black;
+            text-align: left;
+            background: #dfdfdf url('Images/GridView/bg-options.png') repeat-x 0 0;
+
+
+            ul {
+                margin-top: 10px;
+                overflow: hidden;
+
+                > li {
+                    float: left;
+                }
+
+                    > li + li {
+                        margin-left: 10px;
+                    }
+
+                    > li a.button {
+                        width: auto;
+                        height: auto;
+                        display: block;
+                        font-weight: normal;
+                        padding-left: 20px;
+                    }
+            }
+        }
+
+        a.button {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+        }
+    }
+
+    div.addresses > div {
+        overflow: hidden;
+        width: 50%;
+        float: left;
+
+        > fieldset {
+            margin: 0 10px;
+        }
+
+        &:first-child > fieldset {
+            margin-left: 0;
+        }
+
+        &:last-child > fieldset {
+            margin-right: 0;
+        }
+
+
+        div.field.break {
+            width: 100%;
+
+            div.commentsEditor, div.additionalDataEditor {
+                float: none;
+
+                table.gridView {
+                    width: 100%;
+                }
+            }
+
+
+            table.gridView > thead > tr > th:first-child,
+            table.gridView > tbody > tr > td:first-child {
+                min-width: 70px;
+            }
+
+            table.gridView > tbody > tr > td.content,
+            table.gridView > tbody > tr > td.content > textarea {
+                width: 100%;
+                min-width: 40px;
+            }
+
+            table.gridView > tbody > tr > td > input[type=text] {
+                width: 100%;
+                min-width: 80px;
+                max-width: 150px;
+            }
+        }
+    }
+
+    fieldset.status select {
+        width: 100%;
+    }
+
+    fieldset.summary {
+        > div {
+            overflow: hidden;
+            line-height: 25px;
+        }
+
+            > div + div {
+                margin-top: 10px;
+            }
+
+            > div > * {
+                display: block;
+            }
+
+            > div > input[type=text] {
+                width: 100px;
+            }
+
+        div > span:first-child, div > label {
+            float: left;
+        }
+
+        > div > * + * {
+            float: right;
+        }
+
+        > div > * + div {
+            float: none;
+            clear: both;
+        }
+    }
+
+    fieldset.versions {
+        > ul > li {
+            overflow: hidden;
+        }
+
+            > ul > li.current {
+                font-weight: bold;
+            }
+
+            > ul > li + li {
+                margin-top: 5px;
+                padding-top: 5px;
+                border-top: 1px solid #cccccc;
+            }
+
+            > ul > li > div {
+                float: left;
+            }
+
+            > ul > li > ul {
+                float: right;
+            }
+    }
+}
+
+div.payments {
+
+    table.gridView {
+        a.button {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+        }
+
+        td.paymentAmount {
+            input[type=text], select {
+                width: auto;
+            }
+
+            input[type=text] {
+                text-align: right;
+            }
+        }
+    }
+}
+
+div.popin.comments,
+div.popin.additionalData {
+    textarea {
+        width: 300px;
+    }
+
+    input[type=text] {
+        width: 200px;
+    }
+}

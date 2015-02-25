@@ -1,0 +1,1203 @@
+﻿.background(@path) 
+{
+	.backgroundWithColor(@path, @color);
+}
+
+.backgroundWithColor(@path, @clr) 
+{
+	@encodedColor:%("%A",@clr);
+	background-image:url('Images/@{path}?color=@{encodedColor}');
+}
+
+
+//COMMON
+
+.ctx-clr 
+{
+    color:@color;
+}
+
+.ctx-bg, .message, ul.messages > li
+{
+    background-color:@color;
+}
+
+.ctx-brd
+{
+	border-color:@color;
+}
+
+
+//LOADER
+
+div.loader
+{
+	.ctx-brd;
+	background-color:lighten(@color,30%);
+}
+
+
+//INFO
+span.info
+{
+	.background("Info/info.png");
+}
+
+//BUTTONS
+
+a.rounded span
+{
+	.background("Buttons/bg-btn.png");
+}
+
+
+//TABSTRIP
+
+ul.tabStrip > li > a
+{
+	.ctx-bg;
+}
+
+//CALENDAR
+
+div.date-picker div.selector table td.today a
+{
+	color:@color !important;
+}
+
+
+//MENU
+
+#nMenu>ul.head>li:hover
+{
+	background-color:darken(@color,10%);
+}
+
+
+//POPIN
+
+div.popin>header>h4
+{
+	.ctx-clr;
+}
+
+//ORDER
+
+div.order a.button.add, div.payments a.button.add
+{
+	.background("Buttons/add.png");
+}
+
+div.order a.button.edit, div.payments a.button.edit
+{
+	.background("Buttons/edit.png");
+}
+
+div.order a.button.view, div.payments a.button.view
+{
+	.background("Buttons/view.png");
+}
+
+
+//CATEGORIES
+
+#bCategoriesTreeView td.option > a.add 
+{
+    .background('Categories/add.png');
+}
+
+#bCategoriesTreeView td.option > a.save 
+{
+    .background('Categories/save.png');
+}
+
+#bCategoriesTreeView td.option > a.delete 
+{
+    .background('Categories/delete.png');
+}
+
+#bCategoriesTreeView td.option > a.linker 
+{
+    .background('Categories/link.png');
+}
+
+#bCategoriesTreeView td.option > a.duplicate 
+{
+   .background('Categories/copy.png');
+}
+
+#bCategoriesTreeView td.option > a.cancel 
+{
+   .background('Categories/cancel.png');
+}
+
+#bCategoriesTreeView td.option > a.edit 
+{
+   .background('Categories/edit.png');
+}
+
+
+
+//PRODUCT
+
+#bProduct div.menu a, #bProduct div.menu span
+{
+	.ctx-clr;
+}
+
+
+//DISCOUNTS
+
+div.discountEditor a.addCondition 
+{
+	.background("Buttons/add.png");
+}
+
+div.discountEditor a.removeCondition 
+{
+	.background("Buttons/delete.png");
+}
+
+
+//DOCUMENTATION
+
+#bDataBurst ul.do > li
+{
+	.background("Documentation/do.png");
+}
+
+#bDataBurst ul.warning > li
+{
+	.background("Documentation/warning.png");
+}
+
+#bDataBurst ul.insider > li
+{
+	.background("Documentation/insider.png");
+}
+
+
+//FILE PICKER
+div.filePicker ul.files > li.image.error 
+{
+     .background("Files/error.png");
+}
+
+
+//FILEMANAGER
+
+div.fileManager ul.optionsMenu > li.new
+{
+	.background("Buttons/new.png");
+}
+
+div.fileManager ul.optionsMenu > li.upload
+{
+	.background("Buttons/upload.png");
+}
+
+div.fileManager ul.optionsMenu > li.goUp 
+{
+	.background("Buttons/up.png");
+}
+
+div.fileManager ul.optionsMenu > li.refresh 
+{
+	.background("Buttons/refresh.png");
+}
+
+div.fileManager ul.optionsMenu > li.download 
+{
+	.background("Buttons/download.png");
+}
+
+div.fileManager div.selection > a 
+{
+	.ctx-bg;
+}
+
+div.fileManager div.list ul > li.container 
+{
+	.background("Files/container.png");
+}
+
+div.fileManager div.metadata div.form div.buttons > ul > li.save 
+{
+	.background("Buttons/save.png");
+}
+
+div.fileManager div.metadata div.form div.buttons > ul > li.delete 
+{
+	.background("Buttons/delete.png");
+}
+
+div.fileManager div.list ul > li.image.error
+{
+    .background("Files/error.png");
+}
+
+div.fileManager div.containers ul > li > div > div.expander 
+{
+	.background("Files/arrows.png");
+}
+
+
+//CONTEXTMENU
+
+ul.contextMenu > li.add 
+{
+	.background("Buttons/new.png");
+}
+
+ul.contextMenu > li.upload
+{
+	.background("Buttons/upload.png");
+}
+
+ul.contextMenu > li.refresh 
+{
+	.background("Buttons/refresh.png");
+}
+
+ul.contextMenu > li.view
+{
+	.background("Buttons/view.png");
+}
+
+ul.contextMenu > li.rename 
+{
+	.background("Buttons/rename.png");
+}
+
+ul.contextMenu > li.delete 
+{
+	.background("Buttons/delete.png");
+}
+
+ul.contextMenu > li.download 
+{
+	.background("Buttons/download.png");
+}
+
+// HELP
+
+.help
+{
+	.background("Common/help.png");
+}
+
+
+// MENU
+
+#nMenu
+{
+	@unauthorizedColor : #cccccc;
+	
+	li.block 
+	{
+		@hoverColor : #676767;
+		@selectedColor : #ffffff;
+		
+		a.synthesis
+		{
+			.background("Menu/Pictos/synthesis.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/synthesis.png",@hoverColor);
+			}
+		}
+		a.licensing
+		{
+			.background("Menu/Pictos/licensing.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/licensing.png",@hoverColor);
+			}
+		}
+		a.customers
+		{
+			.background("Menu/Pictos/customers.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/customers.png",@hoverColor);
+			}
+		}
+		a.databurst
+		{
+			.background("Menu/Pictos/databurst.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/databurst.png",@hoverColor);
+			}
+		}
+		a.medias
+		{
+			.background("Menu/Pictos/medias.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/medias.png",@hoverColor);
+			}
+		}
+		a.emailing
+		{
+			.background("Menu/Pictos/emailing.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/emailing.png",@hoverColor);
+			}
+		}
+		a.contenttypes
+		{
+			.background("Menu/Pictos/contenttypes.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/contenttypes.png",@hoverColor);
+			}
+		}
+		a.contentitems
+		{
+			.background("Menu/Pictos/contentitems.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/contentitems.png",@hoverColor);
+			}
+		}
+		a.warehouses
+		{
+			.background("Menu/Pictos/warehouses.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/warehouses.png",@hoverColor);
+			}
+		}
+		a.preferences
+		{
+			.background("Menu/Pictos/preferences.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/preferences.png",@hoverColor);
+			}
+		}
+		a.cache
+		{
+			.background("Menu/Pictos/cache.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/cache.png",@hoverColor);
+			}
+		}
+		&.selected
+		{
+			a.synthesis
+			{
+				.backgroundWithColor("Menu/Pictos/synthesis.png",@selectedColor);
+			}
+			a.licensing
+			{
+				.backgroundWithColor("Menu/Pictos/licensing.png",@selectedColor);
+			}
+			a.customers
+			{
+				.backgroundWithColor("Menu/Pictos/customers.png",@selectedColor);
+			}
+			a.databurst
+			{
+				.backgroundWithColor("Menu/Pictos/databurst.png",@selectedColor);
+			}
+			a.medias
+			{
+				.backgroundWithColor("Menu/Pictos/medias.png",@selectedColor);
+			}
+			a.emailing
+			{
+				.backgroundWithColor("Menu/Pictos/emailing.png",@selectedColor);
+			}
+			a.contenttypes
+			{
+				.backgroundWithColor("Menu/Pictos/contenttypes.png",@selectedColor);
+			}
+			a.contentitems
+			{
+				.backgroundWithColor("Menu/Pictos/contentitems.png",@selectedColor);
+			}
+			a.warehouses
+			{
+				.backgroundWithColor("Menu/Pictos/warehouses.png",@selectedColor);
+			}
+			a.preferences
+			{
+				.backgroundWithColor("Menu/Pictos/preferences.png",@selectedColor);
+			}
+			a.cache
+			{
+				.backgroundWithColor("Menu/Pictos/cache.png",@selectedColor);
+			}
+		}
+		&.unauthorized,&.featuremissing,&.pro,&.enterprise
+		{
+			a.synthesis
+			{
+				.backgroundWithColor("Menu/Pictos/synthesis.png",@unauthorizedColor);
+			}
+			a.licensing
+			{
+				.backgroundWithColor("Menu/Pictos/licensing.png",@unauthorizedColor);
+			}
+			a.customers
+			{
+				.backgroundWithColor("Menu/Pictos/customers.png",@unauthorizedColor);
+			}
+			a.databurst
+			{
+				.backgroundWithColor("Menu/Pictos/databurst.png",@unauthorizedColor);
+			}
+			a.medias
+			{
+				.backgroundWithColor("Menu/Pictos/medias.png",@unauthorizedColor);
+			}
+			a.emailing
+			{
+				.backgroundWithColor("Menu/Pictos/emailing.png",@unauthorizedColor);
+			}
+			a.contenttypes
+			{
+				.backgroundWithColor("Menu/Pictos/contenttypes.png",@unauthorizedColor);
+			}
+			a.contentitems
+			{
+				.backgroundWithColor("Menu/Pictos/contentitems.png",@unauthorizedColor);
+			}
+			a.warehouses
+			{
+				.backgroundWithColor("Menu/Pictos/warehouses.png",@unauthorizedColor);
+			}
+			a.preferences
+			{
+				.backgroundWithColor("Menu/Pictos/preferences.png",@unauthorizedColor);
+			}
+			a.cache
+			{
+				.backgroundWithColor("Menu/Pictos/cache.png",@unauthorizedColor);
+			}
+		}
+	}
+	li.list
+	{
+		@highlightColor:#ffffff;
+
+		a.orders
+		{
+			.background("Menu/Pictos/orders.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/orders.png",@highlightColor);
+			}
+		}
+		a.neworders
+		{
+			.background("Menu/Pictos/neworders.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/neworders.png",@highlightColor);
+			}
+		}
+		a.ordersinprocess
+		{
+			.background("Menu/Pictos/ordersinprocess.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/ordersinprocess.png",@highlightColor);
+			}
+		}
+		a.catalogs
+		{
+			.background("Menu/Pictos/catalogs.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/catalogs.png",@highlightColor);
+			}
+		}
+		a.categories
+		{
+			.background("Menu/Pictos/categories.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/categories.png",@highlightColor);
+			}
+		}
+		a.products
+		{
+			.background("Menu/Pictos/products.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/products.png",@highlightColor);
+			}
+		}
+		a.suppliers
+		{
+			.background("Menu/Pictos/suppliers.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/suppliers.png",@highlightColor);
+			}
+		}
+		a.brands
+		{
+			.background("Menu/Pictos/brands.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/brands.png",@highlightColor);
+			}
+		}
+		a.discounts
+		{
+			.background("Menu/Pictos/discounts.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/discounts.png",@highlightColor);
+			}
+		}
+		a.inventory
+		{
+			.background("Menu/Pictos/inventory.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/inventory.png",@highlightColor);
+			}
+		}
+		a.prices
+		{
+			.background("Menu/Pictos/prices.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/prices.png",@highlightColor);
+			}
+		}
+		a.producttypes
+		{
+			.background("Menu/Pictos/producttypes.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/producttypes.png",@highlightColor);
+			}
+		}
+		a.productattributes
+		{
+			.background("Menu/Pictos/productattributes.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/productattributes.png",@highlightColor);
+			}
+		}
+		a.carriers
+		{
+			.background("Menu/Pictos/carriers.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/carriers.png",@highlightColor);
+			}
+		}
+		a.shippingzones
+		{
+			.background("Menu/Pictos/shippingzones.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/shippingzones.png",@highlightColor);
+			}
+		}
+		a.shippingrates
+		{
+			.background("Menu/Pictos/shippingrates.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/shippingrates.png",@highlightColor);
+			}
+		}
+		a.taxtypes
+		{
+			.background("Menu/Pictos/taxtypes.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/taxtypes.png",@highlightColor);
+			}
+		}
+		a.taxcategories
+		{
+			.background("Menu/Pictos/taxcategories.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/taxcategories.png",@highlightColor);
+			}
+		}
+		a.taxzones
+		{
+			.background("Menu/Pictos/taxzones.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/taxzones.png",@highlightColor);
+			}
+		}
+		a.taxrates
+		{
+			.background("Menu/Pictos/taxrates.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/taxrates.png",@highlightColor);
+			}
+		}
+		a.sellersettings
+		{
+			.background("Menu/Pictos/sellersettings.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/sellersettings.png",@highlightColor);
+			}
+		}
+		a.stores
+		{
+			.background("Menu/Pictos/stores.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/stores.png",@highlightColor);
+			}
+		}
+		a.storeconfigurations
+		{
+			.background("Menu/Pictos/storeconfigurations.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/storeconfigurations.png",@highlightColor);
+			}
+		}
+		a.customersets
+		{
+			.background("Menu/Pictos/customersets.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/customersets.png",@highlightColor);
+			}
+		}
+		a.channels
+		{
+			.background("Menu/Pictos/channels.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/channels.png",@highlightColor);
+			}
+		}
+		a.paymentModes
+		{
+			.background("Menu/Pictos/paymentModes.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/paymentModes.png",@highlightColor);
+			}
+		}
+		a.extensions
+		{
+			.background("Menu/Pictos/extensions.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/extensions.png",@highlightColor);
+			}
+		}
+		a.segments
+		{
+			.background("Menu/Pictos/segments.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/segments.png",@highlightColor);
+			}
+		}
+		a.users
+		{
+			.background("Menu/Pictos/users.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/users.png",@highlightColor);
+			}
+		}
+		a.roles
+		{
+			.background("Menu/Pictos/roles.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/roles.png",@highlightColor);
+			}
+		}
+		a.rolesassignment
+		{
+			.background("Menu/Pictos/rolesassignment.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/rolesassignment.png",@highlightColor);
+			}
+		}
+		a.scheduler
+		{
+			.background("Menu/Pictos/scheduler.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/scheduler.png",@highlightColor);
+			}
+		}
+		a.etl
+		{
+			.background("Menu/Pictos/etl.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/etl.png",@highlightColor);
+			}
+		}
+		a.continents
+		{
+			.background("Menu/Pictos/continents.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/continents.png",@highlightColor);
+			}
+		}
+		a.countries
+		{
+			.background("Menu/Pictos/countries.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/countries.png",@highlightColor);
+			}
+		}
+		a.regions
+		{
+			.background("Menu/Pictos/regions.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/regions.png",@highlightColor);
+			}
+		}
+		a.currencies
+		{
+			.background("Menu/Pictos/currencies.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/currencies.png",@highlightColor);
+			}
+		}
+		a.cultures
+		{
+			.background("Menu/Pictos/cultures.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/cultures.png",@highlightColor);
+			}
+		}
+		a.languages
+		{
+			.background("Menu/Pictos/languages.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/languages.png",@highlightColor);
+			}
+		}
+		a.settings
+		{
+			.background("Menu/Pictos/settings.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/settings.png",@highlightColor);
+			}
+		}
+		a.sellers
+		{
+			.background("Menu/Pictos/sellers.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/sellers.png",@highlightColor);
+			}
+		}
+		a.administrators
+		{
+			.background("Menu/Pictos/administrators.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/administrators.png",@highlightColor);
+			}
+		}
+		a.logs
+		{
+			.background("Menu/Pictos/logs.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/logs.png",@highlightColor);
+			}
+		}
+		a.applicationtiers
+		{
+			.background("Menu/Pictos/applicationtiers.png");
+			&:hover
+			{
+				.backgroundWithColor("Menu/Pictos/applicationtiers.png",@highlightColor);
+			}
+		}
+		li.selected
+		{
+			a.orders
+			{
+				.backgroundWithColor("Menu/Pictos/orders.png",@highlightColor);
+			}
+			a.neworders
+			{
+				.backgroundWithColor("Menu/Pictos/neworders.png",@highlightColor);
+			}
+			a.ordersinprocess
+			{
+				.backgroundWithColor("Menu/Pictos/ordersinprocess.png",@highlightColor);
+			}
+			a.catalogs
+			{
+				.backgroundWithColor("Menu/Pictos/catalogs.png",@highlightColor);
+			}
+			a.categories
+			{
+				.backgroundWithColor("Menu/Pictos/categories.png",@highlightColor);
+			}
+			a.products
+			{
+				.backgroundWithColor("Menu/Pictos/products.png",@highlightColor);
+			}
+			a.suppliers
+			{
+				.backgroundWithColor("Menu/Pictos/suppliers.png",@highlightColor);
+			}
+			a.brands
+			{
+				.backgroundWithColor("Menu/Pictos/brands.png",@highlightColor);
+			}
+			a.discounts
+			{
+				.backgroundWithColor("Menu/Pictos/discounts.png",@highlightColor);
+			}
+			a.inventory
+			{
+				.backgroundWithColor("Menu/Pictos/inventory.png",@highlightColor);
+			}
+			a.prices
+			{
+				.backgroundWithColor("Menu/Pictos/prices.png",@highlightColor);
+			}
+			a.producttypes
+			{
+				.backgroundWithColor("Menu/Pictos/producttypes.png",@highlightColor);
+			}
+			a.productattributes
+			{
+				.backgroundWithColor("Menu/Pictos/productattributes.png",@highlightColor);
+			}
+			a.carriers
+			{
+				.backgroundWithColor("Menu/Pictos/carriers.png",@highlightColor);
+			}
+			a.shippingzones
+			{
+				.backgroundWithColor("Menu/Pictos/shippingzones.png",@highlightColor);
+			}
+			a.shippingrates
+			{
+				.backgroundWithColor("Menu/Pictos/shippingrates.png",@highlightColor);
+			}
+			a.taxtypes
+			{
+				.backgroundWithColor("Menu/Pictos/taxtypes.png",@highlightColor);
+			}
+			a.taxcategories
+			{
+				.backgroundWithColor("Menu/Pictos/taxcategories.png",@highlightColor);
+			}
+			a.taxzones
+			{
+				.backgroundWithColor("Menu/Pictos/taxzones.png",@highlightColor);
+			}
+			a.taxrates
+			{
+				.backgroundWithColor("Menu/Pictos/taxrates.png",@highlightColor);
+			}
+			a.sellersettings
+			{
+				.backgroundWithColor("Menu/Pictos/sellersettings.png",@highlightColor);
+			}
+			a.stores
+			{
+				.backgroundWithColor("Menu/Pictos/stores.png",@highlightColor);
+			}
+			a.storeconfigurations
+			{
+				.backgroundWithColor("Menu/Pictos/storeconfigurations.png",@highlightColor);
+			}
+			a.customersets
+			{
+				.backgroundWithColor("Menu/Pictos/customersets.png",@highlightColor);
+			}
+			a.channels
+			{
+				.backgroundWithColor("Menu/Pictos/channels.png",@highlightColor);
+			}
+		    a.paymentModes
+		    {
+				.backgroundWithColor("Menu/Pictos/paymentModes.png",@highlightColor);
+		    }
+			a.extensions
+			{
+				.backgroundWithColor("Menu/Pictos/extensions.png",@highlightColor);
+			}
+			a.segments
+			{
+				.backgroundWithColor("Menu/Pictos/segments.png",@highlightColor);
+			}
+			a.users
+			{
+				.backgroundWithColor("Menu/Pictos/users.png",@highlightColor);
+			}
+			a.roles
+			{
+				.backgroundWithColor("Menu/Pictos/roles.png",@highlightColor);
+			}
+			a.rolesassignment
+			{
+				.backgroundWithColor("Menu/Pictos/rolesassignment.png",@highlightColor);
+			}
+			a.scheduler
+			{
+				.backgroundWithColor("Menu/Pictos/scheduler.png",@highlightColor);
+			}
+			a.etl
+			{
+				.backgroundWithColor("Menu/Pictos/etl.png",@highlightColor);
+			}
+			a.continents
+			{
+				.backgroundWithColor("Menu/Pictos/continents.png",@highlightColor);
+			}
+			a.countries
+			{
+				.backgroundWithColor("Menu/Pictos/countries.png",@highlightColor);
+			}
+			a.regions
+			{
+				.backgroundWithColor("Menu/Pictos/regions.png",@highlightColor);
+			}
+			a.currencies
+			{
+				.backgroundWithColor("Menu/Pictos/currencies.png",@highlightColor);
+			}
+			a.cultures
+			{
+				.backgroundWithColor("Menu/Pictos/cultures.png",@highlightColor);
+			}
+			a.languages
+			{
+				.backgroundWithColor("Menu/Pictos/languages.png",@highlightColor);
+			}
+			a.settings
+			{
+				.backgroundWithColor("Menu/Pictos/settings.png",@highlightColor);
+			}
+			a.sellers
+			{
+				.backgroundWithColor("Menu/Pictos/sellers.png",@highlightColor);
+			}
+			a.administrators
+			{
+				.backgroundWithColor("Menu/Pictos/administrators.png",@highlightColor);
+			}
+			a.logs
+			{
+				.backgroundWithColor("Menu/Pictos/logs.png",@highlightColor);
+			}
+			a.applicationtiers
+			{
+				.backgroundWithColor("Menu/Pictos/applicationtiers.png",@highlightColor);
+			}
+		}
+		li.unauthorized,li.featuremissing,li.pro,li.enterprise
+		{
+			a.orders
+			{
+				.backgroundWithColor("Menu/Pictos/orders.png",@unauthorizedColor);
+			}
+			a.neworders
+			{
+				.backgroundWithColor("Menu/Pictos/neworders.png",@unauthorizedColor);
+			}
+			a.ordersinprocess
+			{
+				.backgroundWithColor("Menu/Pictos/ordersinprocess.png",@unauthorizedColor);
+			}
+			a.catalogs
+			{
+				.backgroundWithColor("Menu/Pictos/catalogs.png",@unauthorizedColor);
+			}
+			a.categories
+			{
+				.backgroundWithColor("Menu/Pictos/categories.png",@unauthorizedColor);
+			}
+			a.products
+			{
+				.backgroundWithColor("Menu/Pictos/products.png",@unauthorizedColor);
+			}
+			a.suppliers
+			{
+				.backgroundWithColor("Menu/Pictos/suppliers.png",@unauthorizedColor);
+			}
+			a.brands
+			{
+				.backgroundWithColor("Menu/Pictos/brands.png",@unauthorizedColor);
+			}
+			a.discounts
+			{
+				.backgroundWithColor("Menu/Pictos/discounts.png",@unauthorizedColor);
+			}
+			a.inventory
+			{
+				.backgroundWithColor("Menu/Pictos/inventory.png",@unauthorizedColor);
+			}
+			a.prices
+			{
+				.backgroundWithColor("Menu/Pictos/prices.png",@unauthorizedColor);
+			}
+			a.producttypes
+			{
+				.backgroundWithColor("Menu/Pictos/producttypes.png",@unauthorizedColor);
+			}
+			a.productattributes
+			{
+				.backgroundWithColor("Menu/Pictos/productattributes.png",@unauthorizedColor);
+			}
+			a.carriers
+			{
+				.backgroundWithColor("Menu/Pictos/carriers.png",@unauthorizedColor);
+			}
+			a.shippingzones
+			{
+				.backgroundWithColor("Menu/Pictos/shippingzones.png",@unauthorizedColor);
+			}
+			a.shippingrates
+			{
+				.backgroundWithColor("Menu/Pictos/shippingrates.png",@unauthorizedColor);
+			}
+			a.taxtypes
+			{
+				.backgroundWithColor("Menu/Pictos/taxtypes.png",@unauthorizedColor);
+			}
+			a.taxcategories
+			{
+				.backgroundWithColor("Menu/Pictos/taxcategories.png",@unauthorizedColor);
+			}
+			a.taxzones
+			{
+				.backgroundWithColor("Menu/Pictos/taxzones.png",@unauthorizedColor);
+			}
+			a.taxrates
+			{
+				.backgroundWithColor("Menu/Pictos/taxrates.png",@unauthorizedColor);
+			}
+			a.sellersettings
+			{
+				.backgroundWithColor("Menu/Pictos/sellersettings.png",@unauthorizedColor);
+			}
+			a.stores
+			{
+				.backgroundWithColor("Menu/Pictos/stores.png",@unauthorizedColor);
+			}
+			a.storeconfigurations
+			{
+				.backgroundWithColor("Menu/Pictos/storeconfigurations.png",@unauthorizedColor);
+			}
+			a.customersets
+			{
+				.backgroundWithColor("Menu/Pictos/customersets.png",@unauthorizedColor);
+			}
+			a.channels
+			{
+				.backgroundWithColor("Menu/Pictos/channels.png",@unauthorizedColor);
+			}
+		    a.paymentModes
+		    {
+				.backgroundWithColor("Menu/Pictos/paymentModes.png",@unauthorizedColor);
+		    }
+			a.extensions
+			{
+				.backgroundWithColor("Menu/Pictos/extensions.png",@unauthorizedColor);
+			}
+			a.storesettings
+			{
+				.backgroundWithColor("Menu/Pictos/storesettings.png",@unauthorizedColor);
+			}
+			a.segments
+			{
+				.backgroundWithColor("Menu/Pictos/segments.png",@unauthorizedColor);
+			}
+			a.users
+			{
+				.backgroundWithColor("Menu/Pictos/users.png",@unauthorizedColor);
+			}
+			a.roles
+			{
+				.backgroundWithColor("Menu/Pictos/roles.png",@unauthorizedColor);
+			}
+			a.rolesassignment
+			{
+				.backgroundWithColor("Menu/Pictos/rolesassignment.png",@unauthorizedColor);
+			}
+			a.scheduler
+			{
+				.backgroundWithColor("Menu/Pictos/scheduler.png",@unauthorizedColor);
+			}
+			a.etl
+			{
+				.backgroundWithColor("Menu/Pictos/etl.png",@unauthorizedColor);
+			}
+			a.continents
+			{
+				.backgroundWithColor("Menu/Pictos/continents.png",@unauthorizedColor);
+			}
+			a.countries
+			{
+				.backgroundWithColor("Menu/Pictos/countries.png",@unauthorizedColor);
+			}
+			a.regions
+			{
+				.backgroundWithColor("Menu/Pictos/regions.png",@unauthorizedColor);
+			}
+			a.currencies
+			{
+				.backgroundWithColor("Menu/Pictos/currencies.png",@unauthorizedColor);
+			}
+			a.cultures
+			{
+				.backgroundWithColor("Menu/Pictos/cultures.png",@unauthorizedColor);
+			}
+			a.languages
+			{
+				.backgroundWithColor("Menu/Pictos/languages.png",@unauthorizedColor);
+			}
+			a.settings
+			{
+				.backgroundWithColor("Menu/Pictos/settings.png",@unauthorizedColor);
+			}
+			a.sellers
+			{
+				.backgroundWithColor("Menu/Pictos/sellers.png",@unauthorizedColor);
+			}
+			a.administrators
+			{
+				.backgroundWithColor("Menu/Pictos/administrators.png",@unauthorizedColor);
+			}
+			a.logs
+			{
+				.backgroundWithColor("Menu/Pictos/logs.png",@unauthorizedColor);
+			}
+			a.applicationtiers
+			{
+				.backgroundWithColor("Menu/Pictos/applicationtiers.png",@unauthorizedColor);
+			}
+		}
+	}
+}

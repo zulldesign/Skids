@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="ConditionValueEditor">
+  <content>
+    <![CDATA[
+        {{if condition}}
+         {{each editor.conditions}}
+          {{if condition instanceof $value && $.isFunction($.template[condition.template])}}
+            {{tmpl(condition) condition.template}}
+          {{/if}}
+         {{/each}}
+        {{/if}}
+      ]]>
+  </content>
+</template>

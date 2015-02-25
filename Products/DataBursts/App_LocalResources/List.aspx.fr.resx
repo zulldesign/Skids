@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BurstComplete" xml:space="preserve">
+    <value>Mise à jour des données effectuée avec succès pour {0} configurations.</value>
+  </data>
+  <data name="lblCulture.Text" xml:space="preserve">
+    <value>Culture</value>
+  </data>
+  <data name="lblCurrency.Text" xml:space="preserve">
+    <value>Devise</value>
+  </data>
+  <data name="lblCountry.Text" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="lbtnGenerate.Text" xml:space="preserve">
+    <value>Mettre à jour les données</value>
+  </data>
+  <data name="litDataBursts.Text" xml:space="preserve">
+    <value>Mise à jour des données</value>
+  </data>
+  <data name="litInfo.Text" xml:space="preserve">
+    <value>&lt;p&gt;Un site e-commerce contient des informations telles que les prix, les taxes, les remises doivent être rapidement affichées. Le mécanisme de mise à jour des données améliore les performances de votre site et évite des recalculs fréquents.&lt;/p&gt;
+
+&lt;ul class="do"&gt;
+	&lt;li&gt;&lt;strong&gt;A FAIRE &lt;/strong&gt;Cliquez sur le bouton de mise à jour des données pour que les modifications apportées aux catalogues, catégories, produits, et les prix soient mis à jour et accessibles pour votre site e-commerce.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="warning"&gt;
+	&lt;li&gt;&lt;strong&gt;Attention! &lt;/strong&gt; «Mettre à jour les données» conduit à la génération des données et peut ralentir votre infrastructure.Utilisez cette fonctionnalités uniquement lorsque vous avez besoin de mettre à jour le site.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="insider"&gt;
+	&lt;li&gt;&lt;strong&gt;Informations complémentaires : &lt;/strong&gt;Le panier et le calcul des commandes (service orders) ne sont pas affectés par le mécanisme de mise à jour des données, ce qui permet de continuer à fournir les commandes en temps réel. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Merci de consulter l'aide pour des informations techniques détaillées.&lt;/p&gt;</value>
+  </data>
+  <data name="litInstructions.Text" xml:space="preserve">
+    <value>Informations importantes</value>
+  </data>
+  <data name="mgvcCulture.Name" xml:space="preserve">
+    <value>Culture</value>
+  </data>
+  <data name="mgvcCurrency.Name" xml:space="preserve">
+    <value>Devise</value>
+  </data>
+  <data name="mgvcCountry.Name" xml:space="preserve">
+    <value>Pays (optionnel)</value>
+  </data>
+  <data name="AllOtherCountries" xml:space="preserve">
+    <value>Tous les autres pays</value>
+  </data>
+  <data name="litCulture.Text" xml:space="preserve">
+    <value>Culture</value>
+  </data>
+  <data name="litCurrency.Text" xml:space="preserve">
+    <value>Devise</value>
+  </data>
+  <data name="litCountry.Text" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="rfvCultureInsert.ErrorMessage" xml:space="preserve">
+    <value>Veuillez selectionner une ou plusieurs cultures.</value>
+  </data>
+  <data name="rfvCurrencyInsert.ErrorMessage" xml:space="preserve">
+    <value>Veuillez selectionner une ou plusieurs devises.</value>
+  </data>
+  <data name="DefaultConfigurationNotBursted" xml:space="preserve">
+    <value>Les données pour le pays par défaut : {0}, la devise par défaut : {1} et la culture par défaut : {2} définis pour cette boutique n'ont pas été généréees car aucune configuration ne correspond.</value>
+  </data>
+  <data name="litDataConfigurations.Text" xml:space="preserve">
+    <value>Configurations à générer</value>
+  </data>
+  <data name="BurstEmptyErrorMessage" xml:space="preserve">
+    <value>Aucune mise à jour des données n'a été réalisée. Veuillez configurer les zones de taxe, les devises et cultures pour lesquelles les données exposées par les services doivent être précalculées.</value>
+  </data>
+  <data name="NoCountryAvailableErrorMessage" xml:space="preserve">
+    <value>Les configurations choisies ne correspodennt à  aucune donnée pour aucun pays, veuillez vérifier leur cohérence par rapport à l'appartenance des pays de livraison à des zones de taxe.</value>
+  </data>
+</root>

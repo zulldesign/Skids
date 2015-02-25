@@ -1,0 +1,123 @@
+﻿@color: #333333;
+@customFont: 'TeXGyreAdventorRegular';
+
+@font-face 
+{
+    font-family: @customFont;
+    src: url('Fonts/TeX-Gyre-Adventor/texgyreadventor-regular-webfont.eot');
+    src: url('Fonts/TeX-Gyre-Adventor/texgyreadventor-regular-webfont.eot?#iefix') format('embedded-opentype'), url('Fonts/TeX-Gyre-Adventor/texgyreadventor-regular-webfont.woff') format('woff'), url('Fonts/TeX-Gyre-Adventor/texgyreadventor-regular-webfont.ttf') format('truetype'), url('Fonts/TeX-Gyre-Adventor/texgyreadventor-regular-webfont.svg#TeXGyreAdventorRegular') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* 
+{
+    margin:0;
+    padding:0;
+	background-position:0 0;
+	background-repeat:no-repeat;
+}
+
+body,html
+{
+	height:100%;
+}
+
+body, input[type=text], input[type=password], textarea, select, legend, pre
+{
+	color:@color;
+	font-size:13px;
+    font-family: 'Century Gothic', @customFont, Arial, sans-serif;
+}
+
+body
+{
+	min-width:1250px;
+	background-color:#f3f3f3;
+}
+
+script
+{
+	display:none !important;
+}
+
+a
+{
+	color:@color;
+	text-decoration:none;
+}
+
+a:hover
+{
+	text-decoration:underline;
+}
+
+a > img
+{
+	border:0;
+}
+
+p
+{
+	text-align:justify;
+}
+
+h1
+{
+	font-size:24px;
+}
+
+h2
+{
+	font-size:22px;
+}
+
+h3
+{
+	font-size:20px;
+}
+
+h4
+{
+	font-size:18px;
+}
+
+h5
+{
+	font-size:16px;
+}
+
+h6
+{
+	font-size:14px;
+}
+
+ul
+{
+	list-style:none;
+}
+
+table
+{
+	border-collapse:collapse;
+}
+
+textarea
+{
+	overflow:auto;
+}
+
+div.centralizer
+{
+	top:50%;
+	height:0;
+	width:100%;
+	overflow:visible;
+	position:absolute;
+}
+
+div.centralizer > *
+{
+	margin-left:auto;
+	margin-right:auto;
+}

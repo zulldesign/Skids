@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="PercentageActionEditor">
+  <content>
+    <![CDATA[
+        <div class="field inline">
+          <label for="selPercentageTarget${$item.parent.data.index}">${Magelia.WebStore.Discount.Actions.PercentageAction.Localizations.TargetLabel}</label>
+          <select id="selPercentageTarget${$item.parent.data.index}"
+            onchange="
+              (
+                function(source){
+                    var select = $(source);
+                    select.tmplItem().data.updateTarget(select.val());
+                }
+              )
+              (this);
+            "
+          >
+            <option value="0" {{if model.Target==0}}selected="selected"{{/if}}>${Magelia.WebStore.Discount.Actions.PercentageAction.Localizations.ProductUnitOptionText}</option>
+            <option value="1" {{if model.Target==1}}selected="selected"{{/if}}>${Magelia.WebStore.Discount.Actions.PercentageAction.Localizations.ShippingOptionText}</option>
+            <option value="2" {{if model.Target==2}}selected="selected"{{/if}}>${Magelia.WebStore.Discount.Actions.PercentageAction.Localizations.BasketOptionText}</option>
+          </select>
+        </div>
+        <div class="field inline break break-after">
+          <label for="itxtPercentage${$item.parent.data.index}">${Magelia.WebStore.Discount.Actions.PercentageAction.Localizations.PercentageLabel}</label>
+          <input type="text" id="itxtPercentage${$item.parent.data.index}" value="${model.Percentage}" class="numeric"
+            onkeyup="
+              (
+                function(source){
+                  var textbox = $(source);
+                  textbox.tmplItem().data.updatePercentage(textbox);
+                }
+              )
+              (this);
+            "
+            onblur="
+              (
+                function(source){
+                  var textbox = $(source);
+                  textbox.tmplItem().data.updatePercentage(textbox);
+                }
+              )
+              (this);
+            "
+          />
+        </div>
+        {{if model.Target == 2}}
+          <div class="field inline break break-after">
+            <label for="cbxIncludeShippingRates{$item.parent.data.index}">${Magelia.WebStore.Discount.Actions.PercentageAction.Localizations.IncludeShippingRatesLabel}</label>
+            <input id="cbxIncludeShippingRates{$item.parent.data.index}" type="checkbox" {{if model.IncludeShippingRates}}checked="checked"{{/if}}
+              onchange="
+                (
+                  function(source){
+                    var checkbox = $(source);
+                    checkbox.tmplItem().data.updateIncludeShippingRates(checkbox.is(':checked'));
+                  }
+                )(this);
+              "
+            />
+          </div>
+        {{/if}}
+        <div class="field inline break break-after">
+          <label for="cbxAccumulative{$item.parent.data.index}">${Magelia.WebStore.Discount.Actions.PercentageAction.Localizations.AccumulativeLabel}</label>
+          <input id="cbxAccumulative{$item.parent.data.index}" type="checkbox" {{if model.Accumulative}}checked="checked"{{/if}}
+            onchange="
+              (
+                function(source){
+                  var checkbox = $(source);
+                  checkbox.tmplItem().data.updateAccumulative(checkbox.is(':checked'));
+                }
+              )(this);
+            "
+          />
+        </div>
+      ]]>
+  </content>
+</template>

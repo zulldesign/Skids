@@ -1,0 +1,43 @@
+﻿.message, ul.messages > li
+{
+	color:white;
+	padding:10px;
+	text-align:left !important;
+	background-position:10px 10px;
+	&.error
+	{
+		color:#333333;
+		background-color:#ffe933;
+		a
+		{
+			color:#333333;
+		}
+	}
+	&.warning
+	{
+		min-height:33px;
+		padding-left:60px;
+		background-image:url('Images/Messages/warning.png');
+	}
+	&.information
+	{
+		min-height:33px;
+		padding-left:60px;
+		background-image:url('Images/Messages/info.png');
+	}
+}
+
+ul.messages > li + li
+{
+	margin-top:1px;
+}
+
+.message a
+{
+	color:white;
+}
+
+.message + *
+{
+	margin-top:1px;
+}

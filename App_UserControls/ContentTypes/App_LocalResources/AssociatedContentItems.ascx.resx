@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblCode.Text" xml:space="preserve">
+    <value>Code :</value>
+  </data>
+  <data name="lblCreationDate.Text" xml:space="preserve">
+    <value>Creation date :</value>
+  </data>
+  <data name="lblCreatoreUserName.Text" xml:space="preserve">
+    <value>Created by :</value>
+  </data>
+  <data name="lblLastModificationDate.Text" xml:space="preserve">
+    <value>Last modification date :</value>
+  </data>
+  <data name="lblLastModificatorUserName.Text" xml:space="preserve">
+    <value>Last modified by :</value>
+  </data>
+  <data name="lblStatus.Text" xml:space="preserve">
+    <value>Status :</value>
+  </data>
+  <data name="liActive.Text" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="liArchived.Text" xml:space="preserve">
+    <value>Archived</value>
+  </data>
+  <data name="liDraft.Text" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+  <data name="liRejected.Text" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="litActive.Text" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="litArchived.Text" xml:space="preserve">
+    <value>Archived</value>
+  </data>
+  <data name="litDraft.Text" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+  <data name="litRejected.Text" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="litWaitingApproval.Text" xml:space="preserve">
+    <value>Waiting for approval</value>
+  </data>
+  <data name="liWaitingApproval.Text" xml:space="preserve">
+    <value>Waiting for approval</value>
+  </data>
+  <data name="mgvcCode.Name" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="mgvcCreationDate.Name" xml:space="preserve">
+    <value>Creation date</value>
+  </data>
+  <data name="mgvcCreatorUserName.Name" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="mgvcLastModificationDate.Name" xml:space="preserve">
+    <value>Last modification date</value>
+  </data>
+  <data name="mgvcLastModificatorUserName.Name" xml:space="preserve">
+    <value>Last modificator</value>
+  </data>
+  <data name="mgvcStatus.Name" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="NewContentItemCode" xml:space="preserve">
+    <value>NEW {0}</value>
+  </data>
+  <data name="lblCreationInfo.Text" xml:space="preserve">
+    <value>Created by &lt;strong&gt;{0}&lt;/strong&gt; at &lt;strong&gt;{1}&lt;/strong&gt;</value>
+  </data>
+  <data name="lblEditInfo.Text" xml:space="preserve">
+    <value>- Last modified by &lt;strong&gt;{0}&lt;/strong&gt; at &lt;strong&gt;{1}&lt;/strong&gt;</value>
+  </data>
+  <data name="litNoContentTypeAvailable.Text" xml:space="preserve">
+    <value>No content type available</value>
+  </data>
+  <data name="cvCheckCodeUnique.ErrorMessage" xml:space="preserve">
+    <value>Code must be unique per store and ContentType</value>
+  </data>
+  <data name="lblContent.Text" xml:space="preserve">
+    <value>Content : </value>
+  </data>
+  <data name="BrandContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; brand </value>
+  </data>
+  <data name="BundleContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; bundle (sku)</value>
+  </data>
+  <data name="CarrierContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; carrier.</value>
+  </data>
+  <data name="CatalogCategoryContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; category.</value>
+  </data>
+  <data name="CatalogContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; catalog</value>
+  </data>
+  <data name="ContinentContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; continent</value>
+  </data>
+  <data name="CountryContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; country</value>
+  </data>
+  <data name="CurrencyContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; currency</value>
+  </data>
+  <data name="DiscountContainerText" xml:space="preserve">
+    <value>This content item is attached to a the &lt;em&gt;{0}&lt;/em&gt; discount</value>
+  </data>
+  <data name="OrderChannelContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; order channel</value>
+  </data>
+  <data name="PaymentModeContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; payment mode</value>
+  </data>
+  <data name="RegionContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; region</value>
+  </data>
+  <data name="SegmentContainerText" xml:space="preserve">
+    <value>This content item is attached to th &lt;em&gt;{0}&lt;/em&gt; segment</value>
+  </data>
+  <data name="StandardProductContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; standard product</value>
+  </data>
+  <data name="SupplierContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; supplier</value>
+  </data>
+  <data name="VariableProductContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; variable product.</value>
+  </data>
+  <data name="VariantContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; variant product (sku)</value>
+  </data>
+  <data name="WarehouseContainerText" xml:space="preserve">
+    <value>This content item is attached to the &lt;em&gt;{0}&lt;/em&gt; warehouse.</value>
+  </data>
+  <data name="TooManyContentItems" xml:space="preserve">
+    <value>Max. Nb od content itemps exceeded</value>
+  </data>
+</root>

@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BaseType" xml:space="preserve">
+    <value>Base type</value>
+  </data>
+  <data name="cvAttributeCodeIsUnique.ErrorMessage" xml:space="preserve">
+    <value>This code is already in use. Please enter a different code.</value>
+  </data>
+  <data name="cvCodeIsUnique.ErrorMessage" xml:space="preserve">
+    <value>This code is already in use. Please enter a different code.</value>
+  </data>
+  <data name="ddlTypes.DefaultValue" xml:space="preserve">
+    <value>Please select a Type</value>
+  </data>
+  <data name="lblCode.Text" xml:space="preserve">
+    <value>Code :</value>
+  </data>
+  <data name="lbtnCode.Text" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="lbtnIsCollection.Text" xml:space="preserve">
+    <value>Multiple</value>
+  </data>
+  <data name="lbtnIsRequired.Text" xml:space="preserve">
+    <value>Is required</value>
+  </data>
+  <data name="lbtnName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lbtnOrder.Text" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="lbtnType.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="litAssociations.Text" xml:space="preserve">
+    <value>Parent types (optional)</value>
+  </data>
+  <data name="litAttributes.Text" xml:space="preserve">
+    <value>Attributes</value>
+  </data>
+  <data name="litContentTypes.Text" xml:space="preserve">
+    <value>Content Types</value>
+  </data>
+  <data name="litLocalizations.Text" xml:space="preserve">
+    <value>Localizations</value>
+  </data>
+  <data name="mlfAttributeName.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="mlfDescription.HeaderText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="mlfName.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="revAttributeCodeLength.ErrorMessage" xml:space="preserve">
+    <value>Code must be less than 50 characters, must contain only alphanumeric characters and no space and must start with a non-numeric character</value>
+  </data>
+  <data name="revCodeLength.ErrorMessage" xml:space="preserve">
+    <value>Code must be less than 50 characters, must contain only alphanumeric characters and no space and must start with a non-numeric character</value>
+  </data>
+  <data name="rfvAttributeCode.ErrorMessage" xml:space="preserve">
+    <value>This code is already in use. Please enter a different code.</value>
+  </data>
+  <data name="rfvAttributeType.ErrorMessage" xml:space="preserve">
+    <value>Please select an Attribute Type</value>
+  </data>
+  <data name="rfvCode.ErrorMessage" xml:space="preserve">
+    <value>Please enter a code</value>
+  </data>
+  <data name="Type-Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Type-Basket" xml:space="preserve">
+    <value>Basket</value>
+  </data>
+  <data name="Type-Boolean" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="Type-Brand" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="Type-Bundle" xml:space="preserve">
+    <value>Bundle</value>
+  </data>
+  <data name="Type-Carrier" xml:space="preserve">
+    <value>Carrier</value>
+  </data>
+  <data name="Type-Catalog" xml:space="preserve">
+    <value>Catalog</value>
+  </data>
+  <data name="Type-CatalogCategory" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Type-Continent" xml:space="preserve">
+    <value>Continent</value>
+  </data>
+  <data name="Type-Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Type-Currency" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="Type-DateTimeOffset" xml:space="preserve">
+    <value>DateTime</value>
+  </data>
+  <data name="Type-Decimal" xml:space="preserve">
+    <value>Decimal</value>
+  </data>
+  <data name="Type-Discount" xml:space="preserve">
+    <value>Discount</value>
+  </data>
+  <data name="Type-Int64" xml:space="preserve">
+    <value>Integer</value>
+  </data>
+  <data name="Type-LineItem" xml:space="preserve">
+    <value>LineItem</value>
+  </data>
+  <data name="Type-Order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="Type-OrderChannel" xml:space="preserve">
+    <value>Order channel</value>
+  </data>
+  <data name="Type-Package" xml:space="preserve">
+    <value>Package</value>
+  </data>
+  <data name="Type-ProductBase" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="Type-Region" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="Type-Segment" xml:space="preserve">
+    <value>Segment</value>
+  </data>
+  <data name="Type-Seller" xml:space="preserve">
+    <value>Seller</value>
+  </data>
+  <data name="Type-ShippingRate" xml:space="preserve">
+    <value>Shipping rate</value>
+  </data>
+  <data name="Type-ShippingZone" xml:space="preserve">
+    <value>Shipping zone</value>
+  </data>
+  <data name="Type-Store" xml:space="preserve">
+    <value>Store</value>
+  </data>
+  <data name="Type-String" xml:space="preserve">
+    <value>String</value>
+  </data>
+  <data name="Type-Supplier" xml:space="preserve">
+    <value>Supplier</value>
+  </data>
+  <data name="Type-TaxCategory" xml:space="preserve">
+    <value>Tax category</value>
+  </data>
+  <data name="Type-TaxType" xml:space="preserve">
+    <value>Tax type</value>
+  </data>
+  <data name="Type-TaxZone" xml:space="preserve">
+    <value>Tax zone</value>
+  </data>
+  <data name="Type-VariableProduct" xml:space="preserve">
+    <value>Variable product</value>
+  </data>
+  <data name="Type-Variant" xml:space="preserve">
+    <value>Variant</value>
+  </data>
+  <data name="Type-Warehouse" xml:space="preserve">
+    <value>Warehouse</value>
+  </data>
+  <data name="ComplexType" xml:space="preserve">
+    <value>Complex Type</value>
+  </data>
+  <data name="ContentType" xml:space="preserve">
+    <value>ContentType</value>
+  </data>
+  <data name="cvContentTypeIsValid.ErrorMessage" xml:space="preserve">
+    <value>Content Type is Invalid. Errors :&lt;br /&gt; {0}</value>
+  </data>
+  <data name="cvMinAttributeCount.ErrorMessage" xml:space="preserve">
+    <value>Please add at least one attribute</value>
+  </data>
+  <data name="lbtnIsLocalizable.Text" xml:space="preserve">
+    <value>Is localizable</value>
+  </data>
+  <data name="litStores.Text" xml:space="preserve">
+    <value>Stores</value>
+  </data>
+  <data name="mslStores.AssociatedItemsLabelText" xml:space="preserve">
+    <value>Associated stores</value>
+  </data>
+  <data name="mslStores.AvailableItemsLabelText" xml:space="preserve">
+    <value>Available stores</value>
+  </data>
+  <data name="cvStringTypeMaxLength.ErrorMessage" xml:space="preserve">
+    <value>Please enter a valid number in the Value field</value>
+  </data>
+  <data name="lblStringTypeIsHtml.Text" xml:space="preserve">
+    <value>Is HTML :</value>
+  </data>
+  <data name="lblStringTypeMaxLength.Text" xml:space="preserve">
+    <value>Max length :</value>
+  </data>
+  <data name="lblStringTypeRegularExpression.Text" xml:space="preserve">
+    <value>Regular expression :</value>
+  </data>
+  <data name="litTypeOptions.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="mslStores.RemoveMessage" xml:space="preserve">
+    <value>return window.confirm('Are you sure you want ro remove this relationship ? Removing it will delete all content items related to this store.');</value>
+  </data>
+  <data name="Type-File" xml:space="preserve">
+    <value>Media</value>
+  </data>
+  <data name="Type-StandardProduct" xml:space="preserve">
+    <value>Standard product</value>
+  </data>
+  <data name="litAssociationsIntro.Text" xml:space="preserve">
+    <value>Select the types that you want to associate with this content type. For example, a SEO content type including meta title, metadescription, etc. would be associated with all the types that are to be displayed on a website (ex : products, brands, etc.).</value>
+  </data>
+  <data name="SubCategoryOther" xml:space="preserve">
+    <value>Other :</value>
+  </data>
+  <data name="ProductType" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="litContentType.Text" xml:space="preserve">
+    <value>Content type</value>
+  </data>
+  <data name="SubCategoryFile" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="cvAttributeCodeNamingConvention.ErrorMessage" xml:space="preserve">
+    <value>This attribute code doesn't respect naming conventions. Attribute code must be different of the content type code.</value>
+  </data>
+  <data name="cvCodeNamingConvention.ErrorMessage" xml:space="preserve">
+    <value>This code doesn't respect the naming convention. Content type code must be different from attributes codes.</value>
+  </data>
+  <data name="ContentTypeTeasing" xml:space="preserve">
+    <value>Magelia WebStore Community Edition includes one single content type.To benefit from all the features of Magelia WebStore Content Management System and create additional content types, simply upgrade to Magelia WebStore Professional or Enterprise Edition or purchase an extension.</value>
+  </data>
+</root>

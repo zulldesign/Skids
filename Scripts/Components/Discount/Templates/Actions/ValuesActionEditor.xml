@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="ValuesActionEditor">
+  <content>
+    <![CDATA[
+      <div class="field inline break-after">
+          <label for="selValuesTarget${$item.parent.data.index}">${Magelia.WebStore.Discount.Actions.ValuesAction.Localizations.TargetLabel}</label>
+          <select id="selValuesTarget${$item.parent.data.index}"
+            onchange="
+              (
+                function(source){
+                    var select = $(source);
+                    select.tmplItem().data.updateTarget(select.val());
+                }
+              )
+              (this);
+            "
+          >
+            <option value="0" {{if model.Target==0}}selected="selected"{{/if}}>${Magelia.WebStore.Discount.Actions.ValuesAction.Localizations.ProductUnitOptionText}</option>
+            <option value="1" {{if model.Target==1}}selected="selected"{{/if}}>${Magelia.WebStore.Discount.Actions.ValuesAction.Localizations.ShippingOptionText}</option>
+            <option value="2" {{if model.Target==2}}selected="selected"{{/if}}>${Magelia.WebStore.Discount.Actions.ValuesAction.Localizations.BasketOptionText}</option>
+          </select>
+        </div>
+        <div class="field break-after">
+          <span>${Magelia.WebStore.Discount.Actions.ValuesAction.Localizations.ValuesLabel}</span>
+          <table class="gridView">
+            <thead>
+              <th class="{{if currentSort=='Value'}}{{if sortAscending}}sortedAsc{{else}}sortedDesc{{/if}}{{/if}}">
+                <a href="javascript:void(0);"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.sort('Value');
+                      }
+                    )
+                    (this);
+                  "
+                >${Magelia.WebStore.Discount.Actions.ValuesAction.Localizations.ValueHeaderText}</a>
+              </th>
+              <th class="{{if currentSort=='CurrencyId'}}{{if sortAscending}}sortedAsc{{else}}sortedDesc{{/if}}{{/if}}">
+                <a href="javascript:void(0);"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.sort('CurrencyId');
+                      }
+                    )
+                    (this);
+                  "
+                >${Magelia.WebStore.Discount.Actions.ValuesAction.Localizations.CurrencyHeaderText}</a>
+              </th>
+              <th class="{{if currentSort=='IncludeTaxes'}}{{if sortAscending}}sortedAsc{{else}}sortedDesc{{/if}}{{/if}}">
+                <a href="javascript:void(0);"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.sort('IncludeTaxes');
+                      }
+                    )
+                    (this);
+                  "
+                >${Magelia.WebStore.Discount.Actions.ValuesAction.Localizations.IncludeTaxesHeaderText}</a>
+              </th>
+              <th>${Magelia.WebStore.Discount.Actions.ValuesAction.Localizations.ActionHeaderText}</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="text" value="${currentValue}" class="numeric"
+                    onkeyup="
+                      (
+                        function(source){
+                          var textbox = $(source);
+                          textbox.tmplItem().data.updateCurrentValue(textbox);
+                        }
+                      )
+                      (this);
+                    "
+                  />
+                </td>
+                <td>
+                  <select id="selValuesCurrency${$item.parent.data.index}" class="autoSize"
+                    onchange="
+                      (
+                        function(source){
+                          var select = $(source);
+                          select.tmplItem().data.updateCurrentCurrency(select.val());
+                        }
+                      )
+                      (this);
+                    "
+                  >
+                  </select>
+                  <script type="text/javascript">
+                    (
+                      function(){
+                        var select = $('#selValuesCurrency${$item.parent.data.index}');
+                        select.tmplItem().data.populateWithCurrencies(select,'${currentCurrencyId}');
+                      }
+                    )()
+                  </script>
+                </td>
+                <td>
+                  <input type="checkbox" {{if currentIncludeTaxes}}checked="checked"{{/if}}
+                    onchange="
+                      (
+                        function(source){
+                          var checkbox = $(source);
+                          checkbox.tmplItem().data.updateCurrentIncludeTaxes(checkbox.is(':checked'));
+                        }
+                      )
+                      (this);
+                    "
+                  />
+                </td>
+                <td>
+                   <a href="javascript:void(0);" style="padding:0;" class="rounded minor black"
+                    onclick="
+                      (
+                        function(source){
+                          $(source).tmplItem().data.addValue();
+                        }
+                      )
+                      (this);
+                  "><span><span><span>${Magelia.WebStore.Discount.Actions.ValuesAction.Localizations.AddButtonText}</span></span></span></a>
+                </td>
+              </tr>
+              {{each model.Values}}
+                <tr>
+                  <td class="numeric">${$value.Value}</td>
+                  <td id="tdValuesCurrency${$index}_${$item.parent.data.index}">
+                    <script type="text/javascript">
+                     (
+                        function(){
+                          var tdValuesCurrency = $('#tdValuesCurrency${$index}_${$item.parent.data.index}');
+                          tdValuesCurrency.tmplItem().data.setCurrencyCode(tdValuesCurrency,${$value.CurrencyId});
+                        }
+                     )()
+                    </script>
+                  </td>
+                  <td><input type="checkbox" disabled="disabled" {{if $value.IncludeTaxes}}checked="checked"{{/if}}/></td>
+                  <td>
+                    <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                      onclick="
+                        (
+                          function(source){
+                            $(source).tmplItem().data.editValue(${$index});
+                          }
+                        )
+                        (this);
+                      "><span><span><span>${Magelia.WebStore.Discount.Actions.ValuesAction.Localizations.EditButtonText}</span></span></span></a>
+                      <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                      onclick="
+                        (
+                          function(source){
+                            $(source).tmplItem().data.removeValue(${$index});
+                          }
+                        )
+                        (this);
+                      "><span><span><span>${Magelia.WebStore.Discount.Actions.ValuesAction.Localizations.RemoveButtonText}</span></span></span></a>
+                  </td>
+                </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+      ]]>
+  </content>
+</template>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="MaxApplicationConditionEditor">
+  <styles>
+    <![CDATA[
+        div.maxApplicationCount{overflow:hidden;}
+        div.maxApplicationCount>*{display:block;}
+        div.maxApplicationCount>label{float:left;padding-right:2px;}
+        div.maxApplicationCount>input,div.maxApplicationCount>select{float:right;width:120px;}
+        div.maxApplicationCount+div.maxApplicationCount{margin-top:2px;}
+      ]]>
+  </styles>
+  <content>
+    <![CDATA[
+        <div class="maxApplicationCount">
+          <label for="itxtMaxApplication${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.MaxApplicationCondition.Localizations.MaxUtilizationLabel}</label>
+          <input class="numeric" type="text" id="itxtMaxApplication${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}" value="${model.MaxApplication}"
+            onkeyup="
+              (
+                function(source){
+                  var textbox = $(source);
+                  textbox.tmplItem().data.updateMaxApplication(textbox);
+                }
+              )
+              (this);
+            "
+            onblur="
+              (
+                function(source){
+                  var textbox = $(source);
+                  textbox.val(textbox.tmplItem().data.model.MaxApplication);
+                }
+              )
+              (this);
+            "
+          />
+        </div>
+        <div class="maxApplicationCount">
+          <label for="selMaxApplicationType${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.MaxApplicationCondition.Localizations.TypeLabel}</label>
+          <select id="selMaxApplicationType${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}"
+            onchange="
+              (
+                function(source){
+                  var selMaxApplicationType = $(source);
+                  selMaxApplicationType.tmplItem().data.updateType(selMaxApplicationType.val());
+                }
+              )(this);
+            "
+          >
+            <option value="3" {{if model.Type==3}}selected="selected"{{/if}}>${Magelia.WebStore.Discount.Conditions.MaxApplicationCondition.Localizations.OrderSubsetOptionText}</option>
+            <option value="1" {{if model.Type==1}}selected="selected"{{/if}}>${Magelia.WebStore.Discount.Conditions.MaxApplicationCondition.Localizations.OrderOptionText}</option>
+            <option value="2" {{if model.Type==2}}selected="selected"{{/if}}>${Magelia.WebStore.Discount.Conditions.MaxApplicationCondition.Localizations.UserOptionText}</option>
+            <option value="0" {{if model.Type==0}}selected="selected"{{/if}}>${Magelia.WebStore.Discount.Conditions.MaxApplicationCondition.Localizations.TotalOptionText}</option>
+          </select>
+        </div>
+      ]]>
+  </content>
+</template>

@@ -1,0 +1,6 @@
+﻿<asp:Image runat="server" SkinID="Magelia" ImageUrl="Images/Common/magelia.png" />
+<asp:Image runat="server" SkinID="Pending" ImageUrl="Images/Setup/pending.png" />
+<asp:Image runat="server" SkinID="Loading" ImageUrl="Images/Setup/loading.gif" />
+<asp:Image runat="server" SkinID="Success" ImageUrl="Images/Setup/success.png" />
+<asp:Image runat="server" SkinID="Warning" ImageUrl="Images/Setup/alert.png" />
+<asp:Image runat="server" SkinID="Error" ImageUrl="Images/Setup/error.png" />

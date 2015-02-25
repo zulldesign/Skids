@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="cvCodeUnique.ErrorMessage" xml:space="preserve">
+    <value>This code is already in use. Please enter a different code.</value>
+  </data>
+  <data name="cvEndDateGreaterThanStartDate.ErrorMessage" xml:space="preserve">
+    <value>End date must be greater than start date</value>
+  </data>
+  <data name="lblIsActive.Text" xml:space="preserve">
+    <value>Is active</value>
+  </data>
+  <data name="lblIsActive.ToolTip" xml:space="preserve">
+    <value>Only active catalogs will be displayed online.</value>
+  </data>
+  <data name="lblAvailableProductsIsActive.Text" xml:space="preserve">
+    <value>Is active</value>
+  </data>
+  <data name="lblAvailableProductsCatalogs.Text" xml:space="preserve">
+    <value>Catalogs</value>
+  </data>
+  <data name="lblAvailableProductsName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lblAvailableProductsIsOnline.Text" xml:space="preserve">
+    <value>Is online</value>
+  </data>
+  <data name="lblAvailableProductsProductType.Text" xml:space="preserve">
+    <value>Product type</value>
+  </data>
+  <data name="lblAvailableProductsCodeOrSKU.Text" xml:space="preserve">
+    <value>Code or SKU</value>
+  </data>
+  <data name="lblCode.Text" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="lblEndDate.Text" xml:space="preserve">
+    <value>End date</value>
+  </data>
+  <data name="lblIncludeTaxes.Text" xml:space="preserve">
+    <value>Prices include taxes</value>
+  </data>
+  <data name="lblIncludeTaxes.ToolTip" xml:space="preserve">
+    <value>If you select taxes excluded, taxes will be calculated and added to the defined price in order to establish the total price. If you choose taxes included, taxes will be calculated and deducted from the defined price in order to determine the price before taxes.</value>
+  </data>
+  <data name="lblStartDate.Text" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="liNo.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="litAvailableProducts.Text" xml:space="preserve">
+    <value>Available products</value>
+  </data>
+  <data name="litCatalog.Text" xml:space="preserve">
+    <value>Catalog</value>
+  </data>
+  <data name="lblCurrencies.Text" xml:space="preserve">
+    <value>Currencies</value>
+  </data>
+  <data name="litMedias.Text" xml:space="preserve">
+    <value>Media</value>
+  </data>
+  <data name="lblShippingZones.Text" xml:space="preserve">
+    <value>Shipping zones</value>
+  </data>
+  <data name="litStores.Text" xml:space="preserve">
+    <value>Stores</value>
+  </data>
+  <data name="liYes.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="mgvcIsActive.Name" xml:space="preserve">
+    <value>Is active</value>
+  </data>
+  <data name="mgvcCatalogs.Name" xml:space="preserve">
+    <value>Catalogs</value>
+  </data>
+  <data name="mgvcName.Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="mgvcIsOnline.Name" xml:space="preserve">
+    <value>Is online</value>
+  </data>
+  <data name="mgvcProductType.Name" xml:space="preserve">
+    <value>Product type</value>
+  </data>
+  <data name="mgvcCodeOrSKU.Name" xml:space="preserve">
+    <value>Code or SKU</value>
+  </data>
+  <data name="mlfLongDescription.HeaderText" xml:space="preserve">
+    <value>Long description</value>
+  </data>
+  <data name="mlfName.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="mlfShortDescription.HeaderText" xml:space="preserve">
+    <value>Short description</value>
+  </data>
+  <data name="mslCurrencies.AssociatedItemsLabelText" xml:space="preserve">
+    <value>Associated currencies</value>
+  </data>
+  <data name="mslCurrencies.AvailableItemsLabelText" xml:space="preserve">
+    <value>Available currencies</value>
+  </data>
+  <data name="mslShippingZones.AssociatedItemsLabelText" xml:space="preserve">
+    <value>Associated shipping zones</value>
+  </data>
+  <data name="mslShippingZones.AvailableItemsLabelText" xml:space="preserve">
+    <value>Available shipping zones</value>
+  </data>
+  <data name="mslStores.AssociatedItemsLabelText" xml:space="preserve">
+    <value>Associated stores</value>
+  </data>
+  <data name="mslStores.AvailableItemsLabelText" xml:space="preserve">
+    <value>Available stores</value>
+  </data>
+  <data name="mtiGeneral.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="mtiMedias.Text" xml:space="preserve">
+    <value>Medias</value>
+  </data>
+  <data name="mtiProducts.Text" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="revCodeLength.ErrorMessage" xml:space="preserve">
+    <value>Invalid code length, please enter 50 characters maximum</value>
+  </data>
+  <data name="rfvCode.ErrorMessage" xml:space="preserve">
+    <value>Please enter a Code</value>
+  </data>
+  <data name="cvAssociatedProductsCatalogsIsInteger.ErrorMessage" xml:space="preserve">
+    <value>The number of catalogs must be an integer</value>
+  </data>
+  <data name="cvAvailableProductsCatalogsIsInteger.ErrorMessage" xml:space="preserve">
+    <value>The number of catalogs must be an integer</value>
+  </data>
+  <data name="lblAssociatedProductsIsActive.Text" xml:space="preserve">
+    <value>Is active</value>
+  </data>
+  <data name="lblAssociatedProductsCatalogs.Text" xml:space="preserve">
+    <value>Nb of Catalogs associated to the Product</value>
+  </data>
+  <data name="lblAssociatedProductsName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lblAssociatedProductsIsOnline.Text" xml:space="preserve">
+    <value>Is online</value>
+  </data>
+  <data name="lblAssociatedProductsProductType.Text" xml:space="preserve">
+    <value>Product type</value>
+  </data>
+  <data name="lblAssociatedProductsCodeOrSKU.Text" xml:space="preserve">
+    <value>Code or SKU</value>
+  </data>
+  <data name="lblCurrencies.ToolTip" xml:space="preserve">
+    <value>Assign currencies to a catalog. The price for a product can be defined only for currencies assigned to the catalog.</value>
+  </data>
+  <data name="lblShippingZones.ToolTip" xml:space="preserve">
+    <value>You can assign a catalog to different shipping zones. </value>
+  </data>
+  <data name="litAssociatedProducts.Text" xml:space="preserve">
+    <value>Associated products</value>
+  </data>
+  <data name="mcbAssociateProducts.Text" xml:space="preserve">
+    <value>Associate products</value>
+  </data>
+  <data name="mcbRemoveProducts.Text" xml:space="preserve">
+    <value>Remove products</value>
+  </data>
+  <data name="mgvcIsActive.ToolTip" xml:space="preserve">
+    <value>Only active catalogs can be proposed online.</value>
+  </data>
+  <data name="lblExternalId.Text" xml:space="preserve">
+    <value>External ID</value>
+  </data>
+  <data name="revExternalIdLength.ErrorMessage" xml:space="preserve">
+    <value>Invalid external ID length, please enter 50 characters maximum</value>
+  </data>
+</root>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="TagsConditionEditor">
+  <content>
+    <![CDATA[
+        <table border="0" cellpadding="0" cellspacing="0" class="gridView">
+          <thead>
+            <tr>
+              <th class="${sortedAscending?'sortedAsc':'sortedDesc' }">
+                <a href="javascript:void(0);" onclick="$(this).tmplItem().data.revertSorting();">
+                  ${Magelia.WebStore.Discount.Conditions.TagsCondition.Localizations.TagHeaderText}
+                </a>
+              </th>
+              <th>${Magelia.WebStore.Discount.Conditions.TagsCondition.Localizations.ActionHeaderText}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="${model.Tags.length%2==0?'':'odd'}">
+              <td>
+                <input type="text" id="itxtTagAdd${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}" value="${currentTag}"/>
+                <script type="text/javascript">
+                   (
+                    function(){
+                       var itxtTagAdd = $('#itxtTagAdd${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}');
+                       itxtTagAdd.tmplItem().data.registerAddTextbox(itxtTagAdd);
+                    }
+                   )()
+                </script>
+              </td>
+              <td>
+                <a href="javascript:void(0);" style="padding:0;" class="rounded minor black"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.addTag();
+                      }
+                    )
+                    (this);
+                  "
+                ><span><span><span>${Magelia.WebStore.Discount.Conditions.TagsCondition.Localizations.AddButtonText}</span></span></span></a>
+              </td>
+            </tr>
+            {{each model.Tags}}
+              <tr class="${$index%2==0?'':'odd'}">
+                <td>${$value}</td>
+                <td>
+                  <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.editTag(${$index});
+                      }
+                    )
+                    (this);
+                  "><span><span><span>${Magelia.WebStore.Discount.Conditions.TagsCondition.Localizations.EditButtonText}</span></span></span></a>
+                  <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.removeTag(${$index});
+                      }
+                    )
+                    (this);
+                  "><span><span><span>${Magelia.WebStore.Discount.Conditions.TagsCondition.Localizations.RemoveButtonText}</span></span></span></a>
+                </td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      ]]>
+  </content>
+</template>

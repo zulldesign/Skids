@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PlatformAdministration.title" xml:space="preserve">
+    <value>Platform settings</value>
+  </data>
+  <data name="BestSellers.title" xml:space="preserve">
+    <value>Best Sellers</value>
+  </data>
+  <data name="Brands.title" xml:space="preserve">
+    <value>Brands</value>
+  </data>
+  <data name="Catalog.title" xml:space="preserve">
+    <value>Catalog</value>
+  </data>
+  <data name="Categories.title" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="Content.title" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="Countries.title" xml:space="preserve">
+    <value>Countries</value>
+  </data>
+  <data name="Currencies.title" xml:space="preserve">
+    <value>Currencies</value>
+  </data>
+  <data name="Customers.title" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="Dashboard.title" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="DashboardsHeader.title" xml:space="preserve">
+    <value>Dashboards</value>
+  </data>
+  <data name="Discounts.title" xml:space="preserve">
+    <value>Sales promotions</value>
+  </data>
+  <data name="Emailing.title" xml:space="preserve">
+    <value>e-mailings</value>
+  </data>
+  <data name="Inventory.title" xml:space="preserve">
+    <value>Inventory</value>
+  </data>
+  <data name="Cultures.title" xml:space="preserve">
+    <value>Cultures</value>
+  </data>
+  <data name="NewOrders.title" xml:space="preserve">
+    <value>New Orders</value>
+  </data>
+  <data name="OrdersClients.title" xml:space="preserve">
+    <value>Orders/Clients</value>
+  </data>
+  <data name="OrdersInProcess.title" xml:space="preserve">
+    <value>Orders in Process</value>
+  </data>
+  <data name="OrdersReports.title" xml:space="preserve">
+    <value>Orders Reports</value>
+  </data>
+  <data name="Preferences.title" xml:space="preserve">
+    <value>Preferences</value>
+  </data>
+  <data name="Prices.title" xml:space="preserve">
+    <value>Prices</value>
+  </data>
+  <data name="Products.title" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="ProductsHeader.title" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="SalesReports.title" xml:space="preserve">
+    <value>Sales Reports</value>
+  </data>
+  <data name="ShippedOrders.title" xml:space="preserve">
+    <value>Shipped Orders</value>
+  </data>
+  <data name="Carriers.title" xml:space="preserve">
+    <value>Carriers</value>
+  </data>
+  <data name="ShippingRates.title" xml:space="preserve">
+    <value>Shipping Rates</value>
+  </data>
+  <data name="ShippingZones.title" xml:space="preserve">
+    <value>Shipping Zones</value>
+  </data>
+  <data name="Sitesettings.title" xml:space="preserve">
+    <value>Site settings</value>
+  </data>
+  <data name="StaticContent.title" xml:space="preserve">
+    <value>Static content</value>
+  </data>
+  <data name="Suppliers.title" xml:space="preserve">
+    <value>Suppliers</value>
+  </data>
+  <data name="TaxCategories.title" xml:space="preserve">
+    <value>Tax Categories</value>
+  </data>
+  <data name="TaxRates.title" xml:space="preserve">
+    <value>Tax Rates</value>
+  </data>
+  <data name="TaxRules.title" xml:space="preserve">
+    <value>Tax Rules</value>
+  </data>
+  <data name="TaxZones.title" xml:space="preserve">
+    <value>Tax Zones</value>
+  </data>
+  <data name="Users.title" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="Warehouse.title" xml:space="preserve">
+    <value>Warehouse</value>
+  </data>
+  <data name="WebsiteList.title" xml:space="preserve">
+    <value>Websites</value>
+  </data>
+  <data name="Regions.Title" xml:space="preserve">
+    <value>Regions</value>
+  </data>
+  <data name="Continents.title" xml:space="preserve">
+    <value>Continents</value>
+  </data>
+  <data name="Languages.title" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="Taxes_Shipping.Title" xml:space="preserve">
+    <value>Tax and shipping</value>
+  </data>
+  <data name="Orders.Title" xml:space="preserve">
+    <value>All orders</value>
+  </data>
+  <data name="Simulator.Title" xml:space="preserve">
+    <value>Simulator</value>
+  </data>
+  <data name="Stores.Title" xml:space="preserve">
+    <value>Stores</value>
+  </data>
+  <data name="Seller.Title" xml:space="preserve">
+    <value>Seller</value>
+  </data>
+  <data name="Seller.Settings.Title" xml:space="preserve">
+    <value>Seller settings</value>
+  </data>
+  <data name="Platform.Title" xml:space="preserve">
+    <value>Platform</value>
+  </data>
+  <data name="Settings.Title" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Store.Title" xml:space="preserve">
+    <value>Store</value>
+  </data>
+  <data name="StoreConfigurations.title" xml:space="preserve">
+    <value>Store configuration</value>
+  </data>
+  <data name="Scheduler.title" xml:space="preserve">
+    <value>Task scheduler</value>
+  </data>
+  <data name="Extension.title" xml:space="preserve">
+    <value>Extensions</value>
+  </data>
+  <data name="ExtGlobal.title" xml:space="preserve">
+    <value>Global Extensions</value>
+  </data>
+  <data name="ExtStore.title" xml:space="preserve">
+    <value>Store Extensions</value>
+  </data>
+  <data name="Gallery.title" xml:space="preserve">
+    <value>Extensions Gallery</value>
+  </data>
+  <data name="Upload.title" xml:space="preserve">
+    <value>Manual Upload</value>
+  </data>
+  <data name="Attributes.title" xml:space="preserve">
+    <value>Product attributes</value>
+  </data>
+  <data name="Types.Title" xml:space="preserve">
+    <value>Products types</value>
+  </data>
+  <data name="Segments.title" xml:space="preserve">
+    <value>Segments</value>
+  </data>
+  <data name="Logs.title" xml:space="preserve">
+    <value>Technical logs</value>
+  </data>
+  <data name="PaymentModes.title" xml:space="preserve">
+    <value>Payment modes</value>
+  </data>
+  <data name="Channels.title" xml:space="preserve">
+    <value>Channels</value>
+  </data>
+  <data name="ETL.title" xml:space="preserve">
+    <value>Import/Export</value>
+  </data>
+  <data name="ZonesPreferences.title" xml:space="preserve">
+    <value>Preferences</value>
+  </data>
+  <data name="Files.title" xml:space="preserve">
+    <value>Media</value>
+  </data>
+  <data name="ApplicationTiers.title" xml:space="preserve">
+    <value>Application tiers</value>
+  </data>
+  <data name="CustomerSets.title" xml:space="preserve">
+    <value>Customer sets</value>
+  </data>
+  <data name="DataBursts.title" xml:space="preserve">
+    <value>Data Update</value>
+  </data>
+  <data name="ContentType.title" xml:space="preserve">
+    <value>Content type</value>
+  </data>
+  <data name="ContentItem.title" xml:space="preserve">
+    <value>Content items</value>
+  </data>
+  <data name="Licensing.title" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="Administrators.title" xml:space="preserve">
+    <value>Administrators</value>
+  </data>
+  <data name="Administration.Platform.Cache.title" xml:space="preserve">
+    <value>Cache</value>
+  </data>
+  <data name="BulkEdit.title" xml:space="preserve">
+    <value>Bulk edit</value>
+  </data>
+  <data name="GlobalMasterData.title" xml:space="preserve">
+    <value>Global Master Data</value>
+  </data>
+  <data name="ProductConfiguration.title" xml:space="preserve">
+    <value>Product configuration</value>
+  </data>
+  <data name="ProductsGroup.title" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="SellerStoreConfiguration.title" xml:space="preserve">
+    <value>Sellers - Stores</value>
+  </data>
+  <data name="Shipping.title" xml:space="preserve">
+    <value>Shipping</value>
+  </data>
+  <data name="Taxes.Title" xml:space="preserve">
+    <value>Taxes</value>
+  </data>
+  <data name="UserSettings.title" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="DataManagement.title" xml:space="preserve">
+    <value>Data management</value>
+  </data>
+  <data name="Platform.Settings.title" xml:space="preserve">
+    <value>Platform settings</value>
+  </data>
+  <data name="Sellers.Title" xml:space="preserve">
+    <value>Sellers</value>
+  </data>
+  <data name="Store.Settings.title" xml:space="preserve">
+    <value>Store settings</value>
+  </data>
+  <data name="Extensions.title" xml:space="preserve">
+    <value>Extensions</value>
+  </data>
+  <data name="Roles.title" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="RolesAssignment.title" xml:space="preserve">
+    <value>Roles assignment</value>
+  </data>
+</root>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="ConditionEditorVertical">
+  <content>
+    <![CDATA[
+      <table class="condition" border="0" cellpadding="0" cellspacing="0">
+          <tbody>  
+            {{if condition && condition.identifier == 'binary'}}
+                <tr class="operator">
+                  <td class="left"></td>
+                  <td>
+                    <select
+                        onchange="
+                        (
+                          function(source){
+                            var select = $(source);
+                            var data = select.tmplItem().data;
+                            data.condition.updateOperator.call(data.condition, select.val(),data.update,'${path}'{{if index!=null}},${index}{{/if}});
+                          }
+                        )
+                        (this);
+                      "
+                    >
+                      {{if condition.operators.length>0}}
+                        <optgroup label="${Magelia.WebStore.Discount.Conditions.BinaryCondition.Localizations.OperatorGroupLabel}">
+                          {{each condition.operators}}
+                            <option value="${$value}" {{if $value == condition.model.operator}}selected="selected"{{/if}}>${Magelia.WebStore.Discount.Conditions.Operators.Localizations[$value]?Magelia.WebStore.Discount.Conditions.Operators.Localizations[$value]:$value}</option>
+                          {{/each}}
+                        <optgroup>
+                      {{/if}}
+                      <optgroup label="${Magelia.WebStore.Discount.Conditions.BinaryCondition.Localizations.OptionsGroupLabel}">
+                        <option value="reverse">${Magelia.WebStore.Discount.Conditions.BinaryCondition.Localizations.ReverseOptionText}</option>
+                        <option value="">${Magelia.WebStore.Discount.Conditions.BinaryCondition.Localizations.RemoveOptionText}</option>
+                      <optgroup>
+                    </select>
+                  </td>
+                  <td class="right"></td>
+                </tr>
+                <tr class="subcondition">
+                  <td class="left">{{tmpl({condition:condition.model.firstCondition,update:update,editor:editor,path:path+(path?'/':'')+'firstCondition',index:index}) 'ConditionEditorVertical'}}</td>
+                  <td></td>
+                  <td class="right">{{tmpl({condition:condition.model.secondCondition,update:update,editor:editor,path:path+(path?'/':'')+'secondCondition',index:index}) 'ConditionEditorVertical'}}</td>
+                <tr>
+            {{else}}
+              <tr>
+                <td>{{tmpl 'ConditionSelector'}}</td>
+              </tr>
+              {{if condition }}
+                <tr>
+                  <td>{{tmpl 'ConditionValueEditor'}}</td>
+                </tr>
+              {{/if}}
+            {{/if}}
+          </tbody>
+        </table>
+      ]]>
+  </content>
+</template>

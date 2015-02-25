@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="DateConditionEditor">
+  <styles>
+    <![CDATA[
+        div.dateField{overflow:hidden;}
+        div.dateField>*{display:block;}
+        div.dateField>label{float:left;padding-right:2px;}
+        div.dateField>input{float:right;}
+        div.dateField+div.dateField{margin-top:2px;}
+      ]]>
+  </styles>
+  <content>
+    <![CDATA[
+        <div class="dateField">
+          <label for="itxtDateStartDate${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.DateCondition.Localizations.StartDateLabel}</label>
+          <input type="text" class="numeric" id="itxtDateStartDate${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}" value="${model.StartDate}"
+            onchange="
+              (
+                function(source){
+                  var textbox = $(source);
+                  textbox.tmplItem().data.updateStartDate(textbox);
+                }
+              )
+              (this);
+            "
+          />
+        </div>
+        <div class="dateField">
+          <label for="itxtDateEndDate${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.DateCondition.Localizations.EndDateLabel}</label>
+          <input type="text" class="numeric" id="itxtDateEndDate${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}" value="${model.EndDate}"
+            onchange="
+              (
+                function(source){
+                  var textbox = $(source);
+                  textbox.tmplItem().data.updateEndDate(textbox);
+                }
+              )
+              (this);
+            "
+          />
+        </div>
+      ]]>
+  </content>
+</template>

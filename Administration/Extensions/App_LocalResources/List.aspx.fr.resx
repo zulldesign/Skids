@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnUpload.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="cvFile.ErrorMessage" xml:space="preserve">
+    <value>L'extension que vous avez ajoutée n'est pas valide. {0}</value>
+  </data>
+  <data name="ExtensionActivatedConfirmMessage" xml:space="preserve">
+    <value>L'extension '{0}' (v{1}) a été activée.</value>
+  </data>
+  <data name="ExtensionDisabledConfirmMessage" xml:space="preserve">
+    <value>L'extension '{0}' (v{1}) a été désactivée.</value>
+  </data>
+  <data name="ExtensionDowngradedConfirmMessage" xml:space="preserve">
+    <value>L'extension '{0}' a bien été installée avec la version antérieure v{1}.</value>
+  </data>
+  <data name="ExtensionInstalledAndActivatedConfirmMessage" xml:space="preserve">
+    <value>L'extension '{0}' (v{1})  a bien été installée et activée.</value>
+  </data>
+  <data name="ExtensionInstalledConfirmMessage" xml:space="preserve">
+    <value>L'extension '{0}' (v{1}) a bien été installée. Pour l'utiliser, il faut l'activer.</value>
+  </data>
+  <data name="ExtensionUninstalledConfirmMessage" xml:space="preserve">
+    <value>L'extension '{0}' (v{1}) a été désinstallée.</value>
+  </data>
+  <data name="ExtensionUpgradedConfirmMessage" xml:space="preserve">
+    <value>L'extension '{0}' a été migrée en version v{1}.</value>
+  </data>
+  <data name="hlHelp.Text" xml:space="preserve">
+    <value>Aide</value>
+  </data>
+  <data name="hlHelp.Tooltip" xml:space="preserve">
+    <value>Aide</value>
+  </data>
+  <data name="lblAdditionalVersions.Text" xml:space="preserve">
+    <value>Autres versions</value>
+  </data>
+  <data name="lblAdditionalVersionsDisplay.Text" xml:space="preserve">
+    <value>Afficher</value>
+  </data>
+  <data name="lblAdditionalVersionsHide.Text" xml:space="preserve">
+    <value>Masquer</value>
+  </data>
+  <data name="lblExtensionBy.Text" xml:space="preserve">
+    <value>par</value>
+  </data>
+  <data name="lblNewExtension.Text" xml:space="preserve">
+    <value>Fichier de l'extension (.magpkg or magpkg.lic) :</value>
+  </data>
+  <data name="lblNewVersion.Text" xml:space="preserve">
+    <value>La dernière version compatible est v{0}</value>
+  </data>
+  <data name="lblReadMore.Text" xml:space="preserve">
+    <value>Suite ...</value>
+  </data>
+  <data name="lblVersion.Text" xml:space="preserve">
+    <value>Version :</value>
+  </data>
+  <data name="lbtnActivate.Text" xml:space="preserve">
+    <value>Activer</value>
+  </data>
+  <data name="lbtnDisable.Text" xml:space="preserve">
+    <value>Désactiver</value>
+  </data>
+  <data name="lbtnDowngrade.Text" xml:space="preserve">
+    <value>Descendre de version</value>
+  </data>
+  <data name="lbtnExtensionAddInstall.Text" xml:space="preserve">
+    <value>Installer</value>
+  </data>
+  <data name="ExtensionAddInstallAndActivateMessage" xml:space="preserve">
+    <value>Installer &amp; activer</value>
+  </data>
+  <data name="lbtnUninstall.Text" xml:space="preserve">
+    <value>Désinstaller</value>
+  </data>
+  <data name="lbtnUpgrade.Text" xml:space="preserve">
+    <value>Monter de version</value>
+  </data>
+  <data name="litExtensionAddConfirmHeader.Text" xml:space="preserve">
+    <value>Ajout d'extension : confirmation</value>
+  </data>
+  <data name="litUpload.Text" xml:space="preserve">
+    <value>Téléchargez vos extensions</value>
+  </data>
+  <data name="rfvNewExtension.ErrorMessage" xml:space="preserve">
+    <value>Le fichier doit avoir une extension</value>
+  </data>
+  <data name="tiExtensionAdd.Text" xml:space="preserve">
+    <value>Ajouter des extensions</value>
+  </data>
+  <data name="tiExtensionGallery.Text" xml:space="preserve">
+    <value>Galerie d'extensions</value>
+  </data>
+  <data name="tiExtensionList.Text" xml:space="preserve">
+    <value>Extensions installées</value>
+  </data>
+  <data name="lblNoInstalledExtensions.Text" xml:space="preserve">
+    <value>Aucune extension n'est installée</value>
+  </data>
+  <data name="ExtensionUninstalledAllVersionConfirmMessage" xml:space="preserve">
+    <value>Les versions suivantes de l'extension '{0}' ont été désinstallée.</value>
+  </data>
+  <data name="lbtnUninstallAll.Text" xml:space="preserve">
+    <value>Tout désinstaller</value>
+  </data>
+  <data name="ExtensionAddInstallAndDowngradeMessage" xml:space="preserve">
+    <value>Installer cette version antérieure</value>
+  </data>
+  <data name="ExtensionAddInstallAndUpgradeMessage" xml:space="preserve">
+    <value>Instalelr cette nouvelle version</value>
+  </data>
+  <data name="UploadErrorInvalidExtension" xml:space="preserve">
+    <value>Le fichier ('{0}') n'est pas au bon format. Seuls les fichier ayant l'extension  .magpkg or .magpkg.lic peuvent être téléchargés.</value>
+  </data>
+  <data name="UploadErrorInvalidFile" xml:space="preserve">
+    <value>fichier non valide : {0}</value>
+  </data>
+  <data name="UploadErrorUnknownError" xml:space="preserve">
+    <value>Erreur inconnue : {0}</value>
+  </data>
+  <data name="lbtnInstall.Text" xml:space="preserve">
+    <value>Installer</value>
+  </data>
+  <data name="lbtnCheckForUpdates.Text" xml:space="preserve">
+    <value>Rechercher des mises à jour</value>
+  </data>
+  <data name="ErrorWhileGettingUpdates" xml:space="preserve">
+    <value>Une erreur s'est produite lors de la recherche des nouvelles versions disponibles de cette extension.
+Détail de l'erreur : {0}</value>
+  </data>
+  <data name="TimeoutWhileGettingUpdates" xml:space="preserve">
+    <value>Lors de la recherche de mises à jour de l'extension, le serveur n'a pas répondu. merci de vérifier que votre environnement a bien accès à www.magelia.org</value>
+  </data>
+  <data name="ExtensionOperationErrorMessage" xml:space="preserve">
+    <value>Une erreur s'est produite en essayant de réaliser l'opération demandée sur l'extension '{0}' v{1}</value>
+  </data>
+  <data name="RuntimeIncompatibilityInstallTooltip" xml:space="preserve">
+    <value>La version de cette extension n'a pas été vérifié vec la version de votre plate-forme. La version de la plate-forme avec laquelle cette extension a été vérifiée est '{0}'</value>
+  </data>
+  <data name="lblUnverifiedExtensions.Text" xml:space="preserve">
+    <value>Versions non certifiées</value>
+  </data>
+  <data name="lblVerifiedExtensions.Text" xml:space="preserve">
+    <value>Versions certifiées</value>
+  </data>
+  <data name="lbtnDownload.Text" xml:space="preserve">
+    <value>Télécharger</value>
+  </data>
+  <data name="lblAvailableUpdateExtensionTabTitle.Text" xml:space="preserve">
+    <value>Mise à jour disponibles</value>
+  </data>
+  <data name="lblAvailableUpdateUnverifiedExtensionTabTitle.Text" xml:space="preserve">
+    <value>Mises à jour disponibles (compatibilité non certifiée)</value>
+  </data>
+  <data name="lblAvailableUpdateUnverifiedExtensionWarning.Text" xml:space="preserve">
+    <value>Ces versions de l'extension n'ont pas été vérifiées avec la version de votre runtime. Installez les à vos propres risques et périls.</value>
+  </data>
+  <data name="lblExtensionPopinWarning.Text" xml:space="preserve">
+    <value>Le fonctionnement de la version de cette extension n'a pas été vérifié avec la version de votre plate-forme. Cette extension a été vérifiée avec une version '{0}' de Magelia WebStore.</value>
+  </data>
+  <data name="lblInstalledExtensionTabTitle.Text" xml:space="preserve">
+    <value>Versions installées</value>
+  </data>
+  <data name="hlExtensionsGallery.Text" xml:space="preserve">
+    <value>(cliquez ici pour l'ouvir dans une nouvelle fenêtre)</value>
+  </data>
+  <data name="litExtensionsGallery.Text" xml:space="preserve">
+    <value>Galerie d'extensions</value>
+  </data>
+  <data name="litExtensionsGalleryInfo.text" xml:space="preserve">
+    <value>Cette page liste les extensions disponibles pour Magelia WebStore. &lt;br/&gt; Vous pouvez accéder à cette liste depuis depuis la galerie d'extensions disponible sur le site Magelia </value>
+  </data>
+</root>

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap enableLocalization="true" xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode>
+    <siteMapNode resourceKey="DashboardsHeader">
+      <siteMapNode helpKey="Dashboards.Synthesis" feature="Dashboards.Orders" resourceKey="Dashboard" url="~/Default.aspx" CssClass="synthesis" />
+      <siteMapNode resourceKey="Orders">
+        <siteMapNode feature="Dashboards.Orders" resourceKey="Orders" CssClass="orders" isLeaf="true">
+          <siteMapNode helpKey="OrdersClients.OrdersDashboard.List" url="~/Orders/List.aspx" />
+          <siteMapNode helpKey="OrdersClients.OrdersDashboard.Edit" url="~/Orders/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode helpKey="OrdersClients.OrdersDashboard.List.NewOrders" feature="Dashboards.Orders" resourceKey="NewOrders" url="~/Orders/List.aspx?status=0" CssClass="neworders" />
+        <siteMapNode helpKey="OrdersClients.OrdersDashboard.List.OrderInProcess" feature="Dashboards.Orders" resourceKey="OrdersInProcess" url="~/Orders/List.aspx?status=2" CssClass="ordersinprocess" />
+      </siteMapNode>
+      <siteMapNode feature="Dashboards.Customers" resourceKey="Customers" CssClass="customers" isLeaf="true">
+        <siteMapNode helpKey="OrdersClients.Customers.List" url="~/Customers/List.aspx" />
+        <siteMapNode helpKey="OrdersClients.Customers.Edit" url="~/Customers/Edit.aspx" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode resourceKey="ProductsHeader">
+      <siteMapNode resourceKey="ProductsGroup">
+        <siteMapNode feature="Products.Catalogs" resourceKey="Catalog" CssClass="catalogs" helpKey="Products.Catalogs.Edit" url="~/Products/Catalogs/Edit.aspx" />
+        <siteMapNode helpKey="Products.Categories" feature="Products.Categories" resourceKey="Categories" url="~/Products/Categories/Edit.aspx" CssClass="categories" />
+        <siteMapNode feature="Products.Products" resourceKey="Products" CssClass="products" isLeaf="true">
+          <siteMapNode helpKey="Products.Products.List" url="~/Products/List.aspx" />
+          <siteMapNode helpKey="Products.Products.Edit" url="~/Products/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode feature="Products.Suppliers" resourceKey="Suppliers" CssClass="suppliers" isLeaf="true">
+          <siteMapNode helpKey="Products.Suppliers.Edit" url="~/Products/Suppliers/List.aspx" />
+          <siteMapNode helpKey="Products.Suppliers.Edit" url="~/Products/Suppliers/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode feature="Products.Brands" resourceKey="Brands" CssClass="brands" isLeaf="true">
+          <siteMapNode helpKey="Products.Brands.List" url="~/Products/Brands/List.aspx" />
+          <siteMapNode helpKey="Products.Brands.Edit" url="~/Products/Brands/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode feature="Products.SalesPromotions" resourceKey="Discounts" CssClass="discounts" isLeaf="true" >
+          <siteMapNode helpKey="Products.Discounts.List" url="~/Products/Discounts/List.aspx" />
+          <siteMapNode helpKey="Products.Discounts.Edit" url="~/Products/Discounts/Edit.aspx" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode resourceKey="BulkEdit">
+        <siteMapNode helpKey="Products.Inventory" feature="Products.Inventory" resourceKey="Inventory" CssClass="inventory" requiredEdition="Professional" featureMissing="true"/>
+        <siteMapNode helpKey="Products.Prices" feature="Products.Prices" resourceKey="Prices" CssClass="prices" requiredEdition="Professional" featureMissing="true"/>
+      </siteMapNode>
+      <siteMapNode resourceKey="ProductConfiguration">
+        <siteMapNode feature="Products.Types" resourceKey="Types" CssClass="producttypes" isLeaf="true" >
+          <siteMapNode helpKey="Products.Types.List" url="~/Products/Types/List.aspx" />
+          <siteMapNode helpKey="Products.Types.Edit" url="~/Products/Types/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode feature="Products.Attributes" resourceKey="Attributes" CssClass="productattributes" isLeaf="true" >
+          <siteMapNode helpKey="Products.Attributes.List" url="~/Products/Attributes/List.aspx" />
+          <siteMapNode helpKey="Products.Attributes.Edit" url="~/Products/Attributes/Edit.aspx" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode helpKey="Products.DataBurst" feature="Administration.Store.DataBurst" resourceKey="DataBursts" url="~/Products/DataBursts/List.aspx" CssClass="databurst" />
+    </siteMapNode>
+    <siteMapNode resourceKey="Content">
+      <siteMapNode helpKey="Content.Files.List" feature="Content.Medias" resourceKey="Files" CssClass="medias" url="~/Content/Files/List.aspx" />
+      <siteMapNode feature="Content.Emailings" resourceKey="Emailing" CssClass="emailing" isLeaf="true">
+        <siteMapNode helpKey="Content.Emailings.List" url="~/Content/Emailings/List.aspx" />
+        <siteMapNode helpKey="Content.Emailings.Edit" url="~/Content/Emailings/Edit.aspx" />
+      </siteMapNode>
+      <siteMapNode feature="Content.ContentTypes" resourceKey="ContentType" CssClass="contenttypes" isLeaf="true">
+        <siteMapNode helpKey="Content.ContentTypes.Edit" url="~/Content/ContentTypes/Edit.aspx" />
+      </siteMapNode>
+      <siteMapNode feature="Content.ContentItems" resourceKey="ContentItem" CssClass="contentitems" helpKey="Content.ContentItems.List" url="~/Content/ContentItems/Edit.aspx" />
+    </siteMapNode>
+    <siteMapNode resourceKey="Taxes_Shipping" >
+      <siteMapNode feature="TaxAndShipping.Warehouses" resourceKey="Warehouse" CssClass="warehouses" isLeaf="true">
+        <siteMapNode helpKey="TaxAndShipping.Warehouses.Edit" url="~/Shipping/Warehouses/Edit.aspx" />
+      </siteMapNode>
+      <siteMapNode resourceKey="Shipping">
+        <siteMapNode feature="TaxAndShipping.ShippingZones" resourceKey="ShippingZones" CssClass="shippingzones" isLeaf="true">
+          <siteMapNode helpKey="TaxAndShipping.Shipping.Zones.List" url="~/Zones/List.aspx?target=shipping" />
+          <siteMapNode helpKey="TaxAndShipping.Shipping.Zones.Edit" url="~/Zones/Edit.aspx?target=shipping" />
+        </siteMapNode>
+        <siteMapNode feature="TaxAndShipping.Carriers" resourceKey="Carriers" CssClass="carriers" isLeaf="true">
+          <siteMapNode helpKey="TaxAndShipping.Carriers.List" url="~/Shipping/Carriers/List.aspx" />
+          <siteMapNode helpKey="TaxAndShipping.Carriers.Edit" url="~/Shipping/Carriers/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode feature="TaxAndShipping.ShippingRates" resourceKey="ShippingRates" CssClass="shippingrates" isLeaf="true">
+          <siteMapNode helpKey="TaxAndShipping.Shipping.Rates.List" url="~/Shipping/Rates/List.aspx" />
+          <siteMapNode helpKey="TaxAndShipping.Shipping.Rates.Edit" url="~/Shipping/Rates/Edit.aspx" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode resourceKey="Taxes">
+        <siteMapNode feature="TaxAndShipping.TaxZones" resourceKey="TaxZones" CssClass="taxzones" isLeaf="true">
+          <siteMapNode helpKey="TaxAndShipping.Tax.Zones.List" url="~/Zones/List.aspx?target=tax" />
+          <siteMapNode helpKey="TaxAndShipping.Tax.Zones.Edit" url="~/Zones/Edit.aspx?target=tax" />
+        </siteMapNode>
+        <siteMapNode feature="TaxAndShipping.TaxCategories" resourceKey="TaxCategories" CssClass="taxcategories" isLeaf="true" >
+          <siteMapNode helpKey="TaxAndShipping.Tax.Categories.List" url="~/Tax/Categories/List.aspx" />
+          <siteMapNode helpKey="TaxAndShipping.Tax.Categories.Edit" url="~/Tax/Categories/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode feature="TaxAndShipping.TaxRates" resourceKey="TaxRates" CssClass="taxrates" isLeaf="true">
+          <siteMapNode helpKey="TaxAndShipping.Tax.Rates.List" url="~/Tax/Rates/List.aspx" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode feature="TaxAndShipping.Preferences" resourceKey="ZonesPreferences" CssClass="preferences" isLeaf="true" >
+        <siteMapNode helpKey="TaxAndShipping.Zones.Preference.List" url="~/Zones/Preferences/List.aspx" />
+        <siteMapNode helpKey="TaxAndShipping.Zones.Preference.Edit" url="~/Zones/Preferences/Edit.aspx" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode resourceKey="SellerStoreConfiguration">
+      <siteMapNode resourceKey="Seller" isLeaf="false" >
+        <siteMapNode helpKey="Administration.Platform.Sellers.Edit" feature="Administration.Seller.Settings" resourceKey="Seller.Settings" url="~/Administration/Sellers/Edit.aspx" CssClass="sellersettings" />
+        <siteMapNode feature="Administration.Seller.Stores" resourceKey="Stores" CssClass="stores" isLeaf="true" featureMissing="true" />
+        <siteMapNode feature="Administration.Seller.StoreConfigurations" resourceKey="StoreConfigurations" CssClass="storeconfigurations" isLeaf="true">
+          <siteMapNode helpKey="Administration.Store.StoreConfiguration.list" url="~/Administration/StoreConfigurations/List.aspx" />
+          <siteMapNode helpKey="Administration.Store.StoreConfiguration.edit" url="~/Administration/StoreConfigurations/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode feature="Administration.Seller.CustomerSets" resourceKey="CustomerSets" CssClass="customersets" isLeaf="true">
+          <siteMapNode helpKey="Administration.Seller.CustomerSets.List" url="~/Administration/CustomerSets/List.aspx" />
+          <siteMapNode helpKey="Administration.Seller.CustomerSets.Edit" url="~/Administration/CustomerSets/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode feature="Administration.Seller.Segments" resourceKey="Segments" CssClass="segments" isLeaf="true">
+          <siteMapNode helpKey="Administration.Seller.Segments.List" url="~/Administration/Segments/List.aspx" />
+          <siteMapNode helpKey="Administration.Seller.Segments.Edit" url="~/Administration/Segments/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode feature="Administration.Seller.Channels" resourceKey="Channels" CssClass="channels" isLeaf="true">
+          <siteMapNode helpKey="Administration.Seller.Channels.List" url="~/Administration/Channels/List.aspx" />
+          <siteMapNode helpKey="Administration.Seller.Channels.Edit" url="~/Administration/Channels/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode feature="Administration.Seller.PaymentModes"  resourceKey="PaymentModes" CssClass="paymentModes" isLeaf="true">
+          <siteMapNode helpKey="Administration.Seller.PaymentModes.List" url="~/Administration/Payments/Modes/List.aspx" />
+          <siteMapNode helpKey="Administration.Seller.PaymentModes.Edit" url="~/Administration/Payments/Modes/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode feature="Administration.Seller.Extensions" resourceKey="Extensions" CssClass="extensions" helpKey="Administration.Seller.Extensions.List" url="~/Administration/Extensions/List.aspx?scope=Seller" />
+      </siteMapNode>
+      <siteMapNode resourceKey="Store" isLeaf="false" >
+        <siteMapNode helpKey="Administration.Seller.Stores.Edit" feature="Administration.Store.Settings" resourceKey="Store.Settings" url="~/Administration/Stores/Edit.aspx" CssClass="storeconfigurations" />
+      </siteMapNode>
+      <siteMapNode resourceKey="UserSettings">
+        <siteMapNode feature="Administration.Seller.Users" resourceKey="Users" CssClass="users" isLeaf="true" featureMissing="true" />
+        <siteMapNode feature="Administration.Seller.Roles" resourceKey="Roles" CssClass="roles" isLeaf="true" featureMissing="true" />
+        <siteMapNode feature="Administration.Seller.RolesAssignment" resourceKey="RolesAssignment" CssClass="rolesassignment" isLeaf="true" featureMissing="true" />
+      </siteMapNode>
+      <siteMapNode resourceKey="DataManagement">
+        <siteMapNode feature="Administration.Seller.Scheduler" resourceKey="Scheduler" CssClass="scheduler" isLeaf="true" requiredEdition="Professional">
+          <siteMapNode helpKey="administration.Seller.Scheduler.list" url="~/Administration/Scheduler/List.aspx" />
+          <siteMapNode helpKey="administration.Seller.Scheduler.edit" url="~/Administration/Scheduler/Edit.aspx" />
+          <siteMapNode helpKey="administration.Seller.Scheduler.taskRun" url="~/Administration/Scheduler/TaskRuns.aspx" />
+        </siteMapNode>
+        <siteMapNode feature="Administration.Seller.ImportExport" resourceKey="ETL" CssClass="etl" featureMissing="true" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode resourceKey="PlatformAdministration">
+      <siteMapNode admin="true" resourceKey="GlobalMasterData">
+        <siteMapNode resourceKey="Continents" CssClass="continents" isLeaf="true">
+          <siteMapNode helpKey="Administration.Platform.Continents.List" url="~/Administration/Continents/List.aspx" />
+          <siteMapNode helpKey="Administration.Platform.Continents.Edit" url="~/Administration/Continents/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode resourceKey="Countries" CssClass="countries" isLeaf="true" >
+          <siteMapNode helpKey="Administration.Platform.Countries.List" url="~/Administration/Countries/List.aspx" />
+          <siteMapNode helpKey="Administration.Platform.Countries.Edit" url="~/Administration/Countries/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode resourceKey="Regions" CssClass="regions" isLeaf="true" >
+          <siteMapNode helpKey="Administration.Platform.Regions.List" url="~/Administration/Regions/List.aspx" />
+          <siteMapNode helpKey="Administration.Platform.Regions.Edit" url="~/Administration/Regions/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode resourceKey="Currencies" CssClass="currencies" isLeaf="true" >
+          <siteMapNode helpKey="Administration.Platform.Currencies.List" url="~/Administration/Currencies/List.aspx" />
+          <siteMapNode helpKey="Administration.Platform.Currencies.Edit" url="~/Administration/Currencies/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode resourceKey="Cultures" CssClass="cultures" isLeaf="true" >
+          <siteMapNode helpKey="Administration.Platform.Cultures.List" url="~/Administration/Cultures/List.aspx" />
+          <siteMapNode helpKey="Administration.Platform.Cultures.Edit" url="~/Administration/Cultures/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode resourceKey="Languages" CssClass="languages" isLeaf="true" >
+          <siteMapNode helpKey="Administration.Platform.Languages.List" url="~/Administration/Languages/List.aspx" />
+          <siteMapNode helpKey="Administration.Platform.Languages.Edit" url="~/Administration/Languages/Edit.aspx" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode admin="true" resourceKey="Platform" isLeaf="false">
+        <siteMapNode helpKey="Administration.Platform.Settings" resourceKey="Platform.Settings" url="~/Administration/Platform/Settings.aspx" CssClass="settings" />
+        <siteMapNode resourceKey="Sellers" CssClass="sellers" isLeaf="true" featureMissing="true" />
+        <siteMapNode resourceKey="Administrators" CssClass="administrators" isLeaf="true" featureMissing="true">
+          <siteMapNode helpKey="Administration.Platform.Administrators.Edit" url="~/Administration/Administrators/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode resourceKey="Logs" CssClass="logs" isLeaf="true" >
+          <siteMapNode helpKey="Administration.Platform.Logs.List" url="~/Administration/Logs/List.aspx" />
+          <siteMapNode helpKey="Administration.Platform.Logs.Edit" url="~/Administration/Logs/Details.aspx" />
+        </siteMapNode>
+        <siteMapNode resourceKey="ApplicationTiers" CssClass="applicationtiers" isLeaf="true" >
+          <siteMapNode helpKey="Administration.Platform.ApplicationTiers.Edit" url="~/Administration/ApplicationTiers/Edit.aspx" />
+        </siteMapNode>
+        <siteMapNode resourceKey="Extensions" CssClass="extensions" helpKey="Administration.Platform.Extensions.List" url="~/Administration/Extensions/List.aspx?scope=Platform" />
+      </siteMapNode>
+      <siteMapNode admin="true" helpKey="Administration.Platform.Licensing" resourceKey="Licensing" cssClass="licensing" url="~/administration/Platform/Licensing.aspx" />
+      <siteMapNode feature="administration.store.cache" resourceKey="Administration.Platform.Cache" CssClass="cache" isLeaf="true" >
+        <siteMapNode helpKey="Administration.Platform.Cache.List" url="~/Administration/Cache/List.aspx" />
+        <siteMapNode helpKey="Administration.Platform.Cache.Edit" url="~/Administration/Cache/Edit.aspx" />
+      </siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

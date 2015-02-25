@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="IsGiftConditionEditor">
+  <content>
+    <![CDATA[
+        <div>
+          <label for="cbxIsGift${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.IsGiftCondition.Localizations.IsGiftLabel}</label>
+          <input type="checkbox" id="cbxIsGift${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}" {{if model.IsGift}}checked="checked"{{/if}}
+            onchange="
+              (
+                function(source){
+                  var checkbox = $(source);
+                  checkbox.tmplItem().data.updateIsGift(checkbox.is(':checked'));
+                }
+              )
+              (this);
+            "
+          />
+        <div>
+      ]]>
+  </content>
+</template>

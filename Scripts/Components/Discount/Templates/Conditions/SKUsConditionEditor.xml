@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="SKUsConditionEditor">
+  <content>
+    <![CDATA[
+        <table border="0" cellpadding="0" cellspacing="0" class="gridView">
+          <thead>
+            <tr>
+              <th class="${sortedAscending?'sortedAsc':'sortedDesc' }">
+                <a href="javascript:void(0);" onclick="$(this).tmplItem().data.revertSorting();">
+                  ${Magelia.WebStore.Discount.Conditions.SKUsCondition.Localizations.SKUHeaderText}
+                </a>
+              </th>
+              <th>${Magelia.WebStore.Discount.Conditions.SKUsCondition.Localizations.ActionHeaderText}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="${model.SKUs.length%2==0?'':'odd'}">
+              <td>
+                <input type="text" id="itxtSkuAdd${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}" value="${currentSKU}"
+                  onkeypress="
+                    (
+                      function(source,event){
+                        var textbox = $(source);
+                        var SKUsCondition = textbox.tmplItem().data;
+                        SKUsCondition.currentSKU = textbox.val();
+                        if(event.keyCode==13){
+                          SKUsCondition.addSKU();
+                          event.stopPropagation();
+                        }
+                      }
+                    )
+                    (this,event);
+                  "
+                />
+                <script type="text/javascript">
+                   (
+                    function(){
+                       var itxtSkuAdd = $('#itxtSkuAdd${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}');
+                       itxtSkuAdd.tmplItem().data.implementAutoComplete(itxtSkuAdd);
+                    }
+                   )()
+                </script>
+              </td>
+              <td>
+                <a href="javascript:void(0);" style="padding:0;" class="rounded minor black"
+                  onclick="
+                    (
+                      function(source){
+                        var itxtSkuAdd = $('#itxtSkuAdd${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}');
+                        var SKUsCondition = itxtSkuAdd.tmplItem().data;
+                        SKUsCondition.currentSKU = itxtSkuAdd.val();
+                        SKUsCondition.addSKU();
+                      }
+                    )
+                    (this);
+                  "
+                ><span><span><span>${Magelia.WebStore.Discount.Conditions.SKUsCondition.Localizations.AddButtonText}</span></span></span></a>
+              </td>
+            </tr>
+            {{each model.SKUs}}
+              <tr class="${$index%2==0?'':'odd'}">
+                <td>${$value}</td>
+                <td>
+                  <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.editSKU(${$index});
+                      }
+                    )
+                    (this);
+                  "><span><span><span>${Magelia.WebStore.Discount.Conditions.SKUsCondition.Localizations.EditButtonText}</span></span></span></a>
+                  <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.removeSKU(${$index});
+                      }
+                    )
+                    (this);
+                  "><span><span><span>${Magelia.WebStore.Discount.Conditions.SKUsCondition.Localizations.RemoveButtonText}</span></span></span></a>
+                </td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      ]]>
+  </content>
+</template>

@@ -1,0 +1,1 @@
+﻿<asp:ValidationSummary runat="server" CssClass="validation" ShowSummary="true"/>

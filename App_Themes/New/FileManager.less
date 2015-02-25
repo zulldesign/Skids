@@ -1,0 +1,664 @@
+﻿div.fileManager 
+{
+	height: 600px;
+    overflow: hidden;
+	background-color: white;
+    border: 1px solid #cccccc;
+}
+
+p.fileManagerError 
+{
+	color: red;
+	padding: 5px;
+	text-align: center;
+    border: 1px solid #cccccc;
+}
+
+div.fileManager > div 
+{
+    float: left;
+    height: 100%;
+}
+
+div.fileManager > div.left 
+{
+    width: 15%;
+}
+
+div.fileManager > div.middle 
+{
+    width: 70%;
+	margin-left: -1px;
+    border-left: 1px solid #cccccc;
+}
+
+div.fileManager > div.right 
+{
+    width: 15%;
+	margin-left: -1px;
+    border-left: 1px solid #cccccc;
+}
+
+div.fileManager div.containers 
+{
+    width: 100%;
+    height: 100%;
+}
+
+div.fileManager div.containers > p 
+{
+    height: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    padding-left: 5px;
+    border-bottom: 1px solid #cccccc;
+}
+
+div.fileManager div.containers > div 
+{
+    height: 575px;
+    overflow: auto;
+}
+
+div.fileManager div.containers > div > ul 
+{
+    width: 100%;
+    display: table;
+}
+
+div.fileManager div.containers ul li 
+{
+    z-index: 1;
+    width: 100%;
+}
+
+div.fileManager div.containers ul li > ul 
+{
+    margin-left: 15px;
+}
+
+div.fileManager div.containers ul > li > div 
+{
+    height: 20px;
+}
+
+div.fileManager div.containers ul > li > div:hover 
+{
+    background-color: #f3f3f3;
+}
+
+div.fileManager div.containers ul > li > div.hover 
+{
+    background-color: #cccccc;
+}
+
+div.fileManager div.containers ul > li > div.ui-draggable-dragging 
+{
+    background-color: transparent;
+}
+
+div.fileManager div.containers ul > li > div.selected 
+{
+    font-weight: bold;
+}
+
+div.fileManager div.containers ul > li > div > div.expander 
+{
+    width: 20px;
+    height: 20px;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+div.fileManager div.containers ul > li > div > div.expander:hover 
+{
+    cursor: pointer;
+}
+
+div.fileManager div.containers ul > li > div > div.expander.expanded 
+{
+    background-position: 0 -20px;
+}
+
+div.fileManager div.containers ul > li > div > div.expander.empty 
+{
+    background-image: none;
+}
+
+div.fileManager div.containers ul > li > div > div.expander.empty:hover 
+{
+    cursor: auto;
+}
+
+div.fileManager div.containers ul > li  input[type=text]
+{	
+	height:15px;
+	font-size:10px;
+	line-height:15px;
+}
+
+div.fileManager div.containers ul > li > div > div.description 
+{
+	top: -20px;
+	font-size: 10px;
+    margin-left: 20px;
+    line-height: 20px;
+	position: relative;
+	padding-right: 5px;
+    white-space: nowrap;
+}
+
+div.fileManager div.containers ul > li > div > div.description:hover 
+{
+    cursor: pointer;
+}
+
+div.fileManager ul.optionsMenu 
+{
+	height: 24px;
+    display: block;
+    overflow: hidden;
+	padding-left: 1px;
+    border-bottom: 1px solid #cccccc;
+}
+
+div.fileManager ul.optionsMenu > li 
+{
+	float: left;
+    height: 20px;
+	margin: 1px 0;
+	display: block;
+	line-height: 20px;
+	padding: 0 5px 0 25px;
+	border: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: 5px 50%;
+}
+
+div.fileManager ul.optionsMenu > li:hover 
+{
+    cursor: pointer;
+    background-color: #f3f3f3;
+}
+
+div.fileManager ul.optionsMenu > li + li 
+{
+    margin-left: 1px;
+}
+
+div.fileManager ul.optionsMenu > li.path 
+{
+	color: #666666;
+    padding-left: 5px;
+}
+
+div.fileManager ul.optionsMenu > li.path:hover 
+{
+    cursor: auto;
+    background-color: White;
+}
+
+div.fileManager div.list 
+{
+    height: 576px;
+    overflow: auto;
+}
+
+div.fileManager div.list > div 
+{
+    height: 100%;
+}
+
+div.fileManager div.list ul 
+{
+    padding: 2px;
+	overflow: hidden;
+}
+
+div.fileManager div.list ul > li
+{
+    float: left;
+    margin: 2px;
+    width: 100px;
+    height: 110px;
+	display: block;
+    overflow: hidden;
+	padding: 2px 1px 0 1px;
+	background-color: white;
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+}
+
+div.fileManager div.list ul > li:hover, div.fileManager div.list ul > li.ui-selected, div.fileManager div.list ul > li.ui-selecting 
+{
+    cursor: pointer;
+	background-color: #f3f3f3;
+}
+
+div.fileManager div.list ul > li > p, div.filePicker ul.files > li > p 
+{
+	width: 100px;
+    font-size: 10px;
+    margin-top: 65px;
+	text-align: center;
+}
+
+div.fileManager div.list ul > li > p > input[type=text] 
+{
+    width: 98px;
+	height:20px;	
+	font-size:10px;
+	line-height:20px;
+}
+
+div.fileManager div.list ul > li.hover 
+{
+    background-color: #cccccc;
+}
+
+div.fileManager div.list ul > li.image
+{
+    background-repeat: no-repeat;
+    background-position: 50% 30px;
+	background-image: url('Images/Files/loader.gif');
+}
+
+div.fileManager div.list ul > li.image.loaded
+{
+    background-image: none;
+}
+
+div.fileManager div.list ul > li.image.loaded > div
+{
+    height: 65px;
+}
+
+div.fileManager div.list ul > li.image.loaded > div > img
+{
+    max-width: 100px;
+    max-height: 64px;
+}
+
+div.fileManager div.list ul > li.image.loaded > p
+{
+    margin-top: 0;
+}
+
+div.fileManager div.list ul > li.image.error
+{
+	background-position:50% 10px;
+}
+
+div.fileManager div.list ul > li.video
+{
+    background-image: url('Images/Files/video.png');
+}
+
+div.fileManager div.list ul > li.audio 
+{
+    background-image: url('Images/Files/audio.png');
+}
+
+div.fileManager div.list ul > li.document
+{
+    background-image: url('Images/Files/document.png');
+}
+
+div.fileManager div.list ul > li.application 
+{
+    background-image: url('Images/Files/application.png');
+}
+
+div.fileManager div.list ul > li.unknown
+{
+    background-image: url('Images/Files/unknown.png');
+}
+
+div.fileManager div.selection 
+{
+    height: 50%;
+}
+
+div.fileManager div.selection > a 
+{
+	width: 100%;
+	height: 21px;
+	color: white;
+    display: block;
+    line-height: 21px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.fileManager div.selection > a:hover 
+{
+    text-decoration: none;
+}
+
+div.fileManager div.selection > div 
+{
+    height: 253px;
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+
+div.fileManager div.selection.one > div 
+{
+    height: 273px;
+}
+
+div.fileManager div.selection > p 
+{
+    height: 24px;
+	overflow:hidden;
+    line-height: 24px;
+	font-weight: bold;
+	padding-left: 5px;
+    border-bottom: 1px solid #cccccc;
+}
+
+div.fileManager div.selection > div > div 
+{
+    height: 100%;
+}
+
+div.fileManager div.selection > div > div.empty 
+{
+	height: 247px;
+	color: #999999;
+	padding-top: 5px;
+    text-align: center;
+    font-style: italic;
+}
+
+div.fileManager div.selection.one > div > div.empty 
+{
+    height: 268px;
+}
+
+div.fileManager div.selection > div > div.hover 
+{
+	background-color: #cccccc !important;
+}
+
+div.fileManager div.selection > div ul 
+{
+    width: 100%;
+}
+
+div.fileManager div.selection > div ul > li 
+{
+    display: block;
+	font-size: 10px;
+    line-height: 20px;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: 5px 50%;
+    border-bottom: 1px solid #cccccc;
+}
+
+div.fileManager div.selection > div ul > li:hover, div.fileManager div.selection > div ul > li.ui-selected 
+{
+	cursor: pointer;
+    background-color: #f3f3f3;
+}
+
+div.fileManager ul.drag 
+{
+	background-color: white;
+    border: 1px solid #cccccc;
+}
+
+div.fileManager ul.drag > li 
+{
+	height: 20px;
+    display: block;
+    font-size: 10px;
+	overflow: hidden;
+    line-height: 20px;
+    padding: 0 5px 0 25px;
+    background-repeat: no-repeat;
+    background-position: 5px 50%;
+}
+
+div.fileManager ul.drag > li.container, div.fileManager div.selection ul > li.container 
+{
+    background-image: url('Images/Files/container-small.png');
+}
+
+div.fileManager ul.drag > li.image, div.fileManager div.selection ul > li.image 
+{
+    background-image: url('Images/Files/image-small.png');
+}
+
+div.fileManager ul.drag > li.video, div.fileManager div.selection ul > li.video 
+{
+    background-image: url('Images/Files/video-small.png');
+}
+
+div.fileManager ul.drag > li.audio, div.fileManager div.selection ul > li.audio 
+{
+    background-image: url('Images/Files/audio-small.png');
+}
+
+div.fileManager ul.drag > li.document, div.fileManager div.selection ul > li.document 
+{
+    background-image: url('Images/Files/document-small.png');
+}
+
+div.fileManager ul.drag > li.application, div.fileManager div.selection ul > li.application 
+{
+    background-image: url('Images/Files/application-small.png');
+}
+
+div.fileManager ul.drag > li.unknown, div.fileManager div.selection ul > li.unknown 
+{
+    background-image: url('Images/Files/unknown-small.png');
+}
+
+div.fileManager ul.drag > li + li 
+{
+    border-top: 1px solid #cccccc;
+}
+
+div.fileManager div.metadata 
+{
+    height: 50%;
+	overflow: hidden;
+    border-bottom: 1px solid #cccccc;
+}
+
+div.fileManager div.metadata.full 
+{
+	height: 100%;
+	border-bottom: 0;
+}
+
+div.fileManager div.metadata > p 
+{
+    height: 24px;
+	overflow:hidden;
+    line-height: 24px;
+    padding-left: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-bottom: 1px solid #cccccc;
+}
+
+div.fileManager div.metadata > div 
+{
+	height: 275px;
+    overflow: auto;
+}
+
+div.fileManager div.metadata.full > div 
+{
+    height: 100%;
+}
+
+div.fileManager div.metadata > div > p 
+{
+	padding: 5px;
+	color: #999999;
+    text-align: center;
+    font-style: italic;
+}
+
+div.fileManager div.metadata div.form 
+{
+    padding:0 5px;
+}
+
+div.fileManager div.metadata div.form fieldset
+{
+	padding:5px;
+}
+
+div.fileManager div.metadata div.form textarea
+{
+	height:100px;
+}
+
+div.fileManager div.metadata div.form form + form 
+{
+    margin-top: 5px;
+}
+
+div.fileManager div.metadata div.form div.inline 
+{
+    width: 100%;
+}
+
+div.fileManager div.metadata div.form div.inline > * 
+{
+	width: 98%;
+    float: none;
+	display: block;
+}
+
+div.fileManager div.metadata div.form div.inline label
+{
+	overflow:hidden;
+}
+
+div.fileManager div.metadata div.form div.inline label.error 
+{
+	color: Red;
+    padding-top: 2px;
+    text-align: right;
+}
+
+div.fileManager div.metadata div.form div.buttons
+{
+	padding-top:10px;
+}
+
+div.fileManager div.metadata div.form div.buttons > ul > li 
+{
+    height: 20px;
+	line-height: 20px;
+	padding: 0 5px 0 25px;
+	background-color:white;
+	border: 1px solid #cccccc;
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+}
+
+div.fileManager div.metadata div.form div.buttons > ul > li + li
+{
+	margin-left:5px;
+}
+
+div.fileManager div.metadata div.form div.buttons > ul > li:hover 
+{
+	cursor: pointer;
+	border-color:#666666;
+    background-color: #cccccc;
+}
+
+div.fileManagerPopin
+{
+	width:80%;
+	min-width:1000px;
+}
+
+div.fileManagerPopin div.fileManager
+{
+	padding:0;
+}
+
+div.popin.upload 
+{
+	min-width:0;
+	padding: 10px;
+    border-radius: 5px;
+	border:1px solid #cccccc;
+    -moz-box-shadow: 0px 0px 10px #e0e0e0;
+    -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+    box-shadow: 0px 0px 10px #e0e0e0;
+}
+
+div.popin.upload form 
+{
+	margin-top:10px;
+}
+
+div.popin.upload form p 
+{
+    position: absolute;
+    font-weight: bold;
+    margin-top: -20px;
+}
+
+div.popin.upload input 
+{
+    width: auto;
+    height: auto;
+    border: 1px solid #cccccc;
+}
+
+div.popin.upload div.fileLoader 
+{
+    width: 16px;
+    height: 16px;
+    background: url('Images/Files/loader.gif') no-repeat 0 0;
+}
+
+div.popin.upload > div.content 
+{
+    overflow: hidden;
+	padding-bottom:0;
+	margin:10px;
+}
+
+div.popin.upload > span.close 
+{
+	top: 2px;
+	margin:0;
+	right: 2px;
+    display: block;
+	padding: 0 3px;
+	color: #999999;
+	font-weight: bold;
+    position: absolute;
+    border: 1px solid #e0e0e0;
+    border-top-right-radius: 5px;
+}
+
+div.popin > span.close:hover 
+{
+	color: black;
+    cursor: pointer;
+	border-color: #cacaca;
+}
+
+div.overlay 
+{
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	z-index: 50;
+	position: fixed;
+    background-color: White;
+}

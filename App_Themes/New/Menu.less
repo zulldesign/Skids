@@ -1,0 +1,178 @@
+﻿@height: 40px;
+
+#nMenu {
+    overflow: hidden;
+}
+
+    #nMenu > ul.head {
+        overflow: hidden;
+    }
+
+        #nMenu > ul.head > li {
+            float: left;
+            color: white;
+            padding: 0 20px;
+            height: @height;
+            line-height: @height;
+            text-transform: uppercase;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+
+            #nMenu > ul.head > li:first-child {
+                margin-left: 50px;
+            }
+
+            #nMenu > ul.head > li:hover {
+                cursor: pointer;
+            }
+
+            #nMenu > ul.head > li.selected {
+                color: black;
+                background-color: #f3f3f3;
+            }
+
+            #nMenu > ul.head > li.toggle {
+                padding: 0;
+                float: right;
+                margin-right: 50px;
+            }
+
+                #nMenu > ul.head > li.toggle:hover {
+                    background-color: transparent;
+                }
+
+                #nMenu > ul.head > li.toggle > a {
+                    width: 30px;
+                    height: 100%;
+                    display: block;
+                    text-indent: -9999px;
+                    background-image: url('Images/Menu/toggle.png');
+                }
+
+                #nMenu > ul.head > li.toggle.closed > a {
+                    background-position: 0 -40px;
+                }
+
+            #nMenu > ul.head > li + li {
+                margin-left: 10px;
+            }
+
+    #nMenu > ul.sub {
+        height: 210px;
+        overflow: auto;
+        background-color: #f3f3f3;
+    }
+
+        #nMenu > ul.sub.absolute {
+            z-index: 80;
+            position: absolute;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        #nMenu > ul.sub > li {
+            display: none;
+            margin-left: 50px;
+        }
+
+            #nMenu > ul.sub > li.selected {
+                display: block;
+            }
+
+            #nMenu > ul.sub > li > ul {
+                float: left;
+                height: 150px;
+                padding-right: 2px;
+            }
+
+                #nMenu > ul.sub > li > ul > li {
+                    float: left;
+                    height: 150px;
+                    margin: 30px 0;
+                    background: url('Images/Menu/border.png') repeat-y 0 0;
+                }
+
+                    #nMenu > ul.sub > li > ul > li > div {
+                        height: 150px;
+                    }
+
+                    #nMenu > ul.sub > li > ul > li:last-child > div {
+                        background: url('Images/Menu/border.png') repeat-y 100% 0;
+                    }
+
+                    #nMenu > ul.sub > li > ul > li > div > span.title {
+                        height: 36px;
+                        display: block;
+                        padding: 5px 23px 0 23px;
+                        font-weight: bold;
+                    }
+
+                    #nMenu > ul.sub > li > ul > li.block {
+                        width: 190px;
+                    }
+
+                        #nMenu > ul.sub > li > ul > li.block > div > div.content {
+                            width: 132px;
+                            height: 109px;
+                            margin: 0 auto;
+                        }
+
+                        #nMenu > ul.sub > li > ul > li.block > div > div.content {
+                            background: url('Images/Menu/block.png') no-repeat 50% 0;
+                        }
+
+                        #nMenu > ul.sub > li > ul > li.block.selected > div > div.content {
+                            background-position: 50% -109px;
+                        }
+
+                        #nMenu > ul.sub > li > ul > li.block > div > div.content > a {
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            text-indent: -9999px;
+                            background-position: 50% 0;
+                        }
+
+                    #nMenu > ul.sub > li > ul > li.list > div > div.content {
+                        overflow: hidden;
+                    }
+
+                        #nMenu > ul.sub > li > ul > li.list > div > div.content > ul {
+                            float: left;
+                        }
+
+                            #nMenu > ul.sub > li > ul > li.list > div > div.content > ul > li + li {
+                                margin-top: 12px;
+                            }
+
+                            #nMenu > ul.sub > li > ul > li.list > div > div.content > ul > li {
+                                display: block;
+                            }
+
+                                #nMenu > ul.sub > li > ul > li.list > div > div.content > ul > li > a {
+                                    display: block;
+                                    margin-left: 3px;
+                                    line-height: 28px;
+                                    padding: 0 30px 0 45px;
+                                    background-position: 20px 0;
+                                }
+
+                                    #nMenu > ul.sub > li > ul > li.list > div > div.content > ul > li > a:hover {
+                                        text-decoration: none;
+                                    }
+
+                                    #nMenu > ul.sub > li > ul > li.list > div > div.content > ul > li > a:hover,
+                                    #nMenu > ul.sub > li > ul > li.list > div > div.content > ul > li.selected > a {
+                                        color: white;
+                                        background-color: #666666;
+                                    }
+
+                                #nMenu > ul.sub > li > ul > li.list > div > div.content > ul > li.pro > a,
+                                #nMenu > ul.sub > li > ul > li.list > div > div.content > ul > li.enterprise > a,
+                                #nMenu > ul.sub > li > ul > li.list > div > div.content > ul > li.featuremissing > a,
+                                #nMenu > ul.sub > li > ul > li.list > div > div.content > ul > li.unauthorized > a {
+                                    color: #cacaca !important;
+                                }

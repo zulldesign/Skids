@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="EmailDomainConditionEditor">
+  <styles>
+    <![CDATA[
+        input[type=text].wrongEmail{border:1px solid red;}
+      ]]>
+  </styles>
+  <content>
+    <![CDATA[
+        <div>
+          <label for="itxtEmailDomain${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.EmailDomainCondition.Localizations.EmailDomainLabel}</label>
+          <input type="text" id="itxtEmailDomain${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}" value="${model.Domain}"
+            onkeyup="
+              (
+                function(source){
+                  var textbox = $(source);
+                  textbox.tmplItem().data.updateDomain(textbox);
+                }
+              )
+              (this);
+            "
+          />
+          <script type="text/javascript">
+            (
+              function(){
+                $('#itxtEmailDomain${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}').keyup();
+              }
+            )()
+          </script>
+        </div>
+      ]]>
+  </content>
+</template>

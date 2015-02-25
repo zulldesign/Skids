@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="CategoriesConditionEditor">
+  <content>
+    <![CDATA[
+        <table border="0" cellpadding="0" cellspacing="0" class="gridView">
+          <thead>
+            <tr>
+              <th class="${sortedAscending?'sortedAsc':'sortedDesc' }">
+                <a href="javascript:void(0);" onclick="$(this).tmplItem().data.revertSorting();">
+                  ${Magelia.WebStore.Discount.Conditions.CategoriesCondition.Localizations.CategoryHeaderText}
+                </a>
+              </th>
+              <th>${Magelia.WebStore.Discount.Conditions.CategoriesCondition.Localizations.ActionHeaderText}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="${model.Categories.length%2==0?'':'odd'}">
+              <td>
+                <input type="text" id="itxtCategoryAdd${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}" value="${currentCategory}"/>
+                <script type="text/javascript">
+                   (
+                    function(){
+                       var itxtCategoryAdd = $('#itxtCategoryAdd${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}');
+                       itxtCategoryAdd.tmplItem().data.registerAddTextbox(itxtCategoryAdd);
+                    }
+                   )()
+                </script>
+              </td>
+              <td>
+                <a href="javascript:void(0);" style="padding:0;" class="rounded minor black"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.addCategory();
+                      }
+                    )
+                    (this);
+                  "
+                ><span><span><span>${Magelia.WebStore.Discount.Conditions.CategoriesCondition.Localizations.AddButtonText}</span></span></span></a>
+              </td>
+            </tr>
+            {{each model.Categories}}
+              <tr class="${$index%2==0?'':'odd'}">
+                <td>${$value}</td>
+                <td>
+                  <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.editCategory(${$index});
+                      }
+                    )
+                    (this);
+                  "><span><span><span>${Magelia.WebStore.Discount.Conditions.CategoriesCondition.Localizations.EditButtonText}</span></span></span></a>
+                  <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.removeCategory(${$index});
+                      }
+                    )
+                    (this);
+                  "><span><span><span>${Magelia.WebStore.Discount.Conditions.CategoriesCondition.Localizations.RemoveButtonText}</span></span></span></a>
+                </td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      ]]>
+  </content>
+</template>

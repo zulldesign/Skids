@@ -1,0 +1,184 @@
+﻿@sidePadding: 50px;
+
+#bMasterContainer {
+    padding-bottom: 20px;
+}
+
+#aspnetForm {
+    display: block;
+    margin: 0 2.5%;
+    background-color: white;
+    box-shadow: 0 0 7px 0 #cccccc;
+    -moz-box-shadow: 0 0 7px 0 #cccccc;
+    -webkit-box-shadow: 0 0 7px 0 #cccccc;
+}
+
+    #aspnetForm > header {
+        height: 66px;
+        overflow: hidden;
+        padding: 22px @sidePadding 0 @sidePadding;
+        background: url('Images/Layout/bg-header.png') repeat-x 0 0;
+    }
+
+        #aspnetForm > header > ul.flags {
+            position: absolute;
+        }
+
+        #aspnetForm > header > h1 {
+            position: absolute;
+            margin-top: 15px;
+        }
+
+            #aspnetForm > header > h1 > a {
+                color: #666666;
+                font-size: 30px;
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+
+                #aspnetForm > header > h1 > a:hover {
+                    text-decoration: none;
+                }
+
+        #aspnetForm > header > ul.user {
+            float: right;
+            overflow: hidden;
+        }
+
+            #aspnetForm > header > ul.user > li {
+                float: left;
+                overflow: hidden;
+            }
+
+                #aspnetForm > header > ul.user > li label,
+                #aspnetForm > header > ul.user > li > span > span,
+                #aspnetForm > header > ul.user > li.logout > span {
+                    display: block;
+                    overflow: hidden;
+                    line-height: 25px;
+                    padding-bottom: 3px;
+                }
+
+                #aspnetForm > header > ul.user > li > span > * {
+                    float: left;
+                }
+
+                    #aspnetForm > header > ul.user > li > span > * + * {
+                        margin-left: 10px;
+                    }
+
+                #aspnetForm > header > ul.user > li > span > a {
+                    margin-top: 15px;
+                }
+
+                #aspnetForm > header > ul.user > li + li {
+                    margin-left: 10px;
+                }
+
+                #aspnetForm > header > ul.user > li.logout {
+                    overflow: hidden;
+                    text-align: right;
+                }
+
+                    #aspnetForm > header > ul.user > li.logout > a {
+                        float: left;
+                        font-weight: bold;
+                    }
+
+    #aspnetForm > footer {
+        padding: 10px 0;
+        text-align: center;
+        background-color: #f3f3f3;
+    }
+
+        #aspnetForm > footer > #tFooter > tbody > tr > td {
+            padding: 0 5px;
+        }
+
+    #aspnetForm > div.contextual {
+        height: 60px;
+        overflow: hidden;
+        padding: 0 @sidePadding;
+    }
+
+        #aspnetForm > div.contextual > h2 {
+            float: left;
+            color: #666666;
+            font-size: 30px;
+            line-height: 60px;
+            font-weight: normal;
+        }
+
+        #aspnetForm > div.contextual.bottom > h2 {
+            display: none;
+        }
+
+        #aspnetForm > div.contextual > div {
+            float: right;
+        }
+
+            #aspnetForm > div.contextual > div > ul {
+                float: left;
+            }
+
+                #aspnetForm > div.contextual > div > ul:first-child {
+                    line-height: 60px;
+                }
+
+        #aspnetForm > div.contextual a.help {
+            padding-left: 20px;
+            text-transform: uppercase;
+        }
+
+        #aspnetForm > div.contextual > div > ul + ul {
+            margin-left: 20px;
+        }
+
+            #aspnetForm > div.contextual > div > ul + ul > li {
+                float: left;
+                padding-top: 11px;
+            }
+
+                #aspnetForm > div.contextual > div > ul + ul > li + li {
+                    margin-left: 10px;
+                }
+
+        #aspnetForm > div.contextual > div > ul + ul + ul {
+            margin-left: 10px;
+        }
+
+
+    #aspnetForm > div > ul.messages {
+        padding: 10px 10px 0 10px;
+    }
+
+#bContent {
+    padding: 0 @sidePadding;
+}
+
+div.popin.warning {
+    padding-bottom: 30px;
+
+    > div {
+        min-width: 400px;
+
+        > h5 {
+            margin-top: 50px;
+            color: #333;
+            font-weight: normal;
+        }
+
+        > ul.buttons {
+            margin-top: 20px;
+            text-align: right;
+
+            > li {
+                display: inline-block;
+            }
+
+                > li + li {
+                    margin-left: 10px;
+                }
+        }
+    }
+}

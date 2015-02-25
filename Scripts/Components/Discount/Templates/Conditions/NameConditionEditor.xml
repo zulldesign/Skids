@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="NameConditionEditor">
+  <styles>
+    <![CDATA[
+      div.nameField+* {margin-top:2px;}
+      ]]>
+  </styles>
+  <content>
+    <![CDATA[
+        <div class="nameField">
+          <label for="itxtNameFirstName${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.NameCondition.Localizations.FirstNameLabel}</label>
+          <input type="text" value="${model.FirstName}" id="itxtNameFirstName${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}"
+            onkeyup="
+              (
+                function(source){
+                    var textbox = $(source);
+                    textbox.tmplItem().data.updateFirstName(textbox.val());
+                }
+              )
+              (this);
+            "
+          />
+        </div>
+        <div class="nameField">
+          <label for="itxtNameLastName${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.NameCondition.Localizations.LastNameLabel}</label>
+          <input type="text" value="${model.LastName}" id="itxtNameLastName${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}"
+            onkeyup="
+              (
+                function(source){
+                    var textbox = $(source);
+                    textbox.tmplItem().data.updateLastName(textbox.val());
+                }
+              )
+              (this);
+            "
+          />
+        </div>
+      ]]>
+  </content>
+</template>

@@ -1,0 +1,222 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DefaultLayout.Master.cs" Inherits="Magelia.WebStore.Admin.App_Masters.DefaultLayout" %>
+
+<%@ Import Namespace="Magelia.WebStore.Admin.App_Masters" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title />
+    <meta name="viewport" content="width=device-width, width=1280" />
+    <link id="lFavicon" rel="shortcut icon" type="image/x-icon" runat="server" />
+    <asp:PlaceHolder runat="server">
+        <%: System.Web.Optimization.Styles.Render("~/App_Themes/New/All") %>
+    </asp:PlaceHolder>
+    <!--[if lt IE 9]><style type="text/css">#aspnetForm{border: 1px solid #cccccc;border-top:0;}</style><![endif]-->
+    <asp:ContentPlaceHolder ID="cphHead" runat="server" />
+</head>
+<body>
+    <div id="bMasterContainer">
+        <form id="aspnetForm" runat="server">
+            <asp:ScriptManager runat="server" EnableScriptGlobalization="true" EnableScriptLocalization="true" EnablePageMethods="true">
+                <CompositeScript>
+                    <Scripts>
+                        <asp:ScriptReference Path="~/Scripts/Libraries/html5shiv.js" />
+                        <asp:ScriptReference Path="~/Scripts/Libraries/jquery-1.8.3.min.js" />
+                        <asp:ScriptReference Path="~/Scripts/Libraries/jquery-ui-1.9.1.custom.min.js" />
+                        <asp:ScriptReference Path="~/Scripts/Libraries/json2.js" />
+                        <asp:ScriptReference Path="~/Scripts/Components/Uservoice.js" />
+                        <asp:ScriptReference Path="~/Scripts/Components/HelpManager.js" />
+                        <asp:ScriptReference Path="~/Scripts/Components/GridView.ascx.js" />
+                        <asp:ScriptReference Path="~/Scripts/Components/File/Manager.js" />
+                        <asp:ScriptReference Path="~/Scripts/Components/File/Manager.Localizations.js" ResourceUICultures="fr" />
+                        <asp:ScriptReference Path="~/Scripts/Plugins/jquery.validationhighlighter.js" />
+                        <asp:ScriptReference Path="~/Scripts/Plugins/jquery.rounded.js" />
+                        <asp:ScriptReference Path="~/Scripts/Plugins/jquery.tabStrip.js" />
+                        <asp:ScriptReference Path="~/Scripts/Plugins/jquery.popin.js" />
+                        <asp:ScriptReference Path="~/Scripts/Plugins/combobox.js" />
+                        <asp:ScriptReference Path="~/Scripts/Plugins/jquery.contextmenu.js" />
+                        <asp:ScriptReference Path="~/Scripts/Plugins/jquery.validate.min.js" />
+                        <asp:ScriptReference Path="~/Scripts/Pages/DefaultLayout.Master.js" />
+                        <asp:ScriptReference Path="~/Scripts/Libraries/tinymce/jquery.tinymce.js" />
+                        <asp:ScriptReference Path="~/Scripts/Plugins/eye.js" />
+                        <asp:ScriptReference Path="~/Scripts/Plugins/colorpicker.js" />
+                        <asp:ScriptReference Path="~/Scripts/Plugins/jquery.mainMenu.js" />
+                        <asp:ScriptReference Path="~/Scripts/Plugins/jquery.cookie.js" />
+                        <asp:ScriptReference Path="~/Scripts/Plugins/readmore.js" />
+                    </Scripts>
+                </CompositeScript>
+                <Scripts>
+                    <asp:ScriptReference Path="~/Scripts/Libraries/tinymce/tiny_mce.js" />
+                    <%-- tiny_mce don't support CompositeScript. the script use his url to load tinymce plugins --%>
+                </Scripts>
+                <Services>
+                    <asp:ServiceReference Path="~/Content/Files/Services.asmx" />
+                    <asp:ServiceReference Path="~/Scripts/Services/AutoCompleteServices.asmx" />
+                </Services>
+            </asp:ScriptManager>
+            <div class="loader">
+                <p>
+                    <asp:Literal ID="litLoading" runat="server" meta:resourcekey="litLoading" />
+                </p>
+            </div>
+            <script type="text/javascript">
+                window['openFileManager'] = function (field_name, url, type, win) {
+                    tinyMCE.activeEditor.windowManager.open(
+                        {
+                            file: '<%= this.ResolveUrl("~/Content/Files/Standalone.aspx") %>?type=' + type,
+                            width: 1280,
+                            height: 605,
+                            resizable: 'yes',
+                            inline: true,
+                            close_previous: 'no',
+                            popup_css: false
+                        },
+                        { window: win, input: field_name }
+                    );
+                    return false;
+                };
+                $.extend(
+                    Magelia.WebStore.HelpManager,
+                    {
+                        Instance: new Magelia.WebStore.HelpManager('<%= Magelia.WebStore.Admin.Web.Configuration.AdminConfiguration.Current.DocumentationUrl  %>', '<%= this.Page.HelpKey %>', $.parseJSON('<%= this.SerializedHelpMap %>'))
+                    }
+                );
+                $(function () { Magelia.WebStore.HelpManager.Instance.initialize(); });
+            </script>
+            <header>
+                <asp:Repeater runat="server" ID="rptCultures" OnItemCommand="rptCultures_ItemCommand" OnItemDataBound="rptCultures_ItemDataBound">
+                    <HeaderTemplate>
+                        <ul class="flags">
+                    </HeaderTemplate>
+                    <FooterTemplate>
+                        </ul>
+                    </FooterTemplate>
+                    <ItemTemplate>
+                        <li id="iFlag" runat="server"></li>
+                    </ItemTemplate>
+                </asp:Repeater>
+                <h1>
+                    <asp:HyperLink ID="hlEnvironment" runat="server" NavigateUrl="~/Default.aspx" />
+                </h1>
+                <ul class="user">
+                    <li>
+                        <asp:UpdatePanel runat="server" UpdateMode="Conditional" RenderMode="Inline">
+                            <ContentTemplate>
+                                <asp:PlaceHolder runat="server" ID="phSeller">
+                                    <span>
+                                        <asp:Label ID="lblSeller" runat="server" AssociatedControlID="ddlSellers" meta:resourcekey="lblSeller" />
+                                        <asp:DropDownList ID="ddlSellers" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlSellers_SelectedIndexChanged" DataValueField="SellerId" DataTextField="Code" CssClass="autoSize" />
+                                    </span>
+                                </asp:PlaceHolder>
+                                <asp:PlaceHolder runat="server" ID="phStore">
+                                    <span>
+                                        <asp:Label ID="lblStore" runat="server" AssociatedControlID="ddlStores" meta:resourcekey="lblStore" />
+                                        <asp:DropDownList ID="ddlStores" runat="server" DataValueField="StoreId" DataTextField="Code" AutoPostBack="true" OnSelectedIndexChanged="ddlStores_SelectedIndexChanged" />
+                                    </span>
+                                </asp:PlaceHolder>
+                                <asp:LinkButton ID="lbtnStoreSwitch" runat="server" SkinID="Minor" meta:resourcekey="lbtnStoreSwitch" OnClick="lbtnStoreSwitch_Click" Visible="false" />
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </li>
+                    <li>
+                        <asp:PlaceHolder runat="server" ID="phCultures">
+                            <asp:Label ID="lblCulture" runat="server" AssociatedControlID="ddlCultures" meta:resourcekey="lblCulture" />
+                            <asp:DropDownList ID="ddlCultures" runat="server" DataTextField="Name" DataValueField="CultureId" AutoPostBack="true" OnSelectedIndexChanged="ddlCultures_SelectedIndexChanged" />
+                        </asp:PlaceHolder>
+                    </li>
+                    <li class="logout">
+                        <span>
+                            <asp:Literal ID="litConnectedAs" runat="server" meta:resourcekey="litConnectedAs" /></span>
+                        <asp:HyperLink ID="hlUserEdit" runat="server" />
+                        <asp:ImageButton ID="imgbtnLogout" runat="server" SkinID="Logout" OnClick="imgbtnLogout_Click" meta:resourcekey="imgbtnLogout" />
+                    </li>
+                </ul>
+            </header>
+            <mag:menu id="magMenu" runat="server" />
+            <asp:UpdatePanel runat="server" UpdateMode="Always">
+                <%-- Required if there is an asyncpostback (postback inside an UpdatePanel) which add message --%>
+                <ContentTemplate>
+                    <asp:Repeater runat="server" ID="rptInfos" EnableViewState="false">
+                        <HeaderTemplate>
+                            <ul class="messages">
+                        </HeaderTemplate>
+                        <FooterTemplate>
+                            </ul>
+                        </FooterTemplate>
+                        <ItemTemplate>
+                            <li class="<%# Enum.GetName(typeof(PageMessageType), ((PageMessage)Container.DataItem).MessageType).ToLowerInvariant() %>">
+                                <%# this.Server.HtmlEncode(((PageMessage)Container.DataItem).Message).Replace("\n", "<br />").Replace("\t", "&nbsp;&nbsp;&nbsp;")%>
+                                <asp:Repeater runat="server" DataSource="<%# ((PageMessage)Container.DataItem).SubMessages %>">
+                                    <HeaderTemplate>
+                                        <ul>
+                                    </HeaderTemplate>
+                                    <FooterTemplate>
+                                        </ul>
+                                    </FooterTemplate>
+                                    <ItemTemplate>
+                                        <li>
+                                            <%# this.Server.HtmlEncode((String)Container.DataItem)%></li>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </li>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+            <asp:Panel ID="pnlWarningPopin" runat="server" class="popin warning" Visible="false" ClientIDMode="Predictable">
+                <header>
+                    <h4>
+                        <asp:Literal ID="litWarning" runat="server" meta:resourcekey="litWarning" />
+                    </h4>
+                </header>
+                <div>
+                    <asp:Repeater runat="server" ID="rptWarnings" EnableViewState="false">
+                        <HeaderTemplate>
+                            <ul class="messages">
+                        </HeaderTemplate>
+                        <FooterTemplate>
+                            </ul>
+                        </FooterTemplate>
+                        <ItemTemplate>
+                            <li class="warning"><%# this.Server.HtmlEncode((String)Container.DataItem).Replace("\n", "<br />")%></li>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                    <h5>
+                        <asp:Literal runat="server" ID="litConfirmContinue" meta:resourceKey="litConfirmContinue" /></h5>
+                    <ul class="buttons">
+                        <li>
+                            <asp:HyperLink runat="server" Text='<%$ resources:global, Cancel %>' NavigateUrl="#" SkinID="Minor" onclick="$('#pnlWarningPopin').popin('close');return false;" />
+                        </li>
+                        <li>
+                            <asp:HiddenField runat="server" ID="hfWarningConfirmed" ClientIDMode="Predictable" />
+                            <asp:HyperLink ID="hlConfirmWarning" runat="server" Text='<%$ resources:global, Confirm %>' SkinID="Major" NavigateUrl="#" />
+                        </li>
+                    </ul>
+                </div>
+            </asp:Panel>
+
+            <div class="contextual">
+                <h2>
+                    <asp:ContentPlaceHolder ID="cphBarTitle" runat="server" />
+                </h2>
+                <div>
+                    <ul>
+                        <li>
+                            <asp:HyperLink ID="hlHelp" runat="server" CssClass="help" meta:resourcekey="hlHelp" NavigateUrl="javascript:void(0);" />
+                        </li>
+                    </ul>
+                    <asp:PlaceHolder runat="server" ID="phPageButtons"></asp:PlaceHolder>
+                    <asp:ContentPlaceHolder ID="cphBarContent" runat="server" />
+                </div>
+            </div>
+            <div id="bContent">
+                <mag:editions runat="server" />
+                <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+            </div>
+            <footer>
+                <mag:footer runat="server" />
+            </footer>
+        </form>
+    </div>
+</body>
+</html>

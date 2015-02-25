@@ -1,0 +1,3 @@
+﻿<asp:Panel runat="server" SkinID="Popin" CssClass="popin"/>
+<asp:Panel runat="server" SkinID="Form" CssClass="form"/>
+<mag:SearchPanel runat="server" CssClass="form"/>

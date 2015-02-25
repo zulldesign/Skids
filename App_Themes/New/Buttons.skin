@@ -1,0 +1,21 @@
+﻿<asp:ImageButton runat="server" SkinID="FlagFr" ImageUrl="Images/Flags/fr.gif" />
+<asp:ImageButton runat="server" SkinID="FlagUs" ImageUrl="Images/Flags/us.gif" />
+
+<asp:LinkButton runat="server" SkinID="Minor" CssClass="rounded"/>
+<asp:LinkButton runat="server" SkinID="Major" CssClass="rounded major"/>
+
+<asp:HyperLink runat="server" SkinID="Minor" CssClass="rounded"/>
+<asp:HyperLink runat="server" SkinID="Major" CssClass="rounded major"/>
+
+<asp:ImageButton runat="server" SkinID="Add" ImageUrl="Images/Buttons/add.png" />
+<asp:ImageButton runat="server" SkinID="Edit" ImageUrl="Images/Buttons/edit.png" />
+<asp:ImageButton runat="server" SkinID="Save" ImageUrl="Images/Buttons/save.png" />
+<asp:ImageButton runat="server" SkinID="Cancel" ImageUrl="Images/Buttons/cancel.png" />
+<asp:ImageButton runat="server" SkinID="Copy" ImageUrl="Images/Buttons/copy.png" />
+<asp:ImageButton runat="server" SkinID="Logout" ImageUrl="Images/Buttons/logout.png" />
+<asp:ImageButton runat="server" SkinID="Delete" ImageUrl="Images/Buttons/delete.png" />
+<asp:ImageButton runat="server" SkinID="Info" ImageUrl="Images/Buttons/info.png" />
+<asp:ImageButton runat="server" SkinID="View" ImageUrl="Images/Buttons/View.png" />
+<asp:ImageButton runat="server" SkinID="Calendar" ImageUrl="Images/Buttons/Calendar.png" />
+<asp:ImageButton runat="server" SkinID="ArrowLeft" ImageUrl="Images/Buttons/arrow-left.png" />
+<asp:ImageButton runat="server" SkinID="ArrowRight" ImageUrl="Images/Buttons/arrow-right.png" />

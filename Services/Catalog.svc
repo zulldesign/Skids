@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Factory="Magelia.WebStore.Services.Implementation.DataServiceHostFactory, Magelia.WebStore.Services.Implementation" Service="Magelia.WebStore.Services.Implementation.CatalogService" %>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="SuppliersConditionEditor">
+  <content>
+    <![CDATA[
+        <table border="0" cellpadding="0" cellspacing="0" class="gridView">
+          <thead>
+            <tr>
+              <th class="${sortedAscending?'sortedAsc':'sortedDesc' }">
+                <a href="javascript:void(0);" onclick="$(this).tmplItem().data.revertSorting();">
+                  ${Magelia.WebStore.Discount.Conditions.SuppliersCondition.Localizations.SupplierHeaderText}
+                </a>
+              </th>
+              <th>${Magelia.WebStore.Discount.Conditions.SuppliersCondition.Localizations.ActionHeaderText}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="${model.Suppliers.length%2==0?'':'odd'}">
+              <td>
+                <input type="text" id="itxtSupplierAdd${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}" value="${currentSupplier}"/>
+                <script type="text/javascript">
+                   (
+                    function(){
+                       var itxtSupplierAdd = $('#itxtSupplierAdd${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}');
+                       itxtSupplierAdd.tmplItem().data.registerAddTextbox(itxtSupplierAdd);
+                    }
+                   )()
+                </script>
+              </td>
+              <td>
+                <a href="javascript:void(0);" style="padding:0;" class="rounded minor black"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.addSupplier();
+                      }
+                    )
+                    (this);
+                  "
+                ><span><span><span>${Magelia.WebStore.Discount.Conditions.SuppliersCondition.Localizations.AddButtonText}</span></span></span></a>
+              </td>
+            </tr>
+            {{each model.Suppliers}}
+              <tr class="${$index%2==0?'':'odd'}">
+                <td>${$value}</td>
+                <td>
+                  <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.editSupplier(${$index});
+                      }
+                    )
+                    (this);
+                  "><span><span><span>${Magelia.WebStore.Discount.Conditions.SuppliersCondition.Localizations.EditButtonText}</span></span></span></a>
+                  <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.removeSupplier(${$index});
+                      }
+                    )
+                    (this);
+                  "><span><span><span>${Magelia.WebStore.Discount.Conditions.SuppliersCondition.Localizations.RemoveButtonText}</span></span></span></a>
+                </td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      ]]>
+  </content>
+</template>

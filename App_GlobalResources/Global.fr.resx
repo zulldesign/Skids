@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="Activate" xml:space="preserve">
+    <value>Activer</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Actif</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="AddNew" xml:space="preserve">
+    <value>Créer nouveau</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Tous</value>
+  </data>
+  <data name="Associate" xml:space="preserve">
+    <value>Associer</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>Parcourir</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="BadFileFormat" xml:space="preserve">
+    <value>Une erreur s'est produite lors de l'envoi du fichier : le format du fichier est incorrect.</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="CannotDeleteCurrentUser" xml:space="preserve">
+    <value>L'utilisateur actuel ne peut être supprimé.</value>
+  </data>
+  <data name="ClientClickConfirmDeletion" xml:space="preserve">
+    <value>return Magelia.WebStore.Confirm('Etes vous sûr de vouloir supprimer le(s) élement(s) sélectionné(s) ?');</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="DataSuccessfullyActivated" xml:space="preserve">
+    <value>Activation(s) effectuée(s) avec succès</value>
+  </data>
+  <data name="DataSuccessfullyDeactivated" xml:space="preserve">
+    <value>Désactivation(s) effectuée(s) avec succès</value>
+  </data>
+  <data name="DataSuccessfullyDeleted" xml:space="preserve">
+    <value>Suppression(s) effectuée(s) avec succès</value>
+  </data>
+  <data name="DataSuccessfullySaved" xml:space="preserve">
+    <value>Enregistrement effectué avec succès</value>
+  </data>
+  <data name="Deactivate" xml:space="preserve">
+    <value>Désactivation</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="DisplayContentIn" xml:space="preserve">
+    <value>Afficher le contenu en</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="ErrorDeletingObjectDependancy" xml:space="preserve">
+    <value>L'objet a d'autres dépendances. Pour supprimer cet objet, vous devez au préalable supprimer ses dépendances.</value>
+  </data>
+  <data name="ErrorDuplicateEntry" xml:space="preserve">
+    <value>Une erreur s’est produite lors de l’enregistrement. Les données existent déjà.</value>
+  </data>
+  <data name="ErrorMsgText" xml:space="preserve">
+    <value>Merci de corriger les problèmes suivants:</value>
+  </data>
+  <data name="ErrorOccuredWhileActivating" xml:space="preserve">
+    <value>Une erreur s’est produite lors du processus d'activation. Les données N’ONT PAS ÉTÉ ACTIVEES.</value>
+  </data>
+  <data name="ErrorOccuredWhileDeactivating" xml:space="preserve">
+    <value>Une erreur s’est produite lors du processus de désactivation. Les données N’ONT PAS ÉTÉ DESACTIVEES.</value>
+  </data>
+  <data name="ErrorOccuredWhileSending" xml:space="preserve">
+    <value>Une erreur s’est produite lors de l’envoi. Les données N’ONT PAS ÉTÉ ENVOYEES. Veuillez réessayer.</value>
+  </data>
+  <data name="FlagSkinId" xml:space="preserve">
+    <value>FlagFr</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>Inactif</value>
+  </data>
+  <data name="InvalidFileUpload" xml:space="preserve">
+    <value>Fichier non conforme (extension, poids, etc.)</value>
+  </data>
+  <data name="ItemsPerPage" xml:space="preserve">
+    <value>Afficher par page :</value>
+  </data>
+  <data name="Localizations" xml:space="preserve">
+    <value>Localisations</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Suivant</value>
+  </data>
+  <data name="NextStep" xml:space="preserve">
+    <value>Etape suivante</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>Pas de données</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="NoSellerWarningMessage" xml:space="preserve">
+    <value>La page demandée nécessite qu'un marchand ait été configuré</value>
+  </data>
+  <data name="NoStoreWarningMessage" xml:space="preserve">
+    <value>La page demandée nécessite qu'une boutique  ait été configurée</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Précédent</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Propriétés</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Rafraichir</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Réinitialiser</value>
+  </data>
+  <data name="ResetPasswordFailed" xml:space="preserve">
+    <value>Une erreur est survenue lors de la recherche de votre compte ou lors de la création du nouveau mot de passe.</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="SaveAndAddNew" xml:space="preserve">
+    <value>Enregistrer et créer nouveau</value>
+  </data>
+  <data name="SaveAndClose" xml:space="preserve">
+    <value>Enregistrer et fermer</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Sélectionner :</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Envoyer</value>
+  </data>
+  <data name="UsernameAlreadyExisting" xml:space="preserve">
+    <value>Ce nom d'utilisateur est déjà enregistré.</value>
+  </data>
+  <data name="Validate" xml:space="preserve">
+    <value>Valider</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copier</value>
+  </data>
+  <data name="FileCountPattern" xml:space="preserve">
+    <value>{0} fichier(s)</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="ClientClickConfirmAdd" xml:space="preserve">
+    <value>return Magelia.WebStore.Confirm('Etes vous sûr de vouloir ajouter le(s) élement(s) sélectionné(s) ?');</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirmer</value>
+  </data>
+  <data name="ContentItems" xml:space="preserve">
+    <value>Contenus</value>
+  </data>
+  <data name="ErrorChangingPassword" xml:space="preserve">
+    <value>Une erreur s'est produite durant la mise à jour de votre mot de passe.</value>
+  </data>
+  <data name="ErrorGeneric" xml:space="preserve">
+    <value>Une erreur s'est produite.</value>
+  </data>
+  <data name="ErrorOccuredWhileGettingUser" xml:space="preserve">
+    <value>L'utilisateur courant n'a pas pu être identifié.</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>Géneral</value>
+  </data>
+  <data name="RequiredFieldPattern" xml:space="preserve">
+    <value>Veuillez renseigner {0}</value>
+  </data>
+</root>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="WarehouseConditionEditor">
+  <content>
+    <![CDATA[
+        <div>
+          <label for="itxtWarehouse${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.WarehouseCondition.Localizations.WarehouseLabel}</label>
+          <input type="text" value="${model.Warehouse}" id="itxtWarehouse${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}"
+            onkeyup="
+              (
+                function(source){
+                    var textbox = $(source);
+                    textbox.tmplItem().data.updateCode(textbox.val());
+                }
+              )
+              (this);
+            "
+          />
+          <script type="text/javascript">
+          (
+            function(){
+              var itxtWarehouse = $('#itxtWarehouse${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}');
+              itxtWarehouse.tmplItem().data.implementAutoComplete(itxtWarehouse);
+            }
+          )()
+          </script/>
+        </div>
+      ]]>
+  </content>
+</template>

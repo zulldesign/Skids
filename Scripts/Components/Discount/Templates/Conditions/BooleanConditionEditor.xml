@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="BooleanConditionEditor">
+  <content>
+    <![CDATA[
+        <div>
+          <label for="cbxBoolean${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.BooleanCondition.Localizations.ValidLabel}</label>
+          <input type="checkbox" id="cbxBoolean${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}" {{if model.valid}}checked="checked"{{/if}}
+            onchange="
+              (
+                function(source){
+                  var checkbox = $(source);
+                  checkbox.tmplItem().data.updateValidity(checkbox.is(':checked'));
+                }
+              )
+              (this);
+            "
+          />
+        <div>
+      ]]>
+  </content>
+</template>

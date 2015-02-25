@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="PromoCodeConditionEditor">
+  <content>
+    <![CDATA[
+        <div>
+          <label for="itxtPromoCode${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.PromoCodeCondition.Localizations.PromoCodeLabel}</label>
+          <input type="text" value="${model.PromoCode}" id="itxtPromoCode${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}"
+            onkeyup="
+              (
+                function(source){
+                    var textbox = $(source);
+                    textbox.tmplItem().data.updatePromoCode(textbox.val());
+                }
+              )
+              (this);
+            "
+          />
+        </div>
+      ]]>
+  </content>
+</template>

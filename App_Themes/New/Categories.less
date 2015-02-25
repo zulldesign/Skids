@@ -1,0 +1,145 @@
+﻿#bCategories {
+    overflow: hidden;
+}
+
+    #bCategories > div.left {
+        float: left;
+        width: 400px;
+    }
+
+        #bCategories > div.left > fieldset select {
+            width: 100%;
+        }
+
+    #bCategories > div.right {
+        margin: 10px 0 0 410px;
+    }
+
+#bCategoriesTreeView {
+    width: 358px;
+    overflow: auto;
+}
+
+    #bCategoriesTreeView li {
+        display: block;
+    }
+
+        #bCategoriesTreeView li.separator {
+            height: 10px;
+        }
+
+            #bCategoriesTreeView li.separator.hover {
+                border-radius: 3px;
+                background-color: #666666;
+            }
+
+    #bCategoriesTreeView input[type=text] {
+        border: 0;
+        width: 92%;
+        background-color: transparent;
+    }
+
+    #bCategoriesTreeView li > table {
+        width: 100%;
+        border-radius: 3px;
+        background-color: white;
+    }
+
+        #bCategoriesTreeView li > table:hover, #bCategoriesTreeView li > table.hover {
+            background-color: #666666;
+        }
+
+            #bCategoriesTreeView li > table:hover a, #bCategoriesTreeView li > table.hover a {
+                color: white;
+            }
+
+    #bCategoriesTreeView li > ul {
+        margin-left: 20px;
+    }
+
+    #bCategoriesTreeView td {
+        height: 40px;
+        text-align: left;
+        line-height: 40px;
+    }
+
+    #bCategoriesTreeView table tr > td:first-child {
+        width: 30px;
+        height: 30px;
+    }
+
+    #bCategoriesTreeView a.expander {
+        width: 30px;
+        height: 30px;
+        display: block;
+        background: url('Images/Categories/arrows.png') no-repeat 0 0;
+    }
+
+        #bCategoriesTreeView a.expander:hover {
+            cursor: pointer;
+        }
+
+        #bCategoriesTreeView a.expander.expanded {
+            background-position: 0 -30px;
+        }
+
+    #bCategoriesTreeView td.content {
+        padding-left: 5px;
+    }
+
+        #bCategoriesTreeView td.content > a {
+            white-space: nowrap;
+        }
+
+            #bCategoriesTreeView td.content > a.selected {
+                font-weight: bold;
+            }
+
+    #bCategoriesTreeView td.option {
+        width: 20px;
+        height: 20px;
+    }
+
+        #bCategoriesTreeView td.option > a {
+            width: 16px;
+            height: 16px;
+            display: block;
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+        }
+
+    #bCategoriesTreeView table:hover td.option > a {
+        background-position: 50% -16px;
+    }
+
+        #bCategoriesTreeView table:hover td.option > a:hover {
+            background-position: 50% -32px;
+        }
+
+#tbxCategorySelection {
+    display: none;
+}
+
+div.categoryTooltip {
+    position: absolute;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+    border-radius: 4px;
+    background-color: White;
+    border: 1px solid #cacaca;
+}
+
+div.categoryHelper {
+    height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    border: 1px solid #cacaca;
+}
+
+    div.categoryHelper.linker {
+        padding-left: 25px;
+        background: white url('Images/Icons/ic-link.png') no-repeat 5px 50%;
+    }

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="ConditionSelector">
+  <content>
+    <![CDATA[
+       <div class="conditionSelector">
+          <select
+            onchange="
+                (
+                  function(source){
+                    var select = $(source);
+                    var data = select.tmplItem().data;
+                    data.update.call(data.editor,data.path,select.val(){{if index!=null}},${index}{{/if}});
+                  }
+                )(this);
+            ">
+            <option value="">${Magelia.WebStore.Discount.Editor.Localizations.EmptyCaptionText}</option>
+            {{each editor.getConditionCategories()}}
+              <optgroup label="${name}">
+                {{each editor.getConditions($value.code)}}
+                  <option value="${identifier}" {{if condition && condition.identifier == identifier}}selected="selected"{{/if}}>${name}</option>
+                {{/each}}
+              </optgroup>
+            {{/each}}
+          </select/>
+          {{if path}}
+            <a href="javascript:void(0);" class="removeCondition" title="${Magelia.WebStore.Discount.Editor.Localizations.RemoveConditionLinkTitle}"
+              onclick="
+                (
+                  function(source){
+                    var btn = $(source);
+                    var data = btn.tmplItem().data;
+                    data.editor.removeCondition(data.path{{if index!=null}},${index}{{/if}});
+                  }
+                )
+                (this);
+              "
+            >${Magelia.WebStore.Discount.Editor.Localizations.RemoveConditionLinkText}</a>
+          {{/if}}
+          {{if condition}}
+            <a href="javascript:void(0);" class="addCondition" title="${Magelia.WebStore.Discount.Editor.Localizations.AddConditionLinkTitle}"
+              onclick="
+                (
+                  function(source){
+                    var btn = $(source);
+                    var data = btn.tmplItem().data;
+                    data.editor.addCondition(data.path{{if index!=null}},${index}{{/if}});
+                  }
+                )
+                (this);
+              "
+            >${Magelia.WebStore.Discount.Editor.Localizations.AddConditionLinkText}</a>
+          {{/if}}
+        </div>
+      ]]>
+  </content>
+</template>

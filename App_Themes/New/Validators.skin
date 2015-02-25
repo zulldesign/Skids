@@ -1,0 +1,5 @@
+﻿<asp:RangeValidator runat="server" CssClass="validator" />
+<asp:CustomValidator runat="server" CssClass="validator" />
+<asp:CompareValidator runat="server" CssClass="validator" />
+<asp:RequiredFieldValidator runat="server" CssClass="validator" />
+<asp:RegularExpressionValidator runat="server" CssClass="validator" />

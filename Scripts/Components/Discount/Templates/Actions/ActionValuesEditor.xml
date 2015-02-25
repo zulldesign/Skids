@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="ActionValuesEditor">
+  <content>
+    <![CDATA[
+        {{if action}}
+         {{each editor.actions}}
+          {{if action instanceof $value && $.isFunction($.template[action.template])}}
+            {{tmpl(action) action.template}}
+          {{/if}}
+         {{/each}}
+        {{/if}}
+      ]]>
+  </content>
+</template>

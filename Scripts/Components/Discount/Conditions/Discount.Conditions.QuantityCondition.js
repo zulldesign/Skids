@@ -1,0 +1,1 @@
+﻿Type.registerNamespace('Magelia.WebStore.Discount.Conditions.QuantityCondition');

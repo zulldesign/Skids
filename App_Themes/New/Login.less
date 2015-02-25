@@ -1,0 +1,143 @@
+﻿@panelWidth:801px;
+@panelHeight:515px;
+
+body.authentication
+{
+	background:#f3f3f3 url('Images/Login/bg-page.jpg') no-repeat 100% 100%;
+}
+
+body.authentication #aspnetForm
+{
+	border:0;
+	margin:0;
+	width:100%;
+}
+
+div.authentication
+{
+	padding-top:74px;
+	width:@panelWidth;
+	height:@panelHeight;
+	margin-top:(@panelHeight/2)*-1;
+	background-image:url('Images/Login/bg-panel.png');
+}
+
+div.authentication > div
+{
+	padding-bottom:15px;
+	background-position:@panelWidth*-2 100%;
+	background-image:url('Images/Login/bg-panel.png');
+}
+
+div.authentication > div > div
+{
+	padding:20px 30px 0 30px;
+	background-repeat:repeat-y;
+	background-position:@panelWidth*-1 0;
+	background-image:url('Images/Login/bg-panel.png');
+}
+
+div.authentication > div > div > h4
+{
+	font-size:15px;
+	text-align:right;
+	font-weight:normal;
+	text-transform:uppercase;
+	margin-bottom:10px;
+}
+
+div.authentication > div > div > a.magelia
+{
+	width:218px;
+	height:77px;
+	display:block;
+	position:absolute;
+	text-indent:-9999px;
+	margin:-60px 0 0 40px;
+	background-image:url('Images/Common/magelia.png');
+}
+
+div.authentication div.validation
+{
+	margin-bottom:0;
+}
+
+div.authentication div.field
+{
+	width:49%;
+	padding:0;
+	margin-top:40px;
+}
+
+div.authentication div.field label
+{
+	min-width:0;
+}
+
+div.authentication div.form>div.field:first-child, div.authentication div.form>div.field:first-child+div.field
+{
+	font-size:20px;
+}
+
+div.authentication div.form>div.field:first-child+div.field+div.field>label
+{
+	min-width:0;
+	padding-right:5px;
+}
+
+div.authentication div.field input[type=text], div.authentication div.field input[type=password]
+{
+	width:90%;
+	height:30px;
+	font-size:20px;
+	margin-top:15px;
+	line-height:30px;
+}
+
+div.authentication div.field a
+{
+	text-decoration:none;
+}
+
+div.authentication div.buttons
+{
+	margin-top:30px;
+}
+
+div.authentication div.buttons input
+{
+	display:none;
+}
+
+div.authentication div.buttons
+{
+	padding-top:0;
+	margin-left:49%;
+}
+
+div.authentication div.buttons > ul
+{
+	float:left;
+}
+
+div.authentication footer
+{
+	padding-top:20px;
+	text-align:center;
+}
+
+div.authentication footer *
+{
+	color:#999999;
+}
+
+div.authentication ul.flags
+{	
+	top:-3px;
+	position:relative
+}
+
+#pnlForgottenPasswordPopin
+{
+	width:620px;
+}

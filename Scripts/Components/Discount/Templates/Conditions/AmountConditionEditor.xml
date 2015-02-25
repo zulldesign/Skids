@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="AmountConditionEditor">
+  <content>
+    <![CDATA[
+        <table class="gridView">
+          <thead>
+            <tr>
+              <th class="{{if currentSort=='Minimum'}}{{if sortAscending}}sortedAsc{{else}}sortedDesc{{/if}}{{/if}}">
+                <a href="javascript:void(0);"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.sort('Minimum');
+                      }
+                    )
+                    (this);
+                  ">
+                  ${Magelia.WebStore.Discount.Conditions.AmountCondition.Localizations.MinimumHeaderText}</a>
+              </th>
+              <th class="{{if currentSort=='Maximum'}}{{if sortAscending}}sortedAsc{{else}}sortedDesc{{/if}}{{/if}}">
+                <a href="javascript:void(0);"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.sort('Maximum');
+                      }
+                    )
+                    (this);
+                  ">
+                  ${Magelia.WebStore.Discount.Conditions.AmountCondition.Localizations.MaximumHeaderText}</a>
+              </th>
+              <th class="{{if currentSort=='IncludeTaxes'}}{{if sortAscending}}sortedAsc{{else}}sortedDesc{{/if}}{{/if}}">
+                <a href="javascript:void(0);"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.sort('IncludeTaxes');
+                      }
+                    )
+                    (this);
+                  ">
+                  ${Magelia.WebStore.Discount.Conditions.AmountCondition.Localizations.IncludeTaxesHeaderText}</a>
+              </th>
+              <th class="{{if currentSort=='IncludeDiscount'}}{{if sortAscending}}sortedAsc{{else}}sortedDesc{{/if}}{{/if}}">
+                <a href="javascript:void(0);"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.sort('IncludeDiscount');
+                      }
+                    )
+                    (this);
+                  ">
+                  ${Magelia.WebStore.Discount.Conditions.AmountCondition.Localizations.IncludeDiscountHeaderText}</a>
+              </th>
+              {{if shipping}}
+                <th class="{{if currentSort=='IncludeShipping'}}{{if sortAscending}}sortedAsc{{else}}sortedDesc{{/if}}{{/if}}">
+                  <a href="javascript:void(0);"
+                    onclick="
+                      (
+                        function(source){
+                          $(source).tmplItem().data.sort('IncludeShipping');
+                        }
+                      )
+                      (this);
+                    ">
+                    ${Magelia.WebStore.Discount.Conditions.AmountCondition.Localizations.IncludeShippingHeaderText}</a>
+                </th>
+              {{/if}}
+              <th class="{{if currentSort=='CurrencyId'}}{{if sortAscending}}sortedAsc{{else}}sortedDesc{{/if}}{{/if}}">
+                <a href="javascript:void(0);"
+                  onclick="
+                    (
+                      function(source){
+                        $(source).tmplItem().data.sort('CurrencyId');
+                      }
+                    )
+                    (this);
+                  ">
+                  ${Magelia.WebStore.Discount.Conditions.AmountCondition.Localizations.CurrencyHeaderText}</a>
+              </th>
+              <th>
+                ${Magelia.WebStore.Discount.Conditions.AmountCondition.Localizations.ActionHeaderText}
+              </th>
+            </tr>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="text" value="${currentMinimum}" class="numeric"
+                    onkeyup="
+                     (
+                        function(source){
+                          var textbox = $(source);
+                          textbox.tmplItem().data.updateCurrentMinimum(textbox);
+                        }
+                      )
+                      (this);
+                    "
+                  />
+                </td>
+                <td>
+                   <input type="text" value="${currentMaximum}" class="numeric"
+                    onkeyup="
+                     (
+                        function(source){
+                          var textbox = $(source);
+                          textbox.tmplItem().data.updateCurrentMaximum(textbox);
+                        }
+                      )
+                      (this);
+                    "
+                  />
+                </td>
+                <td>
+                  <input type="checkbox" {{if currentIncludeTaxes}}checked="checked"{{/if}}
+                    onchange="
+                      (
+                        function(source){
+                          var checkbox = $(source);
+                          return checkbox.tmplItem().data.updateCurrentIncludeTaxes(checkbox.is(':checked'));
+                        }
+                      )
+                      (this);
+                    "
+                  />
+                </td>
+                <td>
+                  <input type="checkbox" {{if currentIncludeDiscount}}checked="checked"{{/if}}
+                    onchange="
+                      (
+                        function(source){
+                          var checkbox = $(source);
+                          return checkbox.tmplItem().data.updateCurrentIncludeDiscount(checkbox.is(':checked'));
+                        }
+                      )
+                      (this);
+                    "
+                  />
+                </td>
+                {{if shipping}}
+                  <td>
+                    <input type="checkbox" {{if currentIncludeShipping}}checked="checked"{{/if}}
+                      onchange="
+                        (
+                          function(source){
+                            var checkbox = $(source);
+                            return checkbox.tmplItem().data.updateCurrentIncludeShipping(checkbox.is(':checked'));
+                          }
+                        )
+                        (this);
+                      "
+                    />
+                  </td>
+                {{/if}}
+                <td>
+                  <select id="slOrderAmountAdd${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}"
+                    onchange="
+                      (
+                        function(source){
+                          var select = $(source);
+                          select.tmplItem().data.updateCurrentCurrency(select.val());
+                        }
+                      )
+                      (this);
+                    "
+                  >
+                  </select>
+                  <script type="text/javascript">
+                    (
+                      function(){
+                        var slOrderAmountAdd = $('#slOrderAmountAdd${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}');
+                        slOrderAmountAdd.tmplItem().data.populateWithCurrencies(slOrderAmountAdd,'${currentCurrencyId}');
+                      }
+                    )()
+                  </script>
+                </td>
+                <td>
+                   <a href="javascript:void(0);" style="padding:0;" class="rounded minor black"
+                    onclick="
+                      (
+                        function(source){
+                          $(source).tmplItem().data.addValue();
+                        }
+                      )
+                      (this);
+                  "><span><span><span>${Magelia.WebStore.Discount.Conditions.AmountCondition.Localizations.AddButtonText}</span></span></span></a>
+                </td>
+              </tr>
+              {{each model.Values}}
+                <tr>
+                  <td class="numeric">${$value.Minimum}</td>
+                  <td class="numeric">${$value.Maximum}</td>
+                  <td><input type="checkbox" disabled="disabled" {{if $value.IncludeTaxes}}checked="checked"{{/if}}/></td>
+                  <td><input type="checkbox" disabled="disabled" {{if $value.IncludeDiscount}}checked="checked"{{/if}}/></td>
+                  {{if shipping}}
+                    <td><input type="checkbox" disabled="disabled" {{if $value.IncludeShipping}}checked="checked"{{/if}}/></td>
+                  {{/if}}
+                  <td id="tdOrderAmount${$index}_${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">
+                    <script type="text/javascript">
+                      (
+                        function(){
+                          var tdOrderAmount = $('#tdOrderAmount${$index}_${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}');
+                          tdOrderAmount.tmplItem().data.setCurrencyCode(tdOrderAmount,${$value.CurrencyId});
+                        }
+                      )()
+                    </script>
+                  </td>
+                  <td>
+                    <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                      onclick="
+                        (
+                          function(source){
+                            $(source).tmplItem().data.editValue(${$index});
+                          }
+                        )
+                        (this);
+                      "><span><span><span>${Magelia.WebStore.Discount.Conditions.AmountCondition.Localizations.EditButtonText}</span></span></span></a>
+                      <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                      onclick="
+                        (
+                          function(source){
+                            $(source).tmplItem().data.removeValue(${$index});
+                          }
+                        )
+                        (this);
+                      "><span><span><span>${Magelia.WebStore.Discount.Conditions.AmountCondition.Localizations.RemoveButtonText}</span></span></span></a>
+                  </td>
+                </tr>
+              {{/each}}
+            </tbody>
+          </thead>
+        </table>
+      ]]>
+  </content>
+</template>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="CatalogConditionEditor">
+  <content>
+    <![CDATA[
+        <div>
+          <label for="itxtCatalog${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.CatalogCondition.Localizations.CatalogLabel}</label>
+          <input type="text" value="${model.Catalog}" id="itxtCatalog${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}"
+            onkeyup="
+              (
+                function(source){
+                    var textbox = $(source);
+                    textbox.tmplItem().data.updateCatalog(textbox.val());
+                }
+              )
+              (this);
+            "
+          />
+          <script type="text/javascript">
+          (
+            function(){
+              var itxtCatalog = $('#itxtCatalog${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}');
+              itxtCatalog.tmplItem().data.implementAutoComplete(itxtCatalog);
+            }
+          )()
+          </script/>
+        </div>
+      ]]>
+  </content>
+</template>

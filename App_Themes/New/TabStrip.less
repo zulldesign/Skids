@@ -1,0 +1,47 @@
+﻿ul.tabStrip
+{
+	height:40px;
+	overflow:hidden;
+}
+
+ul.tabStrip + *
+{
+	padding:10px;
+	margin-top:-1px;
+	background-color:white;
+	border:1px solid #cacaca;
+}
+
+ul.tabStrip > li
+{
+	float:left;
+}
+
+ul.tabStrip > li + li
+{
+	margin-left:10px;
+}
+
+ul.tabStrip > li > a
+{
+	color:white;
+	font-size:11px;
+	height:40px;
+	display:block;
+	padding:0 20px;
+	line-height:40px;
+	text-transform:uppercase;
+}
+
+ul.tabStrip > li > a:hover
+{
+	text-decoration:none;
+}
+
+ul.tabStrip > li.selected > a
+{
+	color:#666666;
+	background-color:white;
+	border:1px solid #cccccc;
+	border-bottom:0;
+}

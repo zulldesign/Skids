@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="GiftActionEditor">
+  <content>
+    <![CDATA[
+        <div>
+          <span>${Magelia.WebStore.Discount.Actions.GiftAction.Localizations.GiftsLabel}</span>
+          <table class="gridView" border="0" cellpadding="0" cellspacing="0">
+            <thead>
+              <tr>
+                <th class="{{if currentSort=='PurchasedQuantity'}}{{if sortAscending}}sortedAsc{{else}}sortedDesc{{/if}}{{/if}}">
+                  <a href="javascript:void(0);"
+                    onclick="
+                      (
+                        function(source){
+                          $(source).tmplItem().data.sort('PurchasedQuantity');
+                        }
+                      )(this);
+                    "
+                  >${Magelia.WebStore.Discount.Actions.GiftAction.Localizations.PurchasedQuantityHeaderText}
+                  </a>
+                </th>
+                <th class="{{if currentSort=='PurchasedSKU'}}{{if sortAscending}}sortedAsc{{else}}sortedDesc{{/if}}{{/if}}">
+                  <a href="javascript:void(0);"
+                    onclick="
+                      (
+                        function(source){
+                          $(source).tmplItem().data.sort('PurchasedSKU');
+                        }
+                      )(this);
+                    "
+                  >${Magelia.WebStore.Discount.Actions.GiftAction.Localizations.PurchasedSKUHeaderText}
+                  </a>
+                </th>
+                <th class="{{if currentSort=='OfferedQuantity'}}{{if sortAscending}}sortedAsc{{else}}sortedDesc{{/if}}{{/if}}">
+                  <a href="javascript:void(0);"
+                    onclick="
+                      (
+                        function(source){
+                          $(source).tmplItem().data.sort('OfferedQuantity');
+                        }
+                      )(this);
+                    "
+                  >${Magelia.WebStore.Discount.Actions.GiftAction.Localizations.OfferedQuantityHeaderText}
+                  </a>
+                </th>
+                <th class="{{if currentSort=='OfferedSKU'}}{{if sortAscending}}sortedAsc{{else}}sortedDesc{{/if}}{{/if}}">
+                  <a href="javascript:void(0);"
+                    onclick="
+                      (
+                        function(source){
+                          $(source).tmplItem().data.sort('OfferedSKU');
+                        }
+                      )(this);
+                    "
+                  >${Magelia.WebStore.Discount.Actions.GiftAction.Localizations.OfferedSKUHeaderText}
+                  </a>
+                </th>
+                <th class="{{if currentSort=='Catalog'}}{{if sortAscending}}sortedAsc{{else}}sortedDesc{{/if}}{{/if}}">
+                  <a href="javascript:void(0);"
+                    onclick="
+                      (
+                        function(source){
+                          $(source).tmplItem().data.sort('Catalog');
+                        }
+                      )(this);
+                    "
+                  >${Magelia.WebStore.Discount.Actions.GiftAction.Localizations.CatalogHeaderText}
+                  </a>
+                </th>
+                <th class="{{if currentSort=='Repeatable'}}{{if sortAscending}}sortedAsc{{else}}sortedDesc{{/if}}{{/if}}">
+                  <a href="javascript:void(0);"
+                    onclick="
+                      (
+                        function(source){
+                          $(source).tmplItem().data.sort('Repeatable');
+                        }
+                      )(this);
+                    "
+                  >${Magelia.WebStore.Discount.Actions.GiftAction.Localizations.RepeatableHeaderText}
+                  </a>
+                </th>
+                <th>${Magelia.WebStore.Discount.Actions.GiftAction.Localizations.ActionHeaderText}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="text" class="numeric" value="${currentPurchasedQuantity}"
+                    onkeyup="
+                      (
+                        function(source){
+                          var textbox = $(source);
+                          textbox.tmplItem().data.updateCurrentPurchasedQuantity(textbox,$('#cbxRepatable${$item.parent.data.index}'));
+                        }
+                      )
+                      (this);
+                    "
+                  />
+                </td>
+                <td>
+                  <input type="text" value="${currentPurchasedSKU}" id="itxtPurchasedSKU${$item.parent.data.index}"
+                    onkeyup="
+                      (
+                        function(source){
+                          var textbox = $(source);
+                          textbox.tmplItem().data.updateCurrentPurchasedSKU(textbox.val(),$('#cbxRepatable${$item.parent.data.index}'));
+                        }
+                      )
+                      (this);
+                    "
+                  />
+                  <script type="text/javascript">
+                    (
+                      function(){
+                        var itxtPurchasedSKU = $('#itxtPurchasedSKU${$item.parent.data.index}');
+                        itxtPurchasedSKU.tmplItem().data.implementAutoComplete(itxtPurchasedSKU);
+                      }
+                    )();
+                  </script>
+                </td>
+                <td>
+                  <input type="text" class="numeric" value="${currentOfferedQuantity}"
+                    onkeyup="
+                      (
+                        function(source){
+                          var textbox = $(source);
+                          textbox.tmplItem().data.updateCurrentOfferedQuantity(textbox);
+                        }
+                      )
+                      (this);
+                    "
+                  />
+                </td>
+                <td>
+                  <input type="text" value="${currentOfferedSKU}" id="itxtOfferedSKU${$item.parent.data.index}"
+                    onkeyup="
+                      (
+                        function(source){
+                          var textbox = $(source);
+                          textbox.tmplItem().data.updateCurrentOfferedSKU(textbox.val());
+                        }
+                      )
+                      (this);
+                    "
+                  />
+                  <script type="text/javascript">
+                    (
+                      function(){
+                        var itxtOfferedSKU = $('#itxtOfferedSKU${$item.parent.data.index}');
+                        itxtOfferedSKU.tmplItem().data.implementAutoComplete(itxtOfferedSKU);
+                      }
+                    )();
+                  </script>
+                </td>
+                <td>
+                  <select id="selGiftsCatalogs${$item.parent.data.index}"
+                    onchange="
+                      (
+                        function(source){
+                          var selGiftsCatalogs = $(source);
+                          selGiftsCatalogs.tmplItem().data.updateCurrentCatalog(selGiftsCatalogs.val());
+                        }
+                      )
+                      (this);
+                    "
+                  >
+                    <option></option>
+                  </select>
+                  <script type="text/javascript">
+                    (
+                      function(){
+                        var selGiftsCatalogs = $('#selGiftsCatalogs${$item.parent.data.index}');
+                        selGiftsCatalogs.tmplItem().data.populateWithCatalogs(selGiftsCatalogs);
+                      }
+                    )();
+                  </script>
+                </td>
+                <td>
+                  <input type="checkbox" {{if currentRepeatable}}checked="checked"{{/if}} id="cbxRepatable${$item.parent.data.index}"
+                  {{if !currentPurchasedSKU || currentPurchasedQuantity == null}}disabled="disabled"{{/if}}
+                    onclick="
+                      (
+                        function(source){
+                          var checkbox = $(source);
+                          checkbox.tmplItem().data.updateCurrentRepeatable(checkbox.is(':checked'));
+                        }
+                      )
+                      (this);
+                    "
+                  />
+                </td>
+                <td>
+                  <a href="javascript:void(0);" style="padding:0;" class="rounded minor black"
+                    onclick="
+                      (
+                        function(source){
+                           $(source).tmplItem().data.addGiftDefinition();
+                        }
+                      )
+                      (this);
+                  "><span><span><span>${Magelia.WebStore.Discount.Actions.GiftAction.Localizations.AddButtonText}</span></span></span></a>
+                </td>
+              </tr>
+              {{each model.GiftDefinitions}}
+                <tr>
+                  <td class="numeric">${PurchasedQuantity}</td>
+                  <td>${PurchasedSKU}</td>
+                  <td class="numeric">${OfferedQuantity}</td>
+                  <td>${OfferedSKU}</td>
+                  <td>${Catalog}</td>
+                  <td><input type="checkbox" disabled="disabled" {{if Repeatable}}checked="checked"{{/if}}/></td>
+                  <td>
+                    <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                    onclick="
+                      (
+                        function(source){
+                           $(source).tmplItem().data.editGiftDefinition(${$index});
+                        }
+                      )
+                      (this);
+                  "><span><span><span>${Magelia.WebStore.Discount.Actions.GiftAction.Localizations.EditButtonText}</span></span></span></a>
+                   <a href="javascript:void(0);" style="padding:0;" class="rounded minor white"
+                    onclick="
+                      (
+                        function(source){
+                           $(source).tmplItem().data.removeGiftDefinition(${$index});
+                        }
+                      )
+                      (this);
+                  "><span><span><span>${Magelia.WebStore.Discount.Actions.GiftAction.Localizations.RemoveButtonText}</span></span></span></a>
+                  </td>
+                <tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+      ]]>
+  </content>
+</template>

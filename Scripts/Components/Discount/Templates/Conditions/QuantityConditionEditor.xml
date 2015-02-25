@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="QuantityConditionEditor">
+  <styles>
+    <![CDATA[
+        div.quantity{overflow:hidden;}
+        div.quantity>*{display:block;}
+        div.quantity>label{float:left;padding-right:2px;}
+        div.quantity>input,div.quantity>select{float:right;width:120px;}
+        div.quantity+div.quantity{margin-top:2px;}
+      ]]>
+  </styles>
+  <content>
+    <![CDATA[
+        <div class="quantity">
+          <label for="selProductQuantityOperator${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.QuantityCondition.Localizations.OperatorLabel}</label>
+          <select id="selProductQuantityOperator${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}"
+            onchange="
+              (
+                function(source){
+                  var selProductQuantityOperator = $(source);
+                  selProductQuantityOperator.tmplItem().data.updateOperator(selProductQuantityOperator.val());
+                }
+              )(this);
+            "
+          >
+            <option value="4" {{if model.Operator==4}}selected="selected"{{/if}}>&#61;</option>
+            <option value="5" {{if model.Operator==5}}selected="selected"{{/if}}>&#33;&#61;</option>
+            <option value="0" {{if model.Operator==0}}selected="selected"{{/if}}>&lt;</option>
+            <option value="1" {{if model.Operator==1}}selected="selected"{{/if}}>&lt;&#61;</option>
+            <option value="2" {{if model.Operator==2}}selected="selected"{{/if}}>&gt;</option>
+            <option value="3" {{if model.Operator==3}}selected="selected"{{/if}}>&gt;&#61;</option>
+          </select>
+        </div>
+        <div class="quantity">
+          <label for="itxtProductQuantityQuantity${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}">${Magelia.WebStore.Discount.Conditions.QuantityCondition.Localizations.QuantityLabel}</label>
+          <input class="numeric" type="text" id="itxtProductQuantityQuantity${$item.parent.data.path.replace(/\//g,'_')}${$item.parent.data.index}" value="${model.Quantity}"
+            onkeyup="
+              (
+                function(source){
+                  var textbox = $(source);
+                  textbox.tmplItem().data.updateQuantity(textbox);
+                }
+              )
+              (this);
+            "
+            onblur="
+              (
+                function(source){
+                  var textbox = $(source);
+                  textbox.val(textbox.tmplItem().data.model.Quantity);
+                }
+              )
+              (this);
+            "
+          />
+        </div>
+      ]]>
+  </content>
+</template>

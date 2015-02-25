@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="Editor">
+  <content>
+    <![CDATA[
+        <div class="discountEditor">
+          {{if showConditions}}
+            <fieldset>
+              <legend>${Magelia.WebStore.Discount.Editor.Localizations.ConditionsLegend}</legend>
+              {{tmpl({condition:discount.PreCondition,update:updatePreCondition,editor:$data,path:'',index:null}) conditionEditorTemplate}}
+            </fieldset>
+          {{/if}}
+          {{if showActions}}
+            <ul class="actions">
+              {{if discount.Actions.length == 0}}
+                <li>{{tmpl({action:null,update:updateAction,editor:$data,index:discount.Actions.length}) 'ActionEditor'}}</li>
+              {{else}}
+                {{each discount.Actions}}
+                  <li>
+                    {{tmpl({action:$value,update:updateAction,editor:$data,index:$index}) 'ActionEditor'}}
+                    <div>
+                      <input id="cbxAppendAction${$index}" type="checkbox" {{if discount.Actions.length-1>$index}}checked="checked"{{/if}}
+                        onchange="
+                        (
+                          function(source){
+                            var cbxAppendAction = $(source);
+                            var editor = cbxAppendAction.tmplItem().data;
+                            editor.updateAction(cbxAppendAction.is(':checked')?editor.actions.first().prototype.identifier:null,${$index+1});
+                          }
+                        )(this);
+                        "
+                      />
+                      <label for="cbxAppendAction${$index}">${Magelia.WebStore.Discount.Editor.Localizations.AppendActionLabelText}</label>
+                    </div>
+                  </li>
+                {{/each}}
+              {{/if}}
+            </ul>
+          {{/if}}
+        </div>
+      ]]>
+  </content>
+</template>

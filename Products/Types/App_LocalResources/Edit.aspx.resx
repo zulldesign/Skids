@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="cvCodeIsUnique.ErrorMessage" xml:space="preserve">
+    <value>Code already exists. Please enter a new code.</value>
+  </data>
+  <data name="lblCode.Text" xml:space="preserve">
+    <value>Code :</value>
+  </data>
+  <data name="lblProductKind.Text" xml:space="preserve">
+    <value>Product kind :</value>
+  </data>
+  <data name="lbtnAttribute.Text" xml:space="preserve">
+    <value>Attribute</value>
+  </data>
+  <data name="lbtnName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lbtnOrder.Text" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="lbtnRequired.Text" xml:space="preserve">
+    <value>Required</value>
+  </data>
+  <data name="liBundle.Text" xml:space="preserve">
+    <value>Bundle</value>
+  </data>
+  <data name="liNo.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="liStandard.Text" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="litAttributes.Text" xml:space="preserve">
+    <value>Attributes</value>
+  </data>
+  <data name="litType.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="liVariable.Text" xml:space="preserve">
+    <value>Variant Products</value>
+  </data>
+  <data name="liYes.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="revCodeLength.ErrorMessage" xml:space="preserve">
+    <value>Invalid code length, max 50 charaters</value>
+  </data>
+  <data name="rfvAttribute.ErrorMessage" xml:space="preserve">
+    <value>Attribute is required</value>
+  </data>
+  <data name="rfvCode.ErrorMessage" xml:space="preserve">
+    <value>Please enter a Code</value>
+  </data>
+  <data name="rfvProductKind.ErrorMessage" xml:space="preserve">
+    <value>Please select a Product kind</value>
+  </data>
+  <data name="mlfName.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lbtnType.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="lblCode.ToolTip" xml:space="preserve">
+    <value>Unique identifier or product type name.</value>
+  </data>
+  <data name="lblProductKind.ToolTip" xml:space="preserve">
+    <value>Standard, Variant and Bundle are the three product kinds. The Product kind impacts the business rules and the screens that define a product.</value>
+  </data>
+  <data name="lbtnAttribute.ToolTip" xml:space="preserve">
+    <value>Available attributes for the selected product type.  These attributes are defined under Product&gt;Attributes.</value>
+  </data>
+  <data name="lbtnOrder.ToolTip" xml:space="preserve">
+    <value>Defines the order according to which attributes will be displayed on the product page.</value>
+  </data>
+  <data name="lbtnRequired.ToolTip" xml:space="preserve">
+    <value>Specifies if this attribute is required or not.</value>
+  </data>
+  <data name="lbtnShowInProductList.ToolTip" xml:space="preserve">
+    <value>Indicates if this attribute must be visible or not in the Product lists.</value>
+  </data>
+  <data name="litDefaultTaxCategories.Text" xml:space="preserve">
+    <value>Default tax categories</value>
+  </data>
+  <data name="mslDefaultTaxCategories.AssociatedItemsLabelText" xml:space="preserve">
+    <value>Assigned tax categories :</value>
+  </data>
+  <data name="mslDefaultTaxCategories.AvailableItemsLabelText" xml:space="preserve">
+    <value>Available tax categories :</value>
+  </data>
+  <data name="lbtnAllowFilter.Text" xml:space="preserve">
+    <value>Allow filter</value>
+  </data>
+  <data name="lbtnAllowSelection.Text" xml:space="preserve">
+    <value>Allow selection</value>
+  </data>
+  <data name="lbtnShowInProductDetail.Text" xml:space="preserve">
+    <value>Show in product detail</value>
+  </data>
+  <data name="lbtnShowInProductList.Text" xml:space="preserve">
+    <value>Show in product list</value>
+  </data>
+  <data name="lbtnIsVariableAttribute.Text" xml:space="preserve">
+    <value>Base attribute</value>
+  </data>
+  <data name="lblIsManaged.Text" xml:space="preserve">
+    <value>Inventory management :</value>
+  </data>
+  <data name="lblIsManaged.Tooltip" xml:space="preserve">
+    <value>Indicate whether Magelia WebStore should manage the inventory of this product or if the product should be considered as always available in stock (not inventory managed).</value>
+  </data>
+  <data name="lblIsVirtual.Text" xml:space="preserve">
+    <value>Physical or virtual product :</value>
+  </data>
+  <data name="lblIsVirtual.Tooltip" xml:space="preserve">
+    <value>Physical products require a shipping method to be shipped, whereas virtual products .</value>
+  </data>
+  <data name="liManaged.Text" xml:space="preserve">
+    <value>managed inventory</value>
+  </data>
+  <data name="liPhysical.Text" xml:space="preserve">
+    <value>Physical product</value>
+  </data>
+  <data name="liUnmanaged.Text" xml:space="preserve">
+    <value>unmanaged inventory</value>
+  </data>
+  <data name="liVirtual.Text" xml:space="preserve">
+    <value>Virtual product</value>
+  </data>
+  <data name="rfvIsManaged.ErrorMessage" xml:space="preserve">
+    <value>Please indicate if this Product type is inventory managed or not.</value>
+  </data>
+  <data name="rfvIsVirtual.ErrorMessage" xml:space="preserve">
+    <value>Please indicate whether your product is virtual or physical</value>
+  </data>
+  <data name="lbtnVisible.Text" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="lbtnVisible.ToolTip" xml:space="preserve">
+    <value>Indicates if the attribute should be visible as a filter on the product lists.</value>
+  </data>
+  <data name="InvalidCopyProductTypeId" xml:space="preserve">
+    <value>The product type identifier to copy given in the parameters is invalid and has been ignored.</value>
+  </data>
+  <data name="InvalidProductTypeId" xml:space="preserve">
+    <value>The product type identifier given in the parameters is invalid and has been ignored.</value>
+  </data>
+</root>

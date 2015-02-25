@@ -1,0 +1,10 @@
+<browsers>
+  <browser refID="Default">
+    <controlAdapters>
+      <adapter controlType="System.Web.UI.WebControls.RequiredFieldValidator" adapterType="Magelia.WebStore.Admin.Web.UI.Adapters.RequiredFieldValidatorAdapter" />
+      <adapter controlType="System.Web.UI.WebControls.TextBox" adapterType="Magelia.WebStore.Admin.Web.UI.Adapters.TextBoxAdapter" />
+      <adapter controlType="System.Web.UI.WebControls.CheckBoxList" adapterType="Magelia.WebStore.Admin.Web.UI.Adapters.CheckBoxListAdapter" />
+      <adapter controlType="System.Web.UI.WebControls.ImageButton" adapterType="Magelia.WebStore.Admin.Web.UI.Adapters.ImageButtonAdapter" />
+    </controlAdapters>
+  </browser>
+</browsers>

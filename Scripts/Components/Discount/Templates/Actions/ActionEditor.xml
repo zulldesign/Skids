@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template id="ActionEditor">
+  <styles>
+    <![CDATA[
+      div.postCondition{padding:5px 5px 10px 5px;}
+      ]]>
+  </styles>
+  <content>
+    <![CDATA[
+      <fieldset>
+        <legend>
+          <label for="selActionType${index}">${Magelia.WebStore.Discount.Editor.Localizations.ActionTypeLabel}</label>
+          <select id="selActionType${index}"
+            onchange="
+              (
+                function(source){
+                  var select = $(source);
+                  var data = select.tmplItem().data;
+                  data.update.call(data.editor,select.val(),${index});
+                }
+              )
+              (this);
+            "
+          >
+            <option value="">${action?Magelia.WebStore.Discount.Editor.Localizations.RemoveOptionText:Magelia.WebStore.Discount.Editor.Localizations.EmptyCaptionText}</option>
+            {{each editor.actions}}
+              <option value="${prototype.identifier}" {{if action && prototype.identifier==action.identifier}}selected="selected"{{/if}}>${$value.Localizations.Name}</option>  
+            {{/each}}
+          </select>
+        </legend>
+        {{if action}}
+          {{if action.showPostCondition}}
+            <div class="postCondition">
+              {{tmpl({condition:action.model.PostCondition,update:editor.updatePostCondition,editor:editor,path:'',index:index}) editor.conditionEditorTemplate}}
+            </div>
+          {{/if}}
+          <fieldset>
+            <legend>${Magelia.WebStore.Discount.Editor.Localizations.ConfigurationLegend}</legend>
+            {{tmpl 'ActionValuesEditor'}}
+            <div>
+              <input id="cbxPostCondition${index}" type="checkbox" {{if action.showPostCondition}}checked="checked"{{/if}}
+                onchange="
+                  (
+                    function(source){
+                      var cbxPostCondition = $(source);
+                      var data = cbxPostCondition.tmplItem().data;
+                      data.editor.showPostCondition(cbxPostCondition.is(':checked'),data.index);
+                    }
+                  )(this);
+                "
+              />
+              <label for="cbxPostCondition${index}">${Magelia.WebStore.Discount.Editor.Localizations.ShowPostConditionLabelText}</label>
+            </div>
+          </fieldset>
+        {{else}}
+          <p>${Magelia.WebStore.Discount.Editor.Localizations.SelectActionText}</p>
+        {{/if}}
+      </fieldset>
+      ]]>
+  </content>
+</template>

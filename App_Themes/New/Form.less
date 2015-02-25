@@ -1,0 +1,235 @@
+﻿input[type=text],
+input[type=number],
+input[type=password],
+input[type=file],
+textarea,
+select
+{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border:1px solid #cccccc;
+}
+
+input[type=text],
+input[type=file],
+input[type=number],
+input[type=password],
+select,
+label,
+textarea
+{
+	height:25px;
+	line-height:25px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+select[size]
+{
+	height:auto;
+}
+
+select.aspNetDisabled, 
+input[type=file].aspNetDisabled, 
+input[type=file][disabled=disabled], 
+input[type=file][readonly=readonly], 
+input[type=text].aspNetDisabled, 
+input[type=text][disabled=disabled], 
+input[type=text][readonly=readonly], 
+input[type=number].aspNetDisabled, 
+input[type=number][disabled=disabled], 
+input[type=number][readonly=readonly], 
+input[type=password].aspNetDisabled, 
+input[type=password][disabled=disabled], 
+input[type=password][readonly=readonly], 
+input[type=date].aspNetDisabled, 
+input[type=date][disabled=disabled], 
+input[type=date][readonly=readonly], 
+input[type=number].aspNetDisabled, 
+input[type=number][disabled=disabled], 
+input[type=number][readonly=readonly], 
+textarea.aspNetDisabled, 
+textarea[disabled=disabled], 
+textarea[readonly=readonly] 
+{
+	color: #999999;
+	background-color: #fbfbfb;
+}
+
+textarea.large
+{
+	width:100%;
+	height:500px;
+}
+
+fieldset
+{
+	border:1px solid #cccccc;
+	background-color:#f3f3f3;
+	padding:10px 20px 20px 20px;
+}
+
+fieldset + *
+{
+	margin-top:10px;
+}
+
+fieldset>legend
+{
+	font-size:18px;
+	padding:0 2px;
+}
+
+fieldset>legend > a
+{
+	padding-right:25px;
+	background:url('Images/Form/arrow-up.png') no-repeat 100% 50%;
+}
+
+fieldset.collapsed
+{
+	padding:0 0 0 20px;
+}
+
+fieldset.collapsed>legend>a
+{
+	background-image:url('Images/Form/arrow-down.png');
+}
+
+.form
+{	
+	overflow:hidden;
+	margin-bottom:10px;
+}
+
+.form div.field
+{
+	float:left;
+	overflow:hidden;
+	padding:5px 10px 5px 0;	
+}
+
+.form div.field>*
+{
+	float:left;
+	clear:both;
+	display:block;
+}
+
+.form div.field.inline>*
+{
+	clear:none;
+}
+
+.form div.field>ul.checkboxList
+{
+	overflow:hidden;
+}
+
+.form div.field>ul.checkboxList>li
+{
+	float:left;
+	margin-right:10px;
+}
+
+.form div.field>ul.checkboxList>li>label:first-child
+{
+	padding-right:5px;
+}
+
+.form div.field.inline>label, 
+.form div.field.inline>span:first-child
+{
+	min-width:200px;
+	line-height:25px;
+	text-align:left;
+}
+
+.form div.field > span
+{
+	line-height:25px;
+}
+
+.form div.field input[type=text], 
+.form div.field input[type=file], 
+.form div.field input[type=number], 
+.form div.field input[type=password],
+.form div.field select, 
+.form div.field textarea
+{
+	width:250px;
+}
+
+.form div.field textarea
+{
+	height:100px;
+}
+
+.form div.field.break, .form div.field.break-after + *
+{
+	clear:left;
+}
+
+.form div.field select.operator
+{
+	clear:left;
+}
+
+.form div.field select.operator+*
+{
+	clear:none;
+	margin-left:-1px;
+}
+
+.form div.field > label + div + div, .form div.field select.operator + div + div
+{
+	clear:none;
+	margin-left:5px;
+}
+
+input.autoSize, select.autoSize
+{
+	width:auto !important;
+}
+
+input.numeric
+{
+	text-align:right; 
+}
+
+input[type=text].uptoDate
+{
+	color:green;
+}
+
+input[type=checkbox]+label, input[type=checkbox]+span
+{
+	padding-left:5px;
+}
+
+span.ui-combobox
+{
+	overflow:hidden;
+}
+
+span.ui-combobox > *
+{
+	float:left;
+}
+
+span.ui-combobox > a
+{
+	height:23px;
+	margin-left:-1px;
+}
+
+span.ui-combobox > input
+{
+	border-right:0;
+	border-top-right-radius:0;
+	border-bottom-right-radius:0;
+    background-color:#FFF;
+    background-image:none;
+}

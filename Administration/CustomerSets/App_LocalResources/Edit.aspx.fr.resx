@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="cvCode.ErrorMessage" xml:space="preserve">
+    <value>Ce code existe déjà. Le code doit être unique pour un marchand.</value>
+  </data>
+  <data name="cvMaxInvalidPasswordAttempts.ErrorMessage" xml:space="preserve">
+    <value>Nombre invalide</value>
+  </data>
+  <data name="cvMinRequiredNonAlphanumericCharacters.ErrorMessage" xml:space="preserve">
+    <value>Nombre invalide</value>
+  </data>
+  <data name="cvMinRequiredPasswordLength.ErrorMessage" xml:space="preserve">
+    <value>Nombre invalide</value>
+  </data>
+  <data name="cvMinRequiredUserNameLength.ErrorMessage" xml:space="preserve">
+    <value>Nombre invalide</value>
+  </data>
+  <data name="cvPasswordAttemptWindow.ErrorMessage" xml:space="preserve">
+    <value>Nombre invalide</value>
+  </data>
+  <data name="cvPasswordStrengthRegularExpression.Text" xml:space="preserve">
+    <value>Expression régulière invalide :</value>
+  </data>
+  <data name="InvalidCustomerSetId" xml:space="preserve">
+    <value>L'identifiant fournit en paramètre pour le groupe de clients est invalide et a été ignoré.</value>
+  </data>
+  <data name="lblCode.Text" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="lblCode.ToolTip" xml:space="preserve">
+    <value>Identifiant unique du groupe de clients.</value>
+  </data>
+  <data name="lblEnablePasswordReset.Text" xml:space="preserve">
+    <value>Activer la réinitialisation du mot de passe :</value>
+  </data>
+  <data name="lblEnablePasswordReset.ToolTip" xml:space="preserve">
+    <value>Indique si Magelia WebStore permet aux utilisateurs de réinitialiser leur mot de passe :</value>
+  </data>
+  <data name="lblMaxInvalidPasswordAttempts.Text" xml:space="preserve">
+    <value>Nombre maximum de tentatives d'identification invalides :</value>
+  </data>
+  <data name="lblMaxInvalidPasswordAttempts.ToolTip" xml:space="preserve">
+    <value>Nombre de tentatives invalides de connexion ou de récupération du mot de passe autorisées avant que le compte de l'utilisateur ne soit vérouillé.</value>
+  </data>
+  <data name="lblMinRequiredNonAlphanumericCharacters.Text" xml:space="preserve">
+    <value>Nombre minimum de caractères non alphanumériques requis :</value>
+  </data>
+  <data name="lblMinRequiredNonAlphanumericCharacters.ToolTip" xml:space="preserve">
+    <value>Le nombre minimum de caractères spéciaux non-alphanumériques requis pour créer un mot de passe valide.</value>
+  </data>
+  <data name="lblMinRequiredPasswordLength.Text" xml:space="preserve">
+    <value>Longueur minimum du mot de passe :</value>
+  </data>
+  <data name="lblMinRequiredPasswordLength.ToolTip" xml:space="preserve">
+    <value>Nombre minimum de caractères requis pour créer un mot de passe valide.</value>
+  </data>
+  <data name="lblMinRequiredUserNameLength.Text" xml:space="preserve">
+    <value>Nombre minimum de caractères requis pour l'identifiant :</value>
+  </data>
+  <data name="lblMinRequiredUserNameLength.ToolTip" xml:space="preserve">
+    <value>Nombre minimum de caractères requis pour le nom d’utilisateur.</value>
+  </data>
+  <data name="lblPasswordAttemptWindow.Text" xml:space="preserve">
+    <value>Nombre de minutes entre les tentatives d'identification invalides :</value>
+  </data>
+  <data name="lblPasswordAttemptWindow.ToolTip" xml:space="preserve">
+    <value>Temps en minutes pendant lequel les tentatives de connexion infructueuses ou tentatives de récupération du mot de passe infructueuses sont suivies.</value>
+  </data>
+  <data name="lblPasswordStrengthRegularExpression.Text" xml:space="preserve">
+    <value>Force du mot de passe sous forme d'expression régulière :</value>
+  </data>
+  <data name="lblPasswordStrengthRegularExpression.ToolTip" xml:space="preserve">
+    <value>Expression régulière utilisée pour évaluer la complexité du mot de passe.</value>
+  </data>
+  <data name="lblRequiresEmail.Text" xml:space="preserve">
+    <value>E-mail requis :</value>
+  </data>
+  <data name="lblRequiresEmail.ToolTip" xml:space="preserve">
+    <value>Indique si l’identifiant de l'utilisateur doit être son e-mail.</value>
+  </data>
+  <data name="lblRequiresQuestionAndAnswer.Text" xml:space="preserve">
+    <value>Nécessite une question et une réponse :</value>
+  </data>
+  <data name="lblRequiresQuestionAndAnswer.ToolTip" xml:space="preserve">
+    <value>Indique si l'utilisateur doit à répondre à une question afin de réinitialiser son mot de passe.</value>
+  </data>
+  <data name="lblRequiresUniqueEmail.Text" xml:space="preserve">
+    <value>E-mail unique requis :</value>
+  </data>
+  <data name="lblRequiresUniqueEmail.ToolTip" xml:space="preserve">
+    <value>Indique s’il est possible que le même e-mail soit associé à  plusieurs utilisateurs.</value>
+  </data>
+  <data name="litCustomerSet.Text" xml:space="preserve">
+    <value>Groupe de client</value>
+  </data>
+  <data name="revCodeLength.ErrorMessage" xml:space="preserve">
+    <value>Le code doit contenir au moins 1 caractère et moins de 50 caractères</value>
+  </data>
+  <data name="rfvCode.ErrorMessage" xml:space="preserve">
+    <value>Le code est requis</value>
+  </data>
+</root>
